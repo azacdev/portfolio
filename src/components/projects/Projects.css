@@ -1,0 +1,83 @@
+.projects {
+    margin-bottom: 4rem;
+}
+
+.portfolio__container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+    padding: 0 2.8rem;
+}
+
+.portfolio__item {
+    display: grid;
+    place-items: center;
+    background-color: var(--container-color);
+    padding: 1.2rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: .3s;
+}
+
+.portfolio__item h3 {
+    margin: 1.2rem 0 2rem;
+}
+
+.portfolio__item:hover {
+    background-color: transparent;
+    border: 1px solid var(--container-color);
+}
+
+.portfolio__item-image {
+    border-radius: 1.5rem;
+    overflow: hidden;
+}
+
+.portfolio__image {
+    width: 378px;
+    height: 240px;
+    object-fit: cover;
+}
+
+.portfolio__item-cta {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.portfolio__icon {
+    margin-left: 0.3rem;
+}
+
+
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 992px) {
+    .portfolio__container{
+        gap: 1.2rem;
+    }
+    .portfolio__btn {
+        padding: 1rem 1rem;
+    } 
+  }
+  
+  /* For medium devices */
+  @media screen and (max-width: 768px) {
+    .portfolio__container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 0;
+    }
+
+  }
+  
+  @media screen and (max-width: 576px) {
+  }
+  
+  /* For small devices */
+  @media screen and (max-width: 421px) {
+    .portfolio__btn {
+        padding: 1rem 0.75rem;
+    } 
+  }
+
