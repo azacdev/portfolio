@@ -1,17 +1,17 @@
 import React from 'react'
 import './Projects.css'
-import IMG1 from '../../assets/meme-generator.png'
+import IMG1 from '../../assets/orion-anime.png'
+import IMG3 from '../../assets/meme-generator.png'
 import IMG2 from '../../assets/bulletin.png'
-import IMG3 from '../../assets/movie-site.png'
 import IMG4 from '../../assets/tenzies.png'
 
 const data = [
   {
     id: 1,
     image: IMG1,
-    title: "Meme Generator",
-    github: "https://github.com/azacdev/meme-generator.git",
-    demo: "https://azacdev.github.io/meme-generator/"
+    title: "Orion Anime",
+    github: "https://github.com/azacdev/orion-anime",
+    demo: "https://orion-anime.vercel.app/"
   },
   {
     id: 2,
@@ -23,9 +23,9 @@ const data = [
   { 
     id: 3,
     image: IMG3,
-    title: "Movie Site Using React",
-    github: "https://github.com/azacdev/revamped-movies.git",
-    demo: "https://azacdev.github.io/revamped-movies/"
+    title: "Meme Generator",
+    github: "https://github.com/azacdev/meme-generator.git",
+    demo: "https://azacdev.github.io/meme-generator/"
   },
   {
     id: 4,
