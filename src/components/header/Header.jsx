@@ -19,7 +19,7 @@ const Header = () => {
   return (
     <header className='header'>
       <nav className="nav container">
-        <a href="index.html" className="nav__logo">
+        <a href="#home" className="nav__logo">
           Azacdev
         </a>
 
