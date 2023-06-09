@@ -33,8 +33,7 @@
 }
 
 .portfolio__image {
-    width: 378px;
-    height: 240px;
+    width: 100%;
     object-fit: cover;
 }
 
