@@ -197,7 +197,7 @@ img {
   body {
     margin: 0 0 var(--header-height) 0;
   }
-  
+
   .section {
     padding: 2rem 0 4rem;
   }
@@ -215,7 +215,7 @@ img {
   :root {
     --big-font-size: 2.25rem;
   }
-  
+
   .container {
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);
