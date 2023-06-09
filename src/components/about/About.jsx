@@ -1,7 +1,6 @@
 import React from "react";
 import "./About.css";
 import CV from "../../assets/Abdulrazak-Abubakar-CV.pdf";
-import Info from "./Info";
 
 const About = () => {
   return (
@@ -22,7 +21,6 @@ const About = () => {
           </p>
         </div>
 
-        <Info />
         <a
           download=""
           href={CV}
