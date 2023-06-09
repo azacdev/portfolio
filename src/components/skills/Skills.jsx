@@ -32,20 +32,6 @@ const Skills = () => {
               </div>
 
               <div className="skills__data">
-                <i class="bx bxl-git"></i>
-                <div>
-                  <h3 className="skills__name">Git</h3>
-                </div>
-              </div>
-
-              <div className="skills__data">
-                <i class="bx bxl-bootstrap"></i>
-                <div>
-                  <h3 className="skills__name">Bootstrap</h3>
-                </div>
-              </div>
-
-              <div className="skills__data">
                 <i class="bx bxl-react"></i>
                 <div>
                   <h3 className="skills__name">React</h3>
@@ -60,11 +46,26 @@ const Skills = () => {
               </div>
 
               <div className="skills__data">
-                <i class="bx bxl-nodejs"></i>
+                <i class="bx bxl-tailwind-css"></i>
                 <div>
-                  <h3 className="skills__name">Node</h3>
+                  <h3 className="skills__name">Tailwind</h3>
                 </div>
               </div>
+
+              <div className="skills__data">
+                <i class="bx bxl-bootstrap"></i>
+                <div>
+                  <h3 className="skills__name">Bootstrap</h3>
+                </div>
+              </div>
+
+              <div className="skills__data">
+                <i class="bx bxl-git"></i>
+                <div>
+                  <h3 className="skills__name">Git</h3>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
