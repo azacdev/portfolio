@@ -2,8 +2,8 @@ import React from "react";
 import "./Projects.css";
 import IMG1 from "../../assets/orion-anime.png";
 import IMG2 from "../../assets/vega-chat.png";
-import IMG3 from "../../assets/meme-generator.png";
-import IMG4 from "../../assets/tenzies.png";
+import IMG3 from "../../assets/gadgets-dome.png";
+// import IMG4 from "../../assets/tenzies.png";
 
 const data = [
   {
