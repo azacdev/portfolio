@@ -51,11 +51,19 @@ const Projects = () => {
 
               <h3>{title}</h3>
               <div className="portfolio__item-cta">
-                <a href={github} target="blank" className="button button__flex portfolio__btn">
+                <a
+                  href={github}
+                  target="blank"
+                  className="button button__flex portfolio__btn"
+                >
                   Github
                   <i class="uil uil-github-alt portfolio__icon"></i>
                 </a>
-                <a href={demo} target="blank" className="button button__flex portfolio__btn">
+                <a
+                  href={demo}
+                  target="blank"
+                  className="button button__flex portfolio__btn"
+                >
                   Live Demo
                   <i class="uil uil-browser portfolio__icon"></i>
                 </a>
