@@ -4,7 +4,6 @@
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: var(--body-color);
 }
 
 .nav {
@@ -40,6 +39,13 @@
 .nav__close,
 .nav__toggle {
   display: none;
+}
+
+.theme-btn {
+  background-color: transparent;
+}
+.theme-icon {
+  font-size: 1.5rem;
 }
 
 /* Active links */

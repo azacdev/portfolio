@@ -127,7 +127,7 @@ img {
   background-color: var(--body-color);
 }
 
-.text-color {
+.text-color-light {
   color: var(--title-color);
 }
 
@@ -144,12 +144,12 @@ img {
 
 /* ======== Dark Mode ============ */
 
-.text-color-dark {
-  color: #b3b3b3;
+.bg-dark {
+  background-color: #000000;
 }
 
-.bg-light-dark {
-  background-color: #000000;
+.text-color-dark {
+  color: #b3b3b3;
 }
 
 .button-dark {
