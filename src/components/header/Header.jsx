@@ -1,4 +1,9 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
+import { RiMenu4Line } from "react-icons/ri"
+import { BiHomeAlt, BiUserCircle } from "react-icons/bi"
+import { MdClose } from "react-icons/md"
+import { FaRegFileLines } from "react-icons/fa"
+import { GrProjects } from "react-icons/gi"
 import './Header.css'
 
 const Header = () => {
@@ -31,7 +36,7 @@ const Header = () => {
               onClick={() => setActiveNav("#home")} 
               className={activeNav === "#home" ? "nav__link active-link" : "nav__link"}
               >
-                <li className="uil uil-estate nav__icon"></li>
+                <BiHomeAlt className="nav__icon"/>
                 Home
               </a>
             </li>
@@ -39,7 +44,7 @@ const Header = () => {
             <li className="nav__item">
               <a href="#about" onClick={() => setActiveNav("#about")} 
               className={activeNav === "#about" ? "nav__link active-link" : "nav__link"}>
-                <li className="uil uil-user nav__icon"></li>
+                <BiUserCircle className="nav__icon"/>
                 About
               </a>
             </li>
@@ -47,7 +52,7 @@ const Header = () => {
             <li className="nav__item">
               <a href="#skills" onClick={() => setActiveNav("#skills")} 
               className={activeNav === "#skills" ? "nav__link active-link" : "nav__link"}>
-                <li className="uil uil-file-alt nav__icon"></li>
+                <FaRegFileLines className="nav__icon"/>
                 Skills
               </a>
             </li>
@@ -57,7 +62,7 @@ const Header = () => {
               <a href="#projects"
               onClick={() => setActiveNav("#projects")} 
               className={activeNav === "#projects" ? "nav__link active-link" : "nav__link"}>
-                <li className="uil uil-scenery nav__icon"></li>
+                <GrProjects className="nav__icon"/>
                 Projects
               </a>
             </li>
@@ -72,11 +77,12 @@ const Header = () => {
             </li>
           </ul>
 
-          <i className="uil uil-times nav__close" onClick={() => showMenu(!toggle)}></i>
+          <MdClose className="nav__close" onClick={() => showMenu(!toggle)}/>
+
         </div>
 
         <div className="nav__toggle" onClick={() => showMenu(!toggle)}>
-          <i className="uil uil-apps"></i>
+          <RiMenu4Line/> 
         </div>
 
       </nav>

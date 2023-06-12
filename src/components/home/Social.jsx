@@ -1,18 +1,18 @@
-import React from 'react'
+import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa"
 
 const Social = () => {
   return (
     <div className="home__social">
         <a href="https://github.com/azacdev" className="home__social-icon" target="blank">
-          <i class="uil uil-github-alt"></i>
+          <FaGithub/>
         </a>
 
         <a href="https://linkedin.com/in/azacdev/" className="home__social-icon" target="blank">
-          <i class="uil uil-linkedin"></i>
+          <FaLinkedin/>
         </a>
 
         <a href="https://twitter.com/azacdev" className="home__social-icon" target="blank">
-          <i class="uil uil-twitter"></i>
+          <FaTwitter/>
         </a>
     </div>
   )
