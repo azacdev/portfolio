@@ -7,14 +7,14 @@
 
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
-   --hue: 0;
+  --hue: 0;
   --sat: 0%;
   --title-color: hsl(var(--hue), var(--sat), 20%);
   --title-color-dark: hsl(var(--hue), var(--sat), 0%);
   --text-color: hsl(var(--hue), var(--sat), 46%);
   --body-color: hsl(var(--hue), var(--sat), 98%);
   --container-color: #fff;
-   
+
   /* --hue: 0;
   --sat: 0%;
   --title-color: #fff;
@@ -90,15 +90,14 @@ textarea {
   font-size: var(--normal-font-size);
 }
 
-body {
+/* body {
   background-color: var(--body-color);
   color: var(--text-color);
-}
+} */
 
 h1,
 h2,
 h3 {
-  color: var(--title-color);
   font-weight: var(--font-semi-bold);
 }
 
@@ -122,6 +121,50 @@ img {
 }
 
 /*=============== REUSABLE CSS CLASSES ===============*/
+/* ======== Light Mode ============ */
+
+.bg-light {
+  background-color: var(--body-color);
+}
+
+.text-color {
+  color: var(--title-color);
+}
+
+.button-light {
+  background-color: var(--title-color);
+  color: var(--container-color);
+}
+
+.button-light:hover {
+  background-color: transparent;
+  color: var(--title-color);
+  border: 1px solid var(--container-color);
+}
+
+/* ======== Dark Mode ============ */
+
+.text-color-dark {
+  color: #b3b3b3;
+}
+
+.bg-light-dark {
+  background-color: #000000;
+}
+
+.button-dark {
+  background-color: #fff;
+  color: #212426;
+}
+
+.button-dark:hover {
+  background-color: transparent;
+  color: #212426;
+  border: 1px solid #212426;
+}
+
+/* =================== Section ================== */
+
 .section {
   padding: 6rem 0 2rem;
 }
@@ -151,18 +194,9 @@ img {
 /*=============== BUTTONS ===============*/
 .button {
   display: inline-block;
-  background-color: var(--title-color);
-  color: var(--container-color);
-  color: var(--body-color);
   padding: 1.25rem 2rem;
   border-radius: 1rem;
   font-weight: var(--font-medium);
-}
-
-.button:hover {
-  background-color: transparent;
-  color: var(--title-color);
-  border: 1px solid var(--container-color);
 }
 
 .button__icon {
