@@ -7,22 +7,24 @@ import Contact from './components/contact/Contact'
 import Footer from './components/footer/Footer'
 import ScrollUp from './components/scrollup/ScrollUp'
 import Projects from './components/projects/Projects'
+import { ThemeProvider } from './components/themeContext/ThemeProvider'
 
 const App = () => {
   return (
-    <>
-    <Header />
-    <main className='main'>
-      <Home />
-      <About />
-      <Skills />
-      <Projects />
-      <Contact />
-    </main>
-
-    <Footer />
-    <ScrollUp />
-    </>
+    <div>
+    <ThemeProvider>
+      <Header />
+      <main className='main'>
+        <Home />
+        <About />
+        <Skills />
+        <Projects />
+        <Contact />
+      </main>
+      <Footer />
+      <ScrollUp />
+    </ThemeProvider>
+    </div>
   )
 }
 
