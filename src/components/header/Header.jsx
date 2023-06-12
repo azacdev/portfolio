@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { RiMenu4Line } from "react-icons/ri"
-import { BiHomeAlt, BiUserCircle } from "react-icons/bi"
+import { BiHomeAlt, BiUserCircle, BiMessageDots } from "react-icons/bi"
 import { MdClose } from "react-icons/md"
 import { FaRegFileLines } from "react-icons/fa"
 import { GrProjects } from "react-icons/gi"
@@ -71,7 +71,7 @@ const Header = () => {
               <a href="#contact" 
               onClick={() => setActiveNav("#contact")} 
               className={activeNav === "#contact" ? "nav__link active-link" : "nav__link"}>
-                <li className="uil uil-message nav__icon"></li>
+                <BiMessageDots className="nav__icon"/>
                 Contact
               </a>
             </li>
