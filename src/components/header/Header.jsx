@@ -1,9 +1,8 @@
 import { useState } from 'react'
 import { RiMenu4Line } from "react-icons/ri"
 import { BiHomeAlt, BiUserCircle, BiMessageDots } from "react-icons/bi"
-import { MdClose } from "react-icons/md"
-import { FaRegFileLines } from "react-icons/fa"
-import { GrProjects } from "react-icons/gi"
+import { MdClose,MdWebAsset  } from "react-icons/md"
+import { BsGearWide } from "react-icons/bs"
 import './Header.css'
 
 const Header = () => {
@@ -52,7 +51,7 @@ const Header = () => {
             <li className="nav__item">
               <a href="#skills" onClick={() => setActiveNav("#skills")} 
               className={activeNav === "#skills" ? "nav__link active-link" : "nav__link"}>
-                <FaRegFileLines className="nav__icon"/>
+                <BsGearWide className="nav__icon"/>
                 Skills
               </a>
             </li>
@@ -62,7 +61,7 @@ const Header = () => {
               <a href="#projects"
               onClick={() => setActiveNav("#projects")} 
               className={activeNav === "#projects" ? "nav__link active-link" : "nav__link"}>
-                <GrProjects className="nav__icon"/>
+                <MdWebAsset className="nav__icon"/>
                 Projects
               </a>
             </li>
@@ -84,7 +83,6 @@ const Header = () => {
         <div className="nav__toggle" onClick={() => showMenu(!toggle)}>
           <RiMenu4Line/> 
         </div>
-
       </nav>
     </header>
   )
