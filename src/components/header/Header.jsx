@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState } from 'react'
 import { ThemeContext } from "../themeContext/ThemeProvider"
 import { RiMenu4Line } from "react-icons/ri"
-import { BiSun, BiSolidMoon, BiHomeAlt, BiUserCircle, BiMessageDots } from "react-icons/bi"
+import { BiSun, BiMoon, BiHomeAlt, BiUserCircle, BiMessageDots } from "react-icons/bi"
 import { MdClose,MdWebAsset  } from "react-icons/md"
 import { BsGearWide } from "react-icons/bs"
 import './Header.css'
@@ -19,13 +19,13 @@ const Header = () => {
 
   /* =================== Toggle Menu =================== */
   const { theme, setThemeMode } = useContext(ThemeContext)
-  const [darkMode, setDarkMode] = useState(theme)
+  // const [darkMode, setDarkMode] = useState(theme)
   const [toggle, showMenu] = useState(false)
   const [activeNav, setActiveNav] = useState("#home")
 
-  useEffect(() => {
-    setThemeMode(!darkMode)
-  })
+  // useEffect(() => {
+  //   setThemeMode(theme)
+  // }, [theme])
 
   return (
     <header className='header'>
@@ -91,9 +91,11 @@ const Header = () => {
           <RiMenu4Line/> 
         </div>
 
-        <div className='theme-toggle'>
-
-        </div>
+      <div className='theme-toggle'>
+        <button onClick={() => setThemeMode(!theme)}>
+          {theme ? <BiSun/> : <BiMoon/>}
+        </button>
+      </div>
       </nav>
     </header>
   )
