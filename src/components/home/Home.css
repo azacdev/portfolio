@@ -68,10 +68,6 @@
   width: fit-content;
 }
 
-.button__icon {
-  font-size: 1.5rem;
-}
-
 .home__scroll {
   display: flex;
   justify-content: center;
@@ -93,7 +89,6 @@
 }
 
 .home__scroll-name {
-  color: var(--title-color);
   font-weight: var(--font-medium);
   margin-right: var(--mb-0-25);
   margin-left: 2px;
@@ -101,7 +96,6 @@
 
 .home__scroll-arrow {
   font-size: 1.25rem;
-  color: var(--title-color);
 }
 
 /*=============== BREAKPOINTS ===============*/

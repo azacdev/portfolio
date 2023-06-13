@@ -171,7 +171,6 @@ img {
 
 .section__title {
   font-size: var(--h1-font-size);
-  color: var(--title-color);
   margin-bottom: 4rem;
 }
 
@@ -201,6 +200,7 @@ img {
 
 .button__icon {
   margin-left: var(--mb-0-5);
+  font-size: 1.5rem;
 }
 
 .button--flex {
