@@ -139,7 +139,7 @@ img {
 .button-light:hover {
   background-color: transparent;
   color: var(--title-color);
-  border: 1px solid var(--container-color);
+  border: 1px solid var(--title-color);
 }
 
 /* ======== Dark Mode ============ */
@@ -159,7 +159,7 @@ img {
 
 .button-dark:hover {
   background-color: transparent;
-  color: #212426;
+  color: #fff;
   border: 1px solid #212426;
 }
 
