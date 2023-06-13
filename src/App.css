@@ -134,6 +134,7 @@ img {
 .button-light {
   background-color: var(--title-color);
   color: var(--container-color);
+  transition: 0.3s ease-in-out;
 }
 
 .button-light:hover {
@@ -155,6 +156,7 @@ img {
 .button-dark {
   background-color: #fff;
   color: #212426;
+  transition: 0.3s ease-in-out;
 }
 
 .button-dark:hover {

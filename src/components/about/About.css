@@ -10,6 +10,7 @@
 
 .about__description {
   max-width: 700px;
+  margin-bottom: var(--mb-2-5);
 }
 
 /*=============== BREAKPOINTS ===============*/
