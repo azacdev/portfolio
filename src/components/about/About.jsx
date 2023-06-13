@@ -37,7 +37,7 @@ const About = () => {
           href={CV}
           target="_blank"
           className={`${
-            theme ? "text-color-light" : "text-color-dark"
+            theme ? "button-light" : "button-light"
           } button button--flex`}
         >
           Download CV
