@@ -16,7 +16,6 @@
 
 .nav__logo,
 .nav__toggle {
-  color: var(--title-color);
   font-weight: var(--font-medium);
 }
 
@@ -30,7 +29,6 @@
   flex-direction: column;
   align-items: center;
   font-size: var(--small-font-size);
-  color: var(--title-color);
   font-weight: var(--font-medium);
   transition: 0.3ms;
 }
@@ -51,13 +49,14 @@
 /* Active links */
 
 .active-link,
-.nav__link:hover {
-  color: var(--title-color-dark);
+.nav__link:active {
+  color: #212426;
   text-decoration: underline;
+  text-underline-offset: 5px;
 }
 
 .scroll-header {
-  box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0.5em 0 0.5em #404046
 }
 
 /* =========== BREAKPOINTS ============= */
@@ -77,12 +76,19 @@
     bottom: -100%;
     left: 0;
     width: 100%;
-    background: var(--body-color);
     padding: 2rem 1.5rem 4rem;
     box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
     border-radius: 1.5rem 1.5rem 0 0;
     transition: 0.3s;
     border: 1px solid var(--container-color);
+  }
+
+  .nav-menu-light {
+    background-color: var(--body-color);
+  }
+
+  .nav-menu-dark {
+    background-color: #000000;
   }
 
   /* Show Menu */
@@ -101,11 +107,6 @@
     bottom: 0.5rem;
     font-size: 1.5rem;
     cursor: pointer;
-    color: var(--title-color);
-  }
-
-  .nav__close:hover {
-    color: var(--title-color-dark);
   }
 
   .nav__toggle {
@@ -123,6 +124,12 @@
   .nav__close,
   .nav__toggle {
     display: block;
+  }
+
+  .theme {
+    position: absolute;
+    top: -34.75rem;
+    right: 2rem;
   }
 }
 

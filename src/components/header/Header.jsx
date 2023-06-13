@@ -23,33 +23,39 @@ const Header = () => {
       : header.classList.remove("scroll-header");
   }
 
-  /* =================== Toggle Menu =================== */
   const { theme, setThemeMode } = useContext(ThemeContext);
-  // const [darkMode, setDarkMode] = useState(theme)
+
+  /* =================== Toggle Menu =================== */
   const [toggle, showMenu] = useState(false);
   const [activeNav, setActiveNav] = useState("#home");
 
-  // useEffect(() => {
-  //   setThemeMode(theme)
-  // }, [theme])
-
   return (
-    <header className={`${theme ? "bg-light" : "bg-dark"}
-    header`}>
+    <header
+      className={`${theme ? "bg-light" : "bg-dark"}
+    header`}
+    >
       <nav className="nav container">
-        <a href="#home" className={`${theme ? "text-color-light" : "text-color-dark "} nav__logo`}>
+        <a
+          href="#home"
+          className={`${
+            theme ? "text-color-light" : "text-color-dark"
+          } nav__logo`}
+        >
           Azacdev
         </a>
 
-        <div className={toggle ? "nav__menu show-menu" : "nav__menu"}>
+        <div
+          className={`${toggle ? "nav__menu show-menu" : "nav__menu"}
+          ${theme ? "bg-light" : "bg-dark"}`}
+        >
           <ul className="nav__list ">
             <li className="nav__item">
               <a
                 href="#home"
                 onClick={() => setActiveNav("#home")}
-                className={
-                  activeNav === "#home" ? "nav__link active-link" : "nav__link"
-                }
+                className={`${theme ? "text-color-light" : "text-color-dark"}
+                ${activeNav === "#home" ? "nav__link active-link" : "nav__link"}
+                `}
               >
                 <BiHomeAlt className="nav__icon" />
                 Home
@@ -60,9 +66,11 @@ const Header = () => {
               <a
                 href="#about"
                 onClick={() => setActiveNav("#about")}
-                className={
+                className={`${theme ? "text-color-light" : "text-color-dark"}
+                ${
                   activeNav === "#about" ? "nav__link active-link" : "nav__link"
                 }
+                `}
               >
                 <BiUserCircle className="nav__icon" />
                 About
@@ -73,11 +81,13 @@ const Header = () => {
               <a
                 href="#skills"
                 onClick={() => setActiveNav("#skills")}
-                className={
+                className={`${theme ? "text-color-light" : "text-color-dark"}
+                ${
                   activeNav === "#skills"
                     ? "nav__link active-link"
                     : "nav__link"
                 }
+                `}
               >
                 <BsGearWide className="nav__icon" />
                 Skills
@@ -88,11 +98,13 @@ const Header = () => {
               <a
                 href="#projects"
                 onClick={() => setActiveNav("#projects")}
-                className={
+                className={`${theme ? "text-color-light" : "text-color-dark"}
+                ${
                   activeNav === "#projects"
                     ? "nav__link active-link"
                     : "nav__link"
                 }
+                `}
               >
                 <MdWebAsset className="nav__icon" />
                 Projects
@@ -103,11 +115,13 @@ const Header = () => {
               <a
                 href="#contact"
                 onClick={() => setActiveNav("#contact")}
-                className={
+                className={`${theme ? "text-color-light" : "text-color-dark"}
+                ${
                   activeNav === "#contact"
                     ? "nav__link active-link"
                     : "nav__link"
                 }
+                `}
               >
                 <BiMessageDots className="nav__icon" />
                 Contact
@@ -115,19 +129,37 @@ const Header = () => {
             </li>
           </ul>
 
-          <MdClose className="nav__close" onClick={() => showMenu(!toggle)} />
+          <MdClose
+            className={`${
+              theme ? "text-color-light" : "text-color-dark"
+            } nav__close`}
+            onClick={() => showMenu(!toggle)}
+          />
         </div>
 
-        <div className="nav__toggle" onClick={() => showMenu(!toggle)}>
+        <div
+          className={`${
+            theme ? "text-color-light" : "text-color-dark"
+          } nav__toggle`}
+          onClick={() => showMenu(!toggle)}
+        >
           <RiMenu4Line />
         </div>
 
-        <div>
+        <div className="theme">
           <button className="theme-btn" onClick={() => setThemeMode(!theme)}>
             {theme ? (
-              <BiSun className="theme-icon" />
+              <BiSun
+                className={`${
+                  theme ? "text-color-light" : "text-color-dark"
+                } theme-icon`}
+              />
             ) : (
-              <BiMoon className="theme-icon" />
+              <BiMoon
+                className={`${
+                  theme ? "text-color-light" : "text-color-dark"
+                } theme-icon`}
+              />
             )}
           </button>
         </div>
