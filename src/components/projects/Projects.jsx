@@ -1,4 +1,7 @@
-import { FaGithub, FaExternalLinkAlt } from "react-icons/fa"
+import { useContext } from "react";
+import { ThemeContext } from "../themeContext/ThemeProvider";
+import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import { FiExternalLink } from "react-icons/fi";
 import "./Projects.css";
 import IMG1 from "../../assets/orion-anime.png";
 import IMG2 from "../../assets/gadgets-dome.png";
@@ -37,8 +40,14 @@ const data = [
 ];
 
 const Projects = () => {
+  const { theme } = useContext(ThemeContext);
   return (
-    <section className="portfolio section" id="projects">
+    <section
+      className={`${
+        theme ? "text-color-light" : "text-color-dark"
+      } portfolio section`}
+      id="projects"
+    >
       <h2 className="section__title projects">Projects</h2>
 
       <div className="portfolio__container container grid">
@@ -50,30 +59,20 @@ const Projects = () => {
             <div className="portfolio_item-details">
               <h3>{title}</h3>
               <p>
-                This is an Anime Website project that allows users to explore and discover various anime shows and movies
+                This is an Anime Website project that allows users to explore
+                and discover various anime shows and movies
               </p>
               <div className="portfolio__item-cta">
-                <a
-                  href={github}
-                  target="blank"
-                  className="button button__flex portfolio__btn"
-                >
-                  Github
-                  <FaGithub className="portfolio__icon"/>
+                <a href={github} target="blank" className="portfolio__btn">
+                  <FaGithub className="portfolio__icon" />
                 </a>
-                <a
-                  href={demo}
-                  target="blank"
-                  className="button button__flex portfolio__btn"
-                >
-                  Live Demo
-                  <FaExternalLinkAlt className="portfolio__icon"/>
+                <a href={demo} target="blank" className="portfolio__btn">
+                  <FiExternalLink className="portfolio__icon" />
                 </a>
               </div>
             </div>
           </article>
-          )
-        )}
+        ))}
       </div>
     </section>
   );
