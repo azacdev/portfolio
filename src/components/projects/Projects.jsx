@@ -59,7 +59,7 @@ const Projects = () => {
                   className="button button__flex portfolio__btn"
                 >
                   Github
-                  <i class="uil uil-github-alt portfolio__icon"></i>
+                  <FaGithub className="portfolio__icon"/>
                 </a>
                 <a
                   href={demo}
@@ -67,7 +67,7 @@ const Projects = () => {
                   className="button button__flex portfolio__btn"
                 >
                   Live Demo
-                  <i class="uil uil-browser portfolio__icon"></i>
+                  <FaExternalLinkAlt className="portfolio__icon"/>
                 </a>
               </div>
             </div>
