@@ -49,6 +49,9 @@ const Projects = () => {
             </div>
             <div className="portfolio_item-details">
               <h3>{title}</h3>
+              <p>
+                This is an Anime Website project that allows users to explore and discover various anime shows and movies
+              </p>
               <div className="portfolio__item-cta">
                 <a
                   href={github}
