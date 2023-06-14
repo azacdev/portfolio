@@ -1,4 +1,4 @@
-import React from "react";
+import { FaGithub } from "react-icons/fa"
 import "./Projects.css";
 import IMG1 from "../../assets/orion-anime.png";
 import IMG2 from "../../assets/gadgets-dome.png";
