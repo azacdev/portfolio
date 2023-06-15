@@ -1,16 +1,11 @@
 .footer {
-  background-color: var(--container-color);
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 0.1em #404046
 }
 
 .footer__container {
   padding: 2rem 0 6rem;
 }
 
-.footer__title,
-.footer__link {
-  color: var(--title-color);
-}
 
 .footer__title {
   text-align: center;
@@ -18,7 +13,7 @@
 }
 
 .footer__link:hover {
-  color: var(--title-color-dark);
+  color: #212426;
 }
 
 .footer__list {
@@ -50,7 +45,6 @@
 .footer__copy {
   display: block;
   margin-top: 4.5rem;
-  color: var(--title-color);
   text-align: center;
   font-size: var(--smaller-font-size);
 }

@@ -60,7 +60,7 @@
 }
 
 .scroll-header {
-  box-shadow: 0.5em 0 0.5em #404046
+  box-shadow: 0 0 0.5em #404046
 }
 
 /* =========== BREAKPOINTS ============= */
@@ -132,8 +132,12 @@
 
   .theme {
     position: absolute;
-    top: -31.2rem;
+    top: -34.2rem;
     right: 2rem;
+  }
+
+  .hide-theme {
+    display: none;
   }
 }
 
