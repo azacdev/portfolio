@@ -1,111 +1,114 @@
 .skills__container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .skills__content {
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 3rem 4rem;
-    border-radius: 1.25rem;
-    transition: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 3rem 4rem;
+  border-radius: 1.25rem;
+  transition: none;
 }
 
 .skills__title {
-    font-size: var(--normal-font-size);
-    font-weight: var(--font-medium);
-    text-align: center;
-    margin-bottom: var(--mb-1-5);
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  text-align: center;
+  margin-bottom: var(--mb-1-5);
 }
 
-
 .skills__group {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 2.5rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2.5rem;
 }
 
 .skills__data {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    row-gap: 0.7rem;
-    transition: 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 0.7rem;
 }
 
 .skills__icon {
-    font-size: 4rem;
+  font-size: 4rem;
+  transition: 0.3s ease-in-out;
+}
+
+.skills__icon:hover {
+  transform: rotate(360deg);
 }
 
 .html__icon:hover {
-    color: #f06529;
+  color: #f06529;
 }
 
 .css__icon:hover {
-    color: #264de4;
+  color: #264de4;
 }
 
 .javascript__icon:hover {
-    color: #f0db4f;
+  color: #f0db4f;
 }
 
 .react__icon:hover {
-    color: #61dbfb;
+  color: #61dbfb;
 }
 
 .redux__icon:hover {
-    color: #764abc;
+  color: #764abc;
 }
 
 .tailwind__icon:hover {
-    color: #2196f3;
+  color: #2196f3;
 }
 
 .bootstrap__icon:hover {
-    color: #563d7c;
+  color: #563d7c;
 }
 
 .git__icon:hover {
-    color: #f34f29;
+  color: #f34f29;
 }
 
 .skills__name {
-    font-size: var(--normal-font-size);
-    font-weight: var(--font-medium);
-    line-height: 18px;
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  line-height: 18px;
 }
 
 /*=============== BREAKPOINTS ===============*/
-  /* For medium devices */
-  
-  @media screen and (max-width: 576px) {
-    .skills__container {
-      grid-template-columns: 1fr;
-    }
+/* For medium devices */
 
-    .skills__group {
-        grid-template-columns:repeat(3, 1fr);
-        gap: 1.8rem;
-    }
-
-    .skills__content {
-        padding: 2.5rem;
-    }
+@media screen and (max-width: 576px) {
+  .skills__container {
+    grid-template-columns: 1fr;
   }
-  
-  /* For small devices */
-  @media screen and (max-width: 350px) {
-    .skills__box {
-        column-gap: 1.25rem;
-    }
 
-    .skills__group {
-        grid-template-columns:repeat(2, 1fr);
-        gap: 1.8rem;
-    }
-
-    .skills__name {
-        font-size: var(--small-font-size);
-    }
+  .skills__group {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.8rem;
   }
+
+  .skills__content {
+    padding: 2.5rem;
+  }
+}
+
+/* For small devices */
+@media screen and (max-width: 350px) {
+  .skills__box {
+    column-gap: 1.25rem;
+  }
+
+  .skills__group {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.8rem;
+  }
+
+  .skills__name {
+    font-size: var(--small-font-size);
+  }
+}

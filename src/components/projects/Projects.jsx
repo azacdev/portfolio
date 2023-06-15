@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { ThemeContext } from "../themeContext/ThemeProvider";
-import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 import { FiExternalLink } from "react-icons/fi";
 import "./Projects.css";
 import IMG1 from "../../assets/orion-anime.png";
@@ -13,6 +13,9 @@ const data = [
     id: 1,
     image: IMG1,
     title: "Orion Anime",
+    description:
+      "This is an Anime Website project that allows users to explore and discover various anime shows and movies.",
+    tools: "React, Redux, React-Router, Vanilla CSS, Git",
     github: "https://github.com/azacdev/orion-anime",
     demo: "https://orion-anime.vercel.app/",
   },
@@ -20,6 +23,9 @@ const data = [
     id: 2,
     image: IMG2,
     title: "Gadgets Dome",
+    description:
+      "This is an e-commerce site that offers a variety of gadgets such as laptops, smartphones, graphics cards, and keyboards.",
+    tools: "React, Tailwind CSS, React-Router, Context API, Daisy UI, Git",
     github: "https://github.com/azacdev/gadgets-dome.git",
     demo: "https://gadgets-dome.vercel.app",
   },
@@ -27,6 +33,10 @@ const data = [
     id: 3,
     image: IMG3,
     title: "Vega Chat",
+    description:
+      "A real-time chat that allows users to authenticate with their Google account and participate in live chat conversations.",
+    tools:
+      "React, Firebase Tailwind CSS, React-Router, Context API, Daisy UI, Git",
     github: "https://github.com/azacdev/vega-chat.git",
     demo: "https://vega-chat.vercel.app/",
   },
@@ -41,6 +51,7 @@ const data = [
 
 const Projects = () => {
   const { theme } = useContext(ThemeContext);
+  
   return (
     <section
       className={`${
@@ -51,17 +62,17 @@ const Projects = () => {
       <h2 className="section__title projects">Projects</h2>
 
       <div className="portfolio__container container grid">
-        {data.map(({ id, image, title, github, demo }) => (
+        {data.map(({ id, image, title, github, demo, description, tools }) => (
           <article className="portfolio__item" key={id}>
             <div className="portfolio__item-image">
               <img src={image} alt={title} className="portfolio__image" />
             </div>
             <div className="portfolio_item-details">
-              <h3>{title}</h3>
-              <p>
-                This is an Anime Website project that allows users to explore
-                and discover various anime shows and movies
-              </p>
+              <div className="portfolio_item-detail">
+                <h3>{title}</h3>
+                <p>{description}</p>
+                <p>Stacks/Tools: {tools}</p>
+              </div>
               <div className="portfolio__item-cta">
                 <a href={github} target="blank" className="portfolio__btn">
                   <FaGithub className="portfolio__icon" />

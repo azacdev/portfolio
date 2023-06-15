@@ -17,7 +17,7 @@
 
 .portfolio__item-image {
   overflow: hidden;
-  border-radius: 0.2rem;
+  border-radius: 0.3rem;
 }
 
 .portfolio__image {
@@ -27,6 +27,12 @@
 
 .portfolio_item-details {
   padding: 0 1rem 1rem;
+}
+
+.portfolio_item-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 .portfolio__item-cta {

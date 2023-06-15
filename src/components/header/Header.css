@@ -33,6 +33,10 @@
   transition: 0.3ms;
 }
 
+.nav__link:hover {
+  transform: scale(1.1);
+}
+
 .nav__icon,
 .nav__close,
 .nav__toggle {
