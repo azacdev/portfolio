@@ -60,7 +60,7 @@
 }
 
 .scroll-header {
-  box-shadow: 0 0 0.5em #404046
+  box-shadow: 0 0 0.5em #404046;
 }
 
 /* =========== BREAKPOINTS ============= */
@@ -136,7 +136,7 @@
     right: 2rem;
   }
 
-  .hide-theme {
+  .hide-theme-btn {
     display: none;
   }
 }

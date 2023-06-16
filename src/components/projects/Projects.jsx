@@ -51,7 +51,7 @@ const data = [
 
 const Projects = () => {
   const { theme } = useContext(ThemeContext);
-  
+
   return (
     <section
       className={`${
@@ -74,10 +74,22 @@ const Projects = () => {
                 <p>Stacks/Tools: {tools}</p>
               </div>
               <div className="portfolio__item-cta">
-                <a href={github} target="blank" className="portfolio__btn">
+                <a
+                  href={github}
+                  target="blank"
+                  className={`${
+                    theme ? "text-color-light" : "text-color-dark"
+                  } portfolio-btn`}
+                >
                   <FaGithub className="portfolio__icon" />
                 </a>
-                <a href={demo} target="blank" className="portfolio__btn">
+                <a
+                  href={demo}
+                  target="blank"
+                  className={`${
+                    theme ? "text-color-light" : "text-color-dark"
+                  } portfolio-btn`}
+                >
                   <FiExternalLink className="portfolio__icon" />
                 </a>
               </div>

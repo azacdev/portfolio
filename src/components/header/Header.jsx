@@ -15,12 +15,22 @@ import "./Header.css";
 const Header = () => {
   /* ============ Change Background Header ============== */
   window.addEventListener("scroll", toggleScroll);
+  window.addEventListener("scroll", toggleTheme);
   // when the scroll is higher than 200 viewport height, add the scroll-header class to a tag with the header tag
   function toggleScroll() {
     const header = document.querySelector(".header");
+
     this.scrollY >= 80
       ? header.classList.add("scroll-header")
       : header.classList.remove("scroll-header");
+  }
+
+  function toggleTheme() {
+    const theme = document.querySelector(".theme-btn");
+
+    this.scrollY >= 80
+      ? theme.classList.add("hide-theme-btn")
+      : theme.classList.remove("hide-theme-btn");
   }
 
   const { theme, setThemeMode } = useContext(ThemeContext);

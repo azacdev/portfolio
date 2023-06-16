@@ -1,4 +1,4 @@
-import { BsFileText } from "react-icons/bs"
+import { BsFileText } from "react-icons/bs";
 import { useContext } from "react";
 import { ThemeContext } from "../themeContext/ThemeProvider";
 import "./About.css";
@@ -10,18 +10,21 @@ const About = () => {
   return (
     <section className="about section" id="about">
       <h2
-      className={`${
-        theme ? "text-color-light" : "text-color-dark"
-      } section__title`}
-      >About Me</h2>
+        className={`${
+          theme ? "text-color-light" : "text-color-dark"
+        } section__title`}
+      >
+        About Me
+      </h2>
 
       <div className="about__container container grid">
         <div className="about__data">
-          <p 
-          className={`${
-            theme ? "text-color-light" : "text-color-dark"
-          } about__description`}>
-            I'm a frontend engineer / developer with a passion for creating
+          <p
+            className={`${
+              theme ? "text-color-light" : "text-color-dark"
+            } about__description`}
+          >
+            I'm a frontend engineer with a passion for creating
             intuitive user interfaces, optimizing performance for seamless user
             experiences, building scalable and efficient frontend systems that
             integrate with backend services, APIs, and databases. I'm deeply
@@ -41,7 +44,7 @@ const About = () => {
           } button button--flex`}
         >
           Download CV
-          <BsFileText className="button__icon"/>
+          <BsFileText className="button__icon" />
         </a>
       </div>
     </section>

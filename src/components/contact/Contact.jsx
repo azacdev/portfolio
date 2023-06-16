@@ -83,18 +83,31 @@ const Contact = () => {
 
           <form ref={form} onSubmit={sendEmail} className="contact__form">
             <div className="contact__form-div">
-              <label className={`${theme ? "contact__form-tag-light" : "contact__form-tag-dark"} contact__form-tag`}>Name</label>
+              <label
+                className={`${
+                  theme ? "contact__form-tag-light" : "contact__form-tag-dark"
+                } contact__form-tag`}
+              >
+                Name
+              </label>
               <input
                 type="text"
                 name="name"
                 className={`${
-                  theme ? "text-color-light" : "text-color-dark"} contact__form-input`}
+                  theme ? "text-color-light" : "text-color-dark"
+                } contact__form-input`}
                 placeholder="Insert your name"
               />
             </div>
 
             <div className="contact__form-div">
-              <label className={`${theme ? "contact__form-tag-light" : "contact__form-tag-dark"} contact__form-tag`}>Mail</label>
+              <label
+                className={`${
+                  theme ? "contact__form-tag-light" : "contact__form-tag-dark"
+                } contact__form-tag`}
+              >
+                Mail
+              </label>
               <input
                 type="email"
                 name="email"
@@ -104,7 +117,13 @@ const Contact = () => {
             </div>
 
             <div className="contact__form-div contact__form-area">
-              <label className={`${theme ? "contact__form-tag-light" : "contact__form-tag-dark"} contact__form-tag`}>Project</label>
+              <label
+                className={`${
+                  theme ? "contact__form-tag-light" : "contact__form-tag-dark"
+                } contact__form-tag`}
+              >
+                Project
+              </label>
               <textarea
                 name="project"
                 cols="30"
@@ -114,11 +133,13 @@ const Contact = () => {
               ></textarea>
             </div>
 
-            <button className={`${
-                  theme ? "button-light" : "button-dark"
-                } button button--flex`}>
+            <button
+              className={`${
+                theme ? "button-light" : "button-dark"
+              } button button--flex`}
+            >
               Send Message
-              <FiSend className="button__icon"/>
+              <FiSend className="button__icon" />
             </button>
           </form>
         </div>

@@ -42,7 +42,6 @@
 }
 
 .portfolio__icon {
-  color: #b3b3b3;
   font-size: 2rem;
 }
 
@@ -56,7 +55,6 @@
   .portfolio__container {
     gap: 1.2rem;
   }
-
 }
 
 /* For medium devices */
@@ -70,4 +68,3 @@
     padding: 0;
   }
 }
-

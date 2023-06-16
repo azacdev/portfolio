@@ -12,7 +12,7 @@ import Projects from "./components/projects/Projects";
 
 const App = () => {
   const { theme } = useContext(ThemeContext);
-  
+
   return (
     <div className={theme ? "bg-light" : "bg-dark"}>
       <Header />

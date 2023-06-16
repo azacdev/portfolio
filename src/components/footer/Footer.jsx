@@ -1,7 +1,6 @@
+import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { useContext } from "react";
 import { ThemeContext } from "../themeContext/ThemeProvider";
-import Social from "../home/Social";
-
 import "./Footer.css";
 
 const Footer = () => {
@@ -51,33 +50,37 @@ const Footer = () => {
           </li>
         </ul>
 
-        {/* <div className="footer__social">
+        <div className="footer__social">
+          <a
+            href="https://github.com/azacdev"
+            className={`${
+              theme ? "text-color-light" : "text-color-dark"
+            } github`}
+            target="blank"
+          >
+            <FaGithub />
+          </a>
+
+          <a
+            href="https://linkedin.com/in/azacdev/"
+            className={`${
+              theme ? "text-color-light" : "text-color-dark"
+            } linkedin`}
+            target="blank"
+          >
+            <FaLinkedin />
+          </a>
+
           <a
             href="https://twitter.com/azacdev"
-            className="footer__social-link"
+            className={`${
+              theme ? "text-color-light" : "text-color-dark"
+            } twitter`}
             target="blank"
           >
-            <i class="bx bxl-twitter"></i>
+            <FaTwitter />
           </a>
-
-          <a
-            href="https://www.instagram.com/azacdev_"
-            className="footer__social-link"
-            target="blank"
-          >
-            <i class="bx bxl-instagram"></i>
-          </a>
-
-          <a
-            href="https://www.facebook.com/"
-            className="footer__social-link"
-            target="blank"
-          >
-            <i class="bx bxl-facebook"></i>
-          </a>
-        </div> */}
-
-        <Social/>
+        </div>
 
         <span className="footer__copy">
           &#169; Azacdev. All rigths reserved
