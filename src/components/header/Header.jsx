@@ -28,7 +28,7 @@ const Header = () => {
   function toggleTheme() {
     const theme = document.querySelector(".theme-btn");
 
-    this.scrollY >= 80
+    this.scrollY >= 30
       ? theme.classList.add("hide-theme-btn")
       : theme.classList.remove("hide-theme-btn");
   }
