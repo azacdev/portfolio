@@ -47,13 +47,9 @@
 .home__title {
   display: inline-block;
   animation: typing 1s steps(30, end), blink-caret 1s step-end infinite;
-  white-space: nowrap;
   border-right: 3px solid;
   font-size: var(--big-font-size);
   margin-bottom: var(--mb-0-25);
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  white-space: pre-wrap;
 }
 
 .home__hand {
@@ -158,10 +154,6 @@
     margin: 0 auto;
   }
 
-  .home__title {
-    font-size: 2.5rem;
-  }
-
   .home__social {
     display: flex;
     justify-content: space-between;
@@ -171,5 +163,17 @@
 
   .home__scroll {
     display: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .home__title {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 350px) { 
+  .home__title {
+    font-size: 1.7rem;
   }
 }
