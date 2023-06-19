@@ -168,12 +168,12 @@
 
 @media screen and (max-width: 576px) {
   .home__title {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 }
 
 @media screen and (max-width: 350px) { 
   .home__title {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 }
