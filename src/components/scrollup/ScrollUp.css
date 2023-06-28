@@ -4,7 +4,7 @@
   bottom: -20%;
   background-color: var(--title-color);
   opacity: 0.8;
-  padding: 1rem;
+  padding: 0.5rem;
   z-index: var(--z-tooltip);
   transition: 0.4s;
 }

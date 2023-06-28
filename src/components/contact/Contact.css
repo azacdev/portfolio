@@ -55,6 +55,7 @@
   align-items: center;
   justify-content: center;
   column-gap: 0.25rem;
+  color: #666666;
 }
 
 .contact__button-icon {
