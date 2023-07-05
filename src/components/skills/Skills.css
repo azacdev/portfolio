@@ -4,13 +4,6 @@
   justify-content: center;
 }
 
-.skills__content {
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 3rem 4rem;
-  border-radius: 1.25rem;
-  transition: none;
-}
-
 .skills__title {
   font-size: var(--normal-font-size);
   font-weight: var(--font-medium);
@@ -21,6 +14,7 @@
 .skills__group {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  text-align: center;
   gap: 2.5rem;
 }
 
@@ -29,6 +23,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  border-radius: 1.25rem;
+  transition: none;
   row-gap: 0.7rem;
 }
 
