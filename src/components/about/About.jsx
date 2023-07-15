@@ -2,7 +2,7 @@ import { BsFileText } from "react-icons/bs";
 import { useContext } from "react";
 import { ThemeContext } from "../themeContext/ThemeProvider";
 import "./About.css";
-import CV from "../../assets/Abdulrazak-Abubakar-CV.pdf";
+import CV from "../../assets/Abdulrazak-Abubakar-(Azacdev)-CV.pdf";
 
 const About = () => {
   const { theme } = useContext(ThemeContext);
