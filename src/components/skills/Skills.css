@@ -28,15 +28,12 @@
   border-radius: 1.25rem;
   transition: none;
   row-gap: 0.7rem;
-}
-
-.skills__icon {
   font-size: 4rem;
-  transition: 0.3s ease-in-out;
+  transition: 250ms ease-in-out;
 }
 
-.skills__icon:hover {
-  transform: rotate(360deg);
+.skills__data:hover {
+  transform: scale(1.05);
 }
 
 .html__icon:hover {
@@ -49,6 +46,10 @@
 
 .javascript__icon:hover {
   color: #f0db4f;
+}
+
+.typescript__icon:hover {
+  color: #007acc;
 }
 
 .react__icon:hover {

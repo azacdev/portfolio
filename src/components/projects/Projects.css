@@ -10,6 +10,14 @@
   transition: 0.3s;
 }
 
+.portfolio__item:nth-child(even) .portfolio__item-image {
+  order: 2;
+}
+
+.portfolio__item:nth-child(even) .portfolio_item-details {
+  order: 1;
+}
+
 .portfolio__item h3 {
   margin: 0.2rem;
   font-size: 1.7rem;
@@ -62,6 +70,10 @@
   .portfolio__item {
     grid-template-columns: 1fr;
     gap: 1rem;
+  }
+
+  .portfolio__item:nth-child(even) .portfolio__item-image {
+    order: 0;
   }
 
   .portfolio_item-details {

@@ -6,7 +6,6 @@ import "./Projects.css";
 import IMG1 from "../../assets/orion-anime.png";
 import IMG2 from "../../assets/gadgets-dome.png";
 import IMG3 from "../../assets/vega-chat.png";
-// import IMG4 from "../../assets/tenzies.png";
 
 const data = [
   {
@@ -14,8 +13,8 @@ const data = [
     image: IMG1,
     title: "Orion Anime",
     description:
-      "This is an Anime Website project that allows users to explore and discover various anime shows and movies.",
-    tools: "React, Redux, React-Router, Vanilla CSS, Git",
+      "An Anime Website project that allows users to explore and discover various anime shows and movies.",
+    tools: "React, Redux, React-Router, React-Player, RTK Query, Tailwind, Git",
     github: "https://github.com/azacdev/orion-anime",
     demo: "https://orion-anime.vercel.app/",
   },
@@ -24,7 +23,7 @@ const data = [
     image: IMG2,
     title: "Gadgets Dome",
     description:
-      "This is an e-commerce site that offers a variety of gadgets such as laptops, smartphones, graphics cards, and keyboards.",
+      "An e-commerce site that offers a variety of gadgets such as laptops, smartphones, graphics cards, and keyboards.",
     tools: "React, Tailwind CSS, React-Router, Context API, Daisy UI, Git",
     github: "https://github.com/azacdev/gadgets-dome.git",
     demo: "https://gadgets-dome.vercel.app",
@@ -40,13 +39,6 @@ const data = [
     github: "https://github.com/azacdev/vega-chat.git",
     demo: "https://vega-chat.vercel.app/",
   },
-  // {
-  //   id: 4,
-  //   image: IMG4,
-  //   title: "Meme Generator",
-  //   github: "https://github.com/azacdev/tenzies-game.git",
-  //   demo: "https://azacdev.github.io/tenzies-game/",
-  // },
 ];
 
 const Projects = () => {
