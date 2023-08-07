@@ -57,7 +57,12 @@ const Projects = () => {
         {data.map(({ id, image, title, github, demo, description, tools }) => (
           <article className="portfolio__item" key={id}>
             <div className="portfolio__item-image">
-              <img src={image} alt={title} className="portfolio__image" />
+              <img
+                src={image}
+                alt={title}
+                className="portfolio__image"
+                loading="lazy"
+              />
             </div>
             <div className="portfolio_item-details">
               <div className="portfolio_item-detail">
