@@ -36,6 +36,10 @@
   transform: scale(1.05);
 }
 
+.next__icon:hover {
+  color: #172b4d;
+}
+
 .html__icon:hover {
   color: #f06529;
 }
