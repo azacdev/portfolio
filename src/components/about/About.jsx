@@ -24,14 +24,14 @@ const About = () => {
               theme ? "text-color-light" : "text-color-dark"
             } about__description`}
           >
-            I'm a frontend engineer with a passion for creating
-            intuitive user interfaces, optimizing performance for seamless user
-            experiences, building scalable and efficient frontend systems that
-            integrate with backend services, APIs, and databases. I'm deeply
-            committed to accessibility and inclusivity and believe that
-            technology has the power to connect and empower people. When I'm not
-            coding, I indulge my love for video games, comics, anime and
-            reading, which inspire me to think creatively and outside the box.
+            I'm a frontend engineer with a passion for creating intuitive user
+            interfaces, optimizing performance for seamless user experiences,
+            building scalable and efficient frontend systems that integrate with
+            backend services, APIs, and databases. I'm deeply committed to
+            accessibility and inclusivity and believe that technology has the
+            power to connect and empower people. When I'm not coding, I enjoy
+            reading, watching anime, playing video games, and comic books, all
+            of which encourage me to think creatively and outside the box.
           </p>
         </div>
 
