@@ -4,8 +4,9 @@ import { FaGithub } from "react-icons/fa";
 import { FiExternalLink } from "react-icons/fi";
 import "./Projects.css";
 import IMG1 from "../../assets/orion-anime.png";
-import IMG2 from "../../assets/gadgets-dome.png";
-import IMG3 from "../../assets/vega-chat.png";
+import IMG2 from "../../assets/shompts.png";
+import IMG3 from "../../assets/gadgets-dome.png";
+import IMG4 from "../../assets/vega-chat.png";
 
 const data = [
   {
@@ -21,6 +22,17 @@ const data = [
   {
     id: 2,
     image: IMG2,
+    title: "Shompts",
+    description:
+      "An AI prompting tool for modern world to discover, create and share creative prompts.",
+    tools:
+      "Next JS, Tailwind CSS, App-Router, Next Auth, MongoDB, Git",
+    github: "https://github.com/azacdev/shompts.git",
+    demo: "https://shompts.vercel.app/",
+  },
+  {
+    id: 3,
+    image: IMG3,
     title: "Gadgets Dome",
     description:
       "An e-commerce site that offers a variety of gadgets such as laptops, smartphones, graphics cards, and keyboards.",
@@ -29,8 +41,8 @@ const data = [
     demo: "https://gadgets-dome.vercel.app",
   },
   {
-    id: 3,
-    image: IMG3,
+    id: 4,
+    image: IMG4,
     title: "Vega Chat",
     description:
       "A real-time chat that allows users to authenticate with their Google account and participate in live chat conversations.",
