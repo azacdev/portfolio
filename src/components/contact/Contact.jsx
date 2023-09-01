@@ -18,8 +18,6 @@ const Contact = () => {
     text: "",
   });
 
-  console.log(userInput.text);
-
   const handleUserInput = (e) => {
     const { name, value } = e.target;
     setUserInput({ ...userInput, [name]: value });
