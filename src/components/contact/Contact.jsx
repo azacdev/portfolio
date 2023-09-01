@@ -57,15 +57,13 @@ const Contact = () => {
   const handleBtn = () => {
     // Notify after clearing
     notify();
-    
-    const handleBtn = () => {
-      // Clear user input fields
-      setUserInput({
-        name: "",
-        email: "",
-        text: "",
-      });
-    };
+
+    // Clear user input fields
+    setUserInput({
+      name: "",
+      email: "",
+      text: "",
+    });
   };
 
   return (
