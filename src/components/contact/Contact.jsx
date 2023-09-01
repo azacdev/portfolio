@@ -1,15 +1,29 @@
-import { useRef, useContext } from "react";
+import { useRef, useContext, useState } from "react";
+import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { AiOutlineArrowRight } from "react-icons/ai";
+import { FaFacebookMessenger } from "react-icons/fa";
 import { ThemeContext } from "../themeContext/ThemeProvider";
 import { MdEmail } from "react-icons/md";
 import { FiSend } from "react-icons/fi";
-import { FaFacebookMessenger } from "react-icons/fa";
-import { AiOutlineArrowRight } from "react-icons/ai";
-import emailjs from "@emailjs/browser";
 import "./Contact.css";
 
 const Contact = () => {
   const { theme } = useContext(ThemeContext);
   const form = useRef();
+  const [userInput, setUserInput] = useState({
+    name: "",
+    email: "",
+    text: "",
+  });
+
+  console.log(userInput.text);
+
+  const handleUserInput = (e) => {
+    const { name, value } = e.target;
+    setUserInput({ ...userInput, [name]: value });
+  };
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -21,6 +35,37 @@ const Contact = () => {
       "cJuH2_nxQgwnvDytr"
     );
     e.target.reset();
+  };
+
+  const disableSubmit =
+    userInput.name.length === 0 ||
+    userInput.email.length === 0 ||
+    userInput.text.length === 0;
+
+  const notify = () =>
+    toast.success("Email Sent!", {
+      theme: "light",
+      position: "top-center",
+      autoClose: 3000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+    });
+
+  const handleBtn = () => {
+    // Notify after clearing
+    notify();
+    
+    const handleBtn = () => {
+      // Clear user input fields
+      setUserInput({
+        name: "",
+        email: "",
+        text: "",
+      });
+    };
   };
 
   return (
@@ -47,9 +92,7 @@ const Contact = () => {
 
               <a
                 href="mailto:azacdev@gmail.com.com"
-                className={`${
-                  theme ? "text-color-light" : "text-color-dark"
-                } contact__button`}
+                className={` contact__button`}
               >
                 Write me
                 <AiOutlineArrowRight className="contact__button-icon" />
@@ -67,9 +110,7 @@ const Contact = () => {
 
               <a
                 href="https://m.me/abdulrazak.abubakar.7374480"
-                className={`${
-                  theme ? "text-color-light" : "text-color-dark"
-                } contact__button`}
+                className={` contact__button`}
               >
                 Write me
                 <AiOutlineArrowRight className="contact__button-icon" />
@@ -93,6 +134,9 @@ const Contact = () => {
               <input
                 type="text"
                 name="name"
+                required
+                value={userInput.name}
+                onChange={handleUserInput}
                 className={`${
                   theme ? "text-color-light" : "text-color-dark"
                 } contact__form-input`}
@@ -111,6 +155,9 @@ const Contact = () => {
               <input
                 type="email"
                 name="email"
+                required
+                value={userInput.email}
+                onChange={handleUserInput}
                 className="contact__form-input"
                 placeholder="Insert your name"
               />
@@ -122,12 +169,15 @@ const Contact = () => {
                   theme ? "contact__form-tag-light" : "contact__form-tag-dark"
                 } contact__form-tag`}
               >
-                Project
+                Text
               </label>
               <textarea
-                name="project"
+                name="text"
                 cols="30"
                 rows="10"
+                required
+                value={userInput.text}
+                onChange={handleUserInput}
                 className="contact__form-input"
                 placeholder="Write your message"
               ></textarea>
@@ -137,6 +187,8 @@ const Contact = () => {
               className={`${
                 theme ? "button-light" : "button-dark"
               } button button--flex`}
+              onClick={handleBtn}
+              disabled={disableSubmit}
             >
               Send Message
               <FiSend className="button__icon" />
@@ -144,6 +196,19 @@ const Contact = () => {
           </form>
         </div>
       </div>
+
+      <ToastContainer
+        theme="light"
+        position="top-center"
+        autoClose={3000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      />
     </section>
   );
 };
