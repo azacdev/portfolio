@@ -53,10 +53,8 @@ const Contact = () => {
     });
 
   const handleBtn = () => {
-    // Notify after clearing
     notify();
 
-    // Clear user input fields
     setUserInput({
       name: "",
       email: "",
