@@ -55,11 +55,14 @@ const Contact = () => {
   const handleBtn = () => {
     notify();
 
-    setUserInput({
-      name: "",
-      email: "",
-      text: "",
-    });
+    // Delay the reset of userInput for 2s
+    setTimeout(() => {
+      setUserInput({
+        name: "",
+        email: "",
+        text: "",
+      });
+    }, 2000);
   };
 
   return (
@@ -153,7 +156,7 @@ const Contact = () => {
                 value={userInput.email}
                 onChange={handleUserInput}
                 className="contact__form-input"
-                placeholder="Insert your name"
+                placeholder="Insert your email"
               />
             </div>
 
