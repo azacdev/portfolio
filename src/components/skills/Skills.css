@@ -76,6 +76,10 @@
   color: #f34f29;
 }
 
+.node__icon:hover {
+  color: #68A063;
+}
+
 .skills__name {
   font-size: var(--normal-font-size);
   font-weight: var(--font-medium);

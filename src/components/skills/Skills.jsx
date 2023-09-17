@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { ThemeContext } from "../themeContext/ThemeProvider";
 import { AiFillHtml5 } from "react-icons/ai";
 import { SiTypescript } from "react-icons/si";
-import { FaCss3, FaReact, FaBootstrap, FaGitAlt } from "react-icons/fa";
+import { FaCss3, FaReact, FaBootstrap, FaGitAlt, FaNode } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
 import { SiRedux, SiTailwindcss } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
@@ -134,6 +134,18 @@ const Skills = () => {
                 <h3 className="skills__name">Git</h3>
               </div>
             </div>
+
+            <div
+              className={`${
+                theme ? "button-light" : "button-dark"
+              } skills__data node__icon`}
+            >
+              <FaNode className="skills__icon" />
+              <div>
+                <h3 className="skills__name">Node JS</h3>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
