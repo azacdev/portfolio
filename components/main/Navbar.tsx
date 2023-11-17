@@ -62,7 +62,7 @@ const Navbar = () => {
         </div>
       </nav>
 
-      <nav className="fixed bg-primary bottom-0 block md:hidden w-full rounded-tl-md rounded-tr-md z-50">
+      <nav className="fixed bottom-0 block md:hidden w-full rounded-tl-md rounded-tr-md shadow-lg shadow-[#2A0E61]/5 bg-[#03001417] backdrop-blur-md z-50">
         {/* Mobile Nav */}
         <div className="max-container h-12 flex items-center justify-between py-[5px]">
           <a
@@ -74,8 +74,8 @@ const Navbar = () => {
 
           <div
             className={`${
-              toggle ? "bottom-0" : "bottom-[-100%]"
-            } fixed left-0 right-0 bg-primary text-lg text-gray-200 w-full pt-8 px-6 pb-16 transition-all duration-300 border border-white rounded-tl-3xl rounded-tr-3xl`}
+              toggle ? "bottom-0" : "bottom-[-600%]"
+            } fixed left-0 right-0 text-lg text-gray-200 w-full pt-8 px-6 pb-16 transition-all duration-300 border border-white rounded-tl-3xl rounded-tr-3xl shadow-lg shadow-[#2A0E61]/5 bg-[#03001417] backdrop-blur-lg z-[60]`}
           >
             <div className="grid grid-cols-3 gap-8">
               <a
@@ -109,13 +109,13 @@ const Navbar = () => {
             </div>
 
             <MdClose
-              className="absolute right-6 bottom-2 text-3xl"
+              className="absolute right-6 top-0 text-3xl"
               onClick={() => showMenu(!toggle)}
             />
           </div>
 
           <div className="cursor-pointer" onClick={() => showMenu(!toggle)}>
-            <RiMenu4Line className="text-3xl text-gray-300"/>
+            <RiMenu4Line className="text-3xl text-gray-300" />
           </div>
         </div>
       </nav>
