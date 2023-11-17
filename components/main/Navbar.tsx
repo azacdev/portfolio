@@ -109,7 +109,7 @@ const Navbar = () => {
             </div>
 
             <MdClose
-              className="absolute right-6 top-0 text-3xl"
+              className="absolute right-6 bottom-2 text-3xl cursor-pointer"
               onClick={() => showMenu(!toggle)}
             />
           </div>
