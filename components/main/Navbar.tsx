@@ -4,10 +4,9 @@ import { useState } from "react";
 import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
 import { RiMenu4Line } from "react-icons/ri";
 import { MdClose } from "react-icons/md";
-import { BiUserCircle } from "react-icons/bi";
 import { BsGearWide } from "react-icons/bs";
 import { MdWebAsset } from "react-icons/md";
-import { BiMessageDots } from "react-icons/bi";
+import { BiMessageDots, BiUserCircle, BiHomeAlt } from "react-icons/bi";
 
 const Navbar = () => {
   const [toggle, showMenu] = useState(false);
@@ -26,26 +25,32 @@ const Navbar = () => {
 
           <div className="flex items-center justify-between gap-5 h-auto text-lg font-bold border border-[#7042f861] bg-[#0300145e] mr[-15px] px-5 py-[5px] rounded-full text-gray-200">
             <a
+              href="#home"
+              className="text-xl cursor-pointer transition-all duration-150 hover:translate-y-[-0.150rem] hover:scale-105"
+            >
+              home
+            </a>
+            <a
               href="#about"
-              className="text-xl cursor-pointer hover:translate-y-[-0.25rem]"
+              className="text-xl cursor-pointer transition-all duration-150 hover:translate-y-[-0.150rem] hover:scale-105"
             >
               About
             </a>
             <a
               href="#skills"
-              className="text-xl cursor-pointer hover:translate-y-[-0.25rem]"
+              className="text-xl cursor-pointer transition-all duration-150 hover:translate-y-[-0.150rem] hover:scale-105"
             >
               Skills
             </a>
             <a
               href="#projects"
-              className="text-xl cursor-pointer hover:translate-y-[-0.25rem]"
+              className="text-xl cursor-pointer transition-all duration-150 hover:translate-y-[-0.150rem] hover:scale-105"
             >
               Projects
             </a>
             <a
               href="#contact"
-              className="text-xl cursor-pointer hover:translate-y-[-0.25rem]"
+              className="text-xl cursor-pointer transition-all duration-150 hover:translate-y-[-0.150rem] hover:scale-105"
             >
               Contact
             </a>
@@ -78,9 +83,16 @@ const Navbar = () => {
           <div
             className={`${
               toggle ? "bottom-0" : "bottom-[-600%]"
-            } fixed left-0 right-0 w-full pt-8 px-6 pb-16 transition-all duration-300  border-t border-white rounded-tl-3xl rounded-tr-3xl z-[60] bg-[#030014]`}
+            } fixed left-0 right-0 w-full pt-8 px-6 pb-16 transition-all duration-200  border-t border-white rounded-tl-3xl rounded-tr-3xl z-[60] bg-[#030014]`}
           >
             <div className="grid grid-cols-3 gap-8 text-lg text-gray-200">
+              <a
+                href="#home"
+                className="flex flex-col justify-center items-center gap-3 cursor-pointer hover:scale-110"
+              >
+                <BiHomeAlt className="text-2xl" />
+                Home
+              </a>
               <a
                 href="#about"
                 className="flex flex-col justify-center items-center gap-3 cursor-pointer hover:scale-110"

@@ -10,9 +10,9 @@ const Footer = () => {
   const year = new Date().getFullYear();
 
   return (
-    <section className="max-container section h-full bg-transparent text-gray-200 shadow-lg z-50">
+    <footer className="max-container section h-full text-gray-200 shadow-lg">
       <div className="w-full flex flex-col items-center justify-center">
-        <div className="w-full h-full flex flex-col md:flex-row items-center justify-between gap-8">
+        <div className="w-full h-full flex flex-col md:flex-row items-center justify-between gap-8 z-20">
           <div className="flex flex-col items-center justify-center">
             <h3 className="font-bold text-xl">Community</h3>
             <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" className="flex flex-row items-center my-[15px] cursor-pointer hover:scale-110">
@@ -33,7 +33,7 @@ const Footer = () => {
 
           <div className="flex flex-col items-center justify-center">
             <h3 className="font-bold text-xl">Socials</h3>
-            <a href="#" target="blank" className="flex flex-row items-center my-[15px] cursor-pointer hover:scale-110">
+            <a href="#" className="flex flex-row items-center my-[15px] cursor-pointer hover:scale-110">
               <RxInstagramLogo />
               <span className="text-[15px] ml-[6px]">Instagram</span>
             </a>
@@ -51,15 +51,15 @@ const Footer = () => {
 
           <div className="flex flex-col items-center justify-center flex-grow md:flex-grow-0">
             <h3 className="font-bold text-xl">About</h3>
-            <a href="#" target="blank" className="flex flex-row items-center my-[15px] cursor-pointer hover:scale-110">
+            <a href="#" className="flex flex-row items-center my-[15px] cursor-pointer hover:scale-110">
               <span className="text-[15px] ml-[6px]">Become Sponsor</span>
             </a>
 
-            <a href="#" target="blank" className="flex flex-row items-center my-[15px] cursor-pointer hover:scale-110">
+            <a href="#" className="flex flex-row items-center my-[15px] cursor-pointer hover:scale-110">
               <span className="text-[15px] ml-[6px]">Learn About Me </span>
             </a>
 
-            <a href="#" target="blank" className="flex flex-row items-center my-[15px] cursor-pointer hover:scale-110">
+            <a href="#" className="flex flex-row items-center my-[15px] cursor-pointer hover:scale-110">
               <span className="text-[15px] ml-[6px]">azacdev@gmail.com</span>
             </a>
           </div>
@@ -69,7 +69,7 @@ const Footer = () => {
           &copy; Azacdev {year} Inc. All rights reserved
         </div>
       </div>
-    </section>
+    </footer>
   );
 };
 

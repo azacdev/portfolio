@@ -15,7 +15,7 @@ const Projects = () => {
         <div className="h-full w-full flex flex-col gap-8">
           {projectsData.map((data) => (
             <ProjectsCard
-              id={data.id}
+              key={data.id}
               src={data.src}
               title={data.title}
               description={data.description}

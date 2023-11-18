@@ -15,7 +15,7 @@ const Skills = () => {
       </div>
 
       <div className="w-full h-full absolute">
-        <div className="w-full h-full z[-20] opacity-20 absolute flex items-center justify-center bg-cover">
+        <div className="w-full h-full z[-20] opacity-10 absolute flex items-center justify-center bg-cover">
           <video
             className="w-full h-auto"
             preload="false"

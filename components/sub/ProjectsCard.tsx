@@ -3,7 +3,6 @@ import { FaGithub } from "react-icons/fa";
 import { FiExternalLink } from "react-icons/fi";
 
 interface ProjectsCardProps {
-  id: number;
   src: StaticImageData;
   title: string;
   description: string;
@@ -13,7 +12,6 @@ interface ProjectsCardProps {
 }
 
 const ProjectsCard = ({
-  id,
   src,
   title,
   description,
@@ -23,8 +21,7 @@ const ProjectsCard = ({
 }: ProjectsCardProps) => {
   return (
     <div
-      className="portfolio__item relative grid grid-cols-1 md:grid-cols-2 items-center gap-4 sm:gap-8 overflow-hidden shadow-lg z-20"
-      key={id}
+      className="portfolio__item relative grid grid-cols-1 md:grid-cols-2 items-center gap-4 sm:gap-8 overflow-hidden shadow-lg"
     >
       <div className="portfolio__item-image">
         <Image

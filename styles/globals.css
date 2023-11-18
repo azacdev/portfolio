@@ -29,6 +29,11 @@ html {
   @apply pt-8 pb-16 md:pt-24 md:pb-8 px-0;
 }
 
+/* SHOW SCROLL */
+.show-scroll {
+  bottom: 3rem;
+}
+
 .welcome-text {
   background: linear-gradient(
       0deg,

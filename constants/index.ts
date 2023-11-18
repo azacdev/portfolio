@@ -1,5 +1,4 @@
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
-
 import { SiHtml5, SiCss3, SiBootstrap, SiReact, SiTypescript, SiRedux, SiTailwindcss, SiMui, SiNextdotjs, SiReactquery, SiExpress, SiMongodb, SiFirebase, SiNodedotjs, SiGit, SiJavascript } from "react-icons/si";
 
 import IMG1 from "@public/orion-anime.png";

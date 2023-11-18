@@ -2,7 +2,7 @@ import HeroContent from "@components/sub/HeroContent";
 
 const Hero = () => {
   return (
-    <section className="max-container flex flex-col h-full pb-14 md:pb-8">
+    <section className="max-container flex flex-col h-full pb-14 md:pb-8" id="home">
       <video
         autoPlay
         muted
