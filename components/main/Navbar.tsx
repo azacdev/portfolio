@@ -65,9 +65,9 @@ const Navbar = () => {
         </div>
       </nav>
 
-      <nav className="fixed bottom-0 block md:hidden w-full rounded-tl-md rounded-tr-md shadow-lg shadow-[#2A0E61]/5 bg-[#03001417] backdrop-blur-md z-50">
+      <nav className="fixed bottom-0 block md:hidden w-full rounded-tl-md rounded-tr-md shadow-lg shadow-[#2A0E61]/5 bg-[#03001417] backdrop-blur-md border-t border-white  z-50">
         {/* Mobile Nav */}
-        <div className="max-container h-12 flex items-center justify-between py-[5px]">
+        <div className="max-container h-12 flex items-center justify-between py-[5px] relative">
           <a
             href="#"
             className="flex flex-row items-center text-gray-300 font-bold text-2xl"
@@ -78,7 +78,7 @@ const Navbar = () => {
           <div
             className={`${
               toggle ? "bottom-0" : "bottom-[-600%]"
-            } fixed left-0 right-0 w-full pt-8 px-6 pb-16 transition-all duration-300  border-t border-white rounded-tl-3xl rounded-tr-3xl z-[60]`}
+            } fixed left-0 right-0 w-full pt-8 px-6 pb-16 transition-all duration-300  border-t border-white rounded-tl-3xl rounded-tr-3xl z-[60] bg-[#030014]`}
           >
             <div className="grid grid-cols-3 gap-8 text-lg text-gray-200">
               <a
