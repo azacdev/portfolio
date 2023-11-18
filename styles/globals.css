@@ -22,7 +22,7 @@ html {
 }
 
 .max-container {
-  @apply max-w-5xl mx-6 lg:mx-auto;
+  @apply max-w-[65rem] mx-6 lg:mx-auto;
 }
 
 .section {

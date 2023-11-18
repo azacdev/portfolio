@@ -24,25 +24,28 @@ const Navbar = () => {
             Azacdev
           </a>
 
-          <div className="flex items-center justify-between gap-5 h-auto text-lg font-bold border border-[#7042f861] bg-[#0300145e] mr[-15px] px-5 py[-10px] rounded-full text-gray-200">
-            <a href="#about" className="text-xl cursor-pointer hover:scale-110">
+          <div className="flex items-center justify-between gap-5 h-auto text-lg font-bold border border-[#7042f861] bg-[#0300145e] mr[-15px] px-5 py-[5px] rounded-full text-gray-200">
+            <a
+              href="#about"
+              className="text-xl cursor-pointer hover:translate-y-[-0.25rem]"
+            >
               About
             </a>
             <a
               href="#skills"
-              className="text-xl cursor-pointer hover:scale-110"
+              className="text-xl cursor-pointer hover:translate-y-[-0.25rem]"
             >
               Skills
             </a>
             <a
               href="#projects"
-              className="text-xl cursor-pointer hover:scale-110"
+              className="text-xl cursor-pointer hover:translate-y-[-0.25rem]"
             >
               Projects
             </a>
             <a
               href="#contact"
-              className="text-xl cursor-pointer hover:scale-110"
+              className="text-xl cursor-pointer hover:translate-y-[-0.25rem]"
             >
               Contact
             </a>
@@ -75,9 +78,9 @@ const Navbar = () => {
           <div
             className={`${
               toggle ? "bottom-0" : "bottom-[-600%]"
-            } fixed left-0 right-0 text-lg text-gray-200 w-full pt-8 px-6 pb-16 transition-all duration-300 border border-white rounded-tl-3xl rounded-tr-3xl shadow-lg shadow-[#2A0E61]/5 bg-[#03001417] backdrop-blur-lg z-[60]`}
+            } fixed left-0 right-0 w-full pt-8 px-6 pb-16 transition-all duration-300  border-t border-white rounded-tl-3xl rounded-tr-3xl z-[60]`}
           >
-            <div className="grid grid-cols-3 gap-8">
+            <div className="grid grid-cols-3 gap-8 text-lg text-gray-200">
               <a
                 href="#about"
                 className="flex flex-col justify-center items-center gap-3 cursor-pointer hover:scale-110"
@@ -109,7 +112,7 @@ const Navbar = () => {
             </div>
 
             <MdClose
-              className="absolute right-6 bottom-2 text-3xl cursor-pointer"
+              className="absolute right-6 bottom-2 text-3xl cursor-pointer text-gray-300"
               onClick={() => showMenu(!toggle)}
             />
           </div>

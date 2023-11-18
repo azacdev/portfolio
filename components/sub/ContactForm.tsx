@@ -108,7 +108,7 @@ const ContactForm = () => {
           ></textarea>
         </div>
 
-        <button className="flex flex-row items-center text-xl py-4 px-8 mt-4 button-primary text-white cursor-pointer rounded-xl max-w-[230px]" onClick={handleBtn} disabled={disableSubmit}>
+        <button className="flex flex-row items-center text-xl py-4 px-8 mt-4 button-primary text-white cursor-pointer rounded-xl max-w-[260px]" onClick={handleBtn} disabled={disableSubmit}>
           Send Message
           <FiSend className="ml-2 text-2xl" />
         </button>
