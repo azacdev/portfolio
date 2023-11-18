@@ -51,15 +51,15 @@ const HeroContent = () => {
 
         <motion.div variants={slideInFromTop} className="mt-2 block md:hidden">
           <div className="flex flex-row gap-5 text-gray-300">
-            <span className="text-2xl cursor-pointer hover:scale-110">
+            <a href="https://linkedin.com/in/azacdev/" target="blank" className="text-2xl cursor-pointer hover:scale-110">
               <FaLinkedin />
-            </span>
-            <span className="text-2xl cursor-pointer hover:scale-110">
+            </a>
+            <a href="https://github.com/azacdev" target="blank" className="text-2xl cursor-pointer hover:scale-110">
               <FaGithub />
-            </span>
-            <span className="text-2xl cursor-pointer hover:scale-110">
+            </a>
+            <a href="https://twitter.com/azacdev" target="blank" className="text-2xl cursor-pointer hover:scale-110">
               <FaTwitter />
-            </span>
+            </a>
           </div>
         </motion.div>
 

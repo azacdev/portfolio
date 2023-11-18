@@ -22,13 +22,12 @@ html {
 }
 
 .max-container {
-  @apply max-w-[65rem] mx-6 lg:mx-auto;
+  @apply max-w-5xl mx-6 xl:mx-auto;
 }
 
 .section {
-  @apply pt-8 pb-16 md:pt-24 md:pb-8 px-0
+  @apply pt-8 pb-16 md:pt-24 md:pb-8 px-0;
 }
-
 
 .welcome-text {
   background: linear-gradient(
@@ -90,11 +89,8 @@ html {
 }
 
 .input-border {
-  border: 1px solid linear-gradient(
-      0deg,
-      rgba(255, 255, 255, 0.4),
-      rgba(112, 85, 85, 0.4)
-    ),
+  border: 1px solid
+      linear-gradient(0deg, rgba(255, 255, 255, 0.4), rgba(112, 85, 85, 0.4)),
     linear-gradient(90.01deg, #e59cff 0.01%, #ba9cff 50.01%, #9cb2ff 100%);
 }
 
@@ -114,5 +110,20 @@ html {
   }
   50% {
     border-color: rgba(113, 47, 255, 0.12);
+  }
+}
+
+.portfolio__item:nth-child(even) .portfolio__item-image {
+  order: 2;
+}
+
+.portfolio__item:nth-child(even) .portfolio_item-details {
+  order: 1;
+}
+
+/* For medium devices */
+@media screen and (max-width: 768px) {
+  .portfolio__item:nth-child(even) .portfolio__item-image {
+    order: 0;
   }
 }

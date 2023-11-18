@@ -68,7 +68,7 @@ const ContactForm = () => {
   return (
     <>
       <form ref={form} onSubmit={sendEmail} className=" w-full md:w-[360px] text-white">
-        <div className="contact__form-div relative h-16 mb-8">
+        <div className="relative h-16 mb-8">
           <label className="bg-[#030014] absolute top-[-1.5rem] left-5 text-sm p-[0.875rem] z-[25]">Name</label>
           <input
             type="text"
@@ -81,7 +81,7 @@ const ContactForm = () => {
           />
         </div>
 
-        <div className="contact__form-div relative h-16 mb-8">
+        <div className="relative h-16 mb-8">
           <label className="bg-[#030014]  absolute top-[-1.5rem] left-5 text-sm p-[0.875rem] z-[25]">Mail</label>
           <input
             type="email"
@@ -94,7 +94,7 @@ const ContactForm = () => {
           />
         </div>
 
-        <div className="contact__form-div contact__form-area relative h-[11rem] mb-8">
+        <div className="relative h-[11rem] mb-8">
           <label className="bg-[#030014] absolute top-[-1.6rem] left-5 text-base p-[0.875rem] z-[35]">Text</label>
           <textarea
             name="text"

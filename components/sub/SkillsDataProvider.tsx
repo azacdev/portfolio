@@ -1,17 +1,8 @@
 "use client";
 
-import Image from "next/image";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { IconType } from "react-icons";
 import { skills } from "@constants";
-
-// interface SkillsDataProps {
-//   skillIcon: IconType;
-//   // width: number;
-//   // height: number;
-//   index: number;
-// }
 
 const SkillsDataProvider = () => {
   const [ref, inView] = useInView({

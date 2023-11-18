@@ -1,6 +1,5 @@
-import { FaYoutube } from "react-icons/fa";
+import { FaYoutube, FaBlog } from "react-icons/fa";
 import {
-  RxDiscordLogo,
   RxGithubLogo,
   RxInstagramLogo,
   RxTwitterLogo,
@@ -11,56 +10,56 @@ const Footer = () => {
   const year = new Date().getFullYear();
 
   return (
-    <section className="max-container section h-full bg-transparent text-gray-200 shadow-lg z-20">
+    <section className="max-container section h-full bg-transparent text-gray-200 shadow-lg z-50">
       <div className="w-full flex flex-col items-center justify-center">
-        <div className="w-full h-full flex flex-row items-center justify-between flex-wrap">
-          <div className="min-w-[150px] h-auto flex flex-col items-center justify-start">
+        <div className="w-full h-full flex flex-col md:flex-row items-center justify-between gap-8">
+          <div className="flex flex-col items-center justify-center">
             <h3 className="font-bold text-xl">Community</h3>
-            <a href="#" className="flex flex-row items-center my-[15px] cursor-pointer">
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" className="flex flex-row items-center my-[15px] cursor-pointer hover:scale-110">
               <FaYoutube />
-              <span className="text-[15px] ml-[6px]">Blog</span>
+              <span className="text-[15px] ml-[6px]">Youtube</span>
             </a>
 
-            <a href="https://github.com/azacdev" target="blank" className="flex flex-row items-center my-[15px] cursor-pointer">
+            <a href="https://github.com/azacdev" target="blank" className="flex flex-row items-center my-[15px] cursor-pointer hover:scale-110">
               <RxGithubLogo />
               <span className="text-[15px] ml-[6px]">Github</span>
             </a>
 
-            <a href="#" className="flex flex-row items-center my-[15px] cursor-pointer">
-              <RxDiscordLogo />
-              <span className="text-[15px] ml-[6px]">Discord</span>
+            <a href="#" className="flex flex-row items-center my-[15px] cursor-pointer hover:scale-110">
+              <FaBlog />
+              <span className="text-[15px] ml-[6px]">Blog</span>
             </a>
           </div>
 
-          <div className="min-w-[150px] h-auto flex flex-col items-center justify-start">
+          <div className="flex flex-col items-center justify-center">
             <h3 className="font-bold text-xl">Socials</h3>
-            <a href="#" target="blank" className="flex flex-row items-center my-[15px] cursor-pointer">
+            <a href="#" target="blank" className="flex flex-row items-center my-[15px] cursor-pointer hover:scale-110">
               <RxInstagramLogo />
               <span className="text-[15px] ml-[6px]">Instagram</span>
             </a>
 
-            <a href="https://twitter.com/azacdev" target="blank" className="flex flex-row items-center my-[15px] cursor-pointer">
+            <a href="https://twitter.com/azacdev" target="blank" className="flex flex-row items-center my-[15px] cursor-pointer hover:scale-110">
               <RxTwitterLogo />
               <span className="text-[15px] ml-[6px]">Twitter</span>
             </a>
 
-            <a href="https://linkedin.com/in/azacdev/" target="blank" className="flex flex-row items-center my-[15px] cursor-pointer">
+            <a href="https://linkedin.com/in/azacdev/" target="blank" className="flex flex-row items-center my-[15px] cursor-pointer hover:scale-110">
               <RxLinkedinLogo />
               <span className="text-[15px] ml-[6px]">LinkedIn</span>
             </a>
           </div>
 
-          <div className="min-w-[150px] h-auto flex flex-col items-center justify-start">
+          <div className="flex flex-col items-center justify-center flex-grow md:flex-grow-0">
             <h3 className="font-bold text-xl">About</h3>
-            <a href="#" target="blank" className="flex flex-row items-center my-[15px] cursor-pointer">
+            <a href="#" target="blank" className="flex flex-row items-center my-[15px] cursor-pointer hover:scale-110">
               <span className="text-[15px] ml-[6px]">Become Sponsor</span>
             </a>
 
-            <a href="#" target="blank" className="flex flex-row items-center my-[15px] cursor-pointer">
+            <a href="#" target="blank" className="flex flex-row items-center my-[15px] cursor-pointer hover:scale-110">
               <span className="text-[15px] ml-[6px]">Learn About Me </span>
             </a>
 
-            <a href="#" target="blank" className="flex flex-row items-center my-[15px] cursor-pointer">
+            <a href="#" target="blank" className="flex flex-row items-center my-[15px] cursor-pointer hover:scale-110">
               <span className="text-[15px] ml-[6px]">azacdev@gmail.com</span>
             </a>
           </div>
