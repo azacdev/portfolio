@@ -29,8 +29,8 @@ const ScrollUp = () => {
   return (
     <div
       onClick={scrollToTop}
-      className={`scrollup fixed right-4 md:right-6 lg:right-10 bottom-[-20%] flex items-center text-xl p-4 button-primary text-white cursor-pointer opacity-80 transition-all duration-200  z-50 ${
-        showScroll ? 'bottom-14 md:bottom-12' : ''
+      className={`scrollup fixed right-4 md:right-6 lg:right-10 bottom-[-20%] flex items-center text-xl p-4 button-primary text-white cursor-pointer opacity-80 transition-all duration-200  z-40 ${
+        showScroll ? 'bottom-[4rem]' : ''
       }`}
     >
       <AiOutlineArrowUp className="text-lg lg:text-2xl" />
