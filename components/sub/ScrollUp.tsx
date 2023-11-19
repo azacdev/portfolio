@@ -30,10 +30,10 @@ const ScrollUp = () => {
     <div
       onClick={scrollToTop}
       className={`scrollup fixed right-4 md:right-6 lg:right-10 bottom-[-20%] flex items-center text-xl p-4 button-primary text-white cursor-pointer opacity-80 transition-all duration-200  z-50 ${
-        showScroll ? 'bottom-16 md:bottom-12' : ''
+        showScroll ? 'bottom-14 md:bottom-12' : ''
       }`}
     >
-      <AiOutlineArrowUp className="scrollup__icon text-lg lg:text-2xl" />
+      <AiOutlineArrowUp className="text-lg lg:text-2xl" />
     </div>
   );
 };
