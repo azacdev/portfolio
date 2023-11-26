@@ -14,7 +14,7 @@ import { useEffect, useState } from "react";
 
 const HeroContent = () => {
   const [text, setText] = useState("");
-  const message = "> H'i, I'm Abdulrazak";
+  const message = "> Hi, I'm Abdulrazak";
 
   useEffect(() => {
     let currentText = "";
