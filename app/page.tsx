@@ -31,7 +31,7 @@ export default function Home() {
                 title="Transforming Ideas Into Reality Through Coding And Design."
                 className="!text-3xl sm:!text-5xl lg:!text-6xl text-center 2xl:!text-6xl lg:!text-left dark:text-light"
               />
-              <p className="my-4 text-xs sm:text-sm lg:text-base font-medium ">
+              <p className="mt-4 text-xs sm:text-sm lg:text-base font-medium ">
                 As a proficient full-stack developer, my commitment lies in
                 translating concepts into cutting-edge software solutions.
                 Explore my recent projects showcasing my expertise in Next.js
