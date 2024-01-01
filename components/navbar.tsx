@@ -13,16 +13,7 @@ import {
   TwitterIcon,
 } from "./icons";
 import useThemeSwitcher from "@/hooks/use-theme-switcher";
-import {
-  Contact,
-  Cross,
-  DoorClosed,
-  Home,
-  LucideWorkflow,
-  Menu,
-  User,
-  X,
-} from "lucide-react";
+import { Contact, Home, LucideWorkflow, Menu, User, X } from "lucide-react";
 
 interface CustomLinkProps {
   href: string;
@@ -47,6 +38,7 @@ const CustomLink = ({ href, title, className }: CustomLinkProps) => {
 };
 
 const Navbar = () => {
+  const pathname = usePathname();
   const [mode, setMode] = useThemeSwitcher();
   const [toggle, showMenu] = useState(false);
 
@@ -132,35 +124,63 @@ const Navbar = () => {
             <div className="grid grid-cols-3 gap-8 text-sm text-dark dark:text-light">
               <Link
                 href="/"
-                className="flex flex-col justify-center items-center gap-3 cursor-pointer hover:scale-110"
+                className="flex flex-col justify-center items-center gap-3 cursor-pointer hover:scale-110 relative group"
                 onClick={() => showMenu(false)}
               >
                 <Home />
                 Home
+                <span
+                  className={`h-[1px] inline-block w-0 bg-dark dark:bg-light absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease-in-out duration-300 ${
+                    pathname.endsWith("/") ? "w-full" : "w-0"
+                  }`}
+                >
+                  &nbsp;
+                </span>
               </Link>
               <Link
                 href="/about"
-                className="flex flex-col justify-center items-center gap-3 cursor-pointer hover:scale-110"
+                className="flex flex-col justify-center items-center gap-3 cursor-pointer hover:scale-110 relative group"
                 onClick={() => showMenu(false)}
               >
                 <User />
                 About
+                <span
+                  className={`h-[1px] inline-block w-0 bg-dark dark:bg-light absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease-in-out duration-300 ${
+                    pathname.endsWith("/about") ? "w-full" : "w-0"
+                  }`}
+                >
+                  &nbsp;
+                </span>
               </Link>
               <Link
                 href="/projects"
-                className="flex flex-col justify-center items-center gap-3 cursor-pointer hover:scale-110"
+                className="flex flex-col justify-center items-center gap-3 cursor-pointer hover:scale-110 relative group"
                 onClick={() => showMenu(false)}
               >
                 <LucideWorkflow />
                 Projects
+                <span
+                  className={`h-[1px] inline-block w-0 bg-dark dark:bg-light absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease-in-out duration-300 ${
+                    pathname.endsWith("/projects") ? "w-full" : "w-0"
+                  }`}
+                >
+                  &nbsp;
+                </span>
               </Link>
               <Link
                 href="/contact"
-                className="flex flex-col justify-center items-center gap-3 cursor-pointer hover:scale-110"
+                className="flex flex-col justify-center items-center gap-3 cursor-pointer hover:scale-110 relative group"
                 onClick={() => showMenu(false)}
               >
                 <Contact />
                 Contact
+                <span
+                  className={`h-[1px] inline-block w-0 bg-dark dark:bg-light absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease-in-out duration-300 ${
+                    pathname.endsWith("/contact") ? "w-full" : "w-0"
+                  }`}
+                >
+                  &nbsp;
+                </span>
               </Link>
             </div>
 
