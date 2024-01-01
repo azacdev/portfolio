@@ -1,156 +1,76 @@
-@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+ 
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
 
-html {
-  scroll-behavior: smooth;
-}
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+ 
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+ 
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+ 
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+ 
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+ 
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+ 
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
 
-body {
-  --sb-track-color: #232e33;
-  --sb-thumb-color: #2D196A;
-  --sb-size: 10px;
-
-  scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
-}
-
-body::-webkit-scrollbar {
-  width: var(--sb-size);
-}
-
-body::-webkit-scrollbar-track {
-  background: var(--sb-track-color);
-  border-radius: 10px;
-}
-
-body::-webkit-scrollbar-thumb {
-  background: var(--sb-thumb-color);
-  border-radius: 10px;
-}
-
-/* Hide scrollbar for IE, Edge and Firefox */
-.scrollbar-hidden {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
-}
-
-.scrollbar-hidden::-webkit-scrollbar {
-  display: none;
-}
-
-.cursive {
-  font-family: "Cedarville Cursive", cursive;
-}
-
-.max-container {
-  @apply max-w-5xl mx-6 xl:mx-auto;
-}
-
-.section {
-  @apply pt-8 pb-16 md:pt-24 md:pb-8 px-0;
-}
-
-/* SHOW SCROLL */
-.show-scroll {
-  bottom: 3rem;
-}
-
-.welcome-text {
-  background: linear-gradient(
-      0deg,
-      rgba(255, 255, 255, 0.4),
-      rgba(112, 85, 85, 0.4)
-    ),
-    linear-gradient(90.01deg, #e59cff 0.01%, #ba9cff 50.01%, #9cb2ff 100%);
-  background-blend-mode: normal, screen;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.welcome-box {
-  isolation: isolate;
-  overflow: hidden;
-  align-items: center;
-  -webkit-backdrop-filter: blur(6px);
-  backdrop-filter: blur(6px);
-  border-radius: 32px;
-  box-shadow: inset 0 -7px 11px #a48fff1f;
-  display: flex;
-
-  position: relative;
-  width: -moz-max-content;
-  width: max-content;
-  transition: 0.45s cubic-bezier(0.6, 0.6, 0, 1) box-shadow;
-}
-
-.button-primary {
-  background: linear-gradient(
-      180deg,
-      rgba(60, 8, 126, 0) 0%,
-      rgba(60, 8, 126, 0.32) 100%
-    ),
-    rgba(113, 47, 255, 0.12);
-  box-shadow: inset 0 0 12px #bf97ff3d;
-}
-
-.button-primary:hover {
-  background: linear-gradient(
-      180deg,
-      rgba(60, 8, 126, 0) 0%,
-      rgba(60, 8, 126, 0.42) 100%
-    ),
-    rgba(113, 47, 255, 0.24);
-  box-shadow: inset 0 0 12px #bf97ff70;
-}
-
-.bg-primary {
-  background: rgb(37, 3, 53);
-  box-shadow: inset 0 0 12px #bf97ff3d;
-}
-
-.hero-title {
-  animation: typing 1s steps(30, end), blink-caret 1s step-end infinite;
-  border-right: 3px solid;
-}
-
-.input-border {
-  border: 1px solid
-      linear-gradient(0deg, rgba(255, 255, 255, 0.4), rgba(112, 85, 85, 0.4)),
-    linear-gradient(90.01deg, #e59cff 0.01%, #ba9cff 50.01%, #9cb2ff 100%);
-}
-
-@keyframes typing {
-  from {
-    width: 0;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+ 
+    --radius: 0.5rem;
   }
-  to {
-    width: 100%;
+ 
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+ 
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+ 
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+ 
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+ 
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+ 
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+ 
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+ 
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+ 
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
   }
 }
-
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
+ 
+@layer base {
+  * {
+    @apply border-border;
   }
-  50% {
-    border-color: rgba(113, 47, 255, 0.12);
-  }
-}
-
-.portfolio__item:nth-child(even) .portfolio__item-image {
-  order: 2;
-}
-
-.portfolio__item:nth-child(even) .portfolio_item-details {
-  order: 1;
-}
-
-/* For medium devices */
-@media screen and (max-width: 768px) {
-  .portfolio__item:nth-child(even) .portfolio__item-image {
-    order: 0;
+  body {
+    @apply bg-background text-foreground;
   }
 }

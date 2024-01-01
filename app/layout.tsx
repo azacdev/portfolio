@@ -1,16 +1,16 @@
-import { Inter } from "next/font/google";
 import type { Metadata } from "next";
+import { Montserrat } from "next/font/google";
 
-import "@styles/globals.css";
-import StarCanvas from "@components/main/StarBackground";
-import Navbar from "@components/main/Navbar";
-import Footer from "@components/main/Footer";
+import "@/styles/globals.css";
+import Navbar from "@/components/navbar";
+import Footer from "@/components/footer";
+import { Toaster } from "sonner";
 
-const inter = Inter({ subsets: ["latin"] });
+const montserrat = Montserrat({ subsets: ["latin"], variable: "--font-mint" });
 
 export const metadata: Metadata = {
   title: "Azacdev",
-  description: "Azacdev Portfolio",
+  description: "Software Developer, Web Developer",
 };
 
 export default function RootLayout({
@@ -21,12 +21,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} bg-[#030014] overflow-y-auto overflow-x-hidden`}
+        className={`${montserrat.className} font-mont bg-light w-full min-h-screen dark:bg-dark`}
       >
-        <StarCanvas/>
-        <Navbar/>
+        <Toaster theme="dark" />
+        <Navbar />
         {children}
-        <Footer/>
+        <Footer />
       </body>
     </html>
   );
