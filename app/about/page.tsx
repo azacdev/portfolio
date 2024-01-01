@@ -36,7 +36,7 @@ const AboutPage = () => {
               backend services, APIs, and databases.
             </p>
             <p className="font-medium my-4">
-              - I'm deeply committed to accessibility and inclusivity and
+              - I&apos;m deeply committed to accessibility and inclusivity and
               believe that technology has the power to connect and empower
               people.
             </p>
