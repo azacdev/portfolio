@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import MainLayout from "@/components/main-layout";
-import profilePic from "@/public/developer-pic-1.png";
+import profilePic from "@/public/profile.webp";
 import lightBulb from "@/public/miscellaneous_icons_1.svg";
 import AnimatedText from "@/components/animation/animated-text";
 import { LinkArrow } from "@/components/icons";
@@ -15,12 +15,12 @@ export default function Home() {
       <TransitionEffect />
       <main className="flex items-center text-dark w-full min-h-screen dark:text-light">
         <MainLayout className="pt-8 sm:pt-12 lg:pt-0 relative overflow-hidden">
-          <div className="flex flex-col md:flex-row justify-center items-center w-full">
+          <div className="flex flex-col md:flex-row justify-center items-center w-full gap-8">
             <div className="w-full md:hidden lg:inline-block lg:w-1/2">
               <Image
                 src={profilePic}
                 alt="azacdev"
-                className="w-full h-auto"
+                className="profilePic border-8 border-dark dark:border-light"
                 priority={true}
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
               />

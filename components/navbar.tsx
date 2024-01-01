@@ -21,6 +21,7 @@ import {
   LucideWorkflow,
   Menu,
   User,
+  X,
 } from "lucide-react";
 
 interface CustomLinkProps {
@@ -163,7 +164,7 @@ const Navbar = () => {
               </Link>
             </div>
 
-            <DoorClosed
+            <X
               className="absolute right-6 bottom-2 text-3xl cursor-pointer text-dark dark:text-light"
               onClick={() => showMenu(!toggle)}
             />
