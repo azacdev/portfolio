@@ -48,7 +48,7 @@ const Education = () => {
     <div className="my-16 md:my-32 lg:my-64">
       <h2 className="font-bold mb-16 text-4xl sm:text-6xl lg:text-8xl lg:mb-32 w-full text-center">Education</h2>
 
-      <div className="w-[75%] mx-auto relative">
+      <div className="w-full md:w-[90%] lg:w-[75%] mx-auto relative">
         <motion.div
           style={{ scaleY: scrollYProgress }}
           ref={ref}
@@ -67,7 +67,7 @@ const Education = () => {
             type="Masters of Computer Science"
             time="2023-present"
             place="Yusuf Maitama Sule University Kano"
-            info="Completed a master's project on deep learning, developing a new neural network architecture for natural language understanding."
+            info="Currently pursuing a master's project in deep learning, developing a neural network architecture to enhance natural language understanding."
           />
         </ul>
       </div>

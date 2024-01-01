@@ -7,20 +7,12 @@ import LiIcon from "@/components/li-icon";
 interface DetailsProps {
   position: string;
   company: string;
-  companyLink: string;
   time: string;
   address: string;
   work: string;
 }
 
-const Details = ({
-  position,
-  company,
-  companyLink,
-  time,
-  address,
-  work,
-}: DetailsProps) => {
+const Details = ({ position, company, time, address, work }: DetailsProps) => {
   const ref = useRef(null);
   return (
     <li
@@ -37,11 +29,9 @@ const Details = ({
       >
         <h3 className="capitalize font-bold text-lg sm:text-xl md:text-2xl">
           {position}&nbsp;{" "}
-          <a href="#" target="_blank" className="text-gray-400 capitalize">
-            @{company}
-          </a>
+          <p className="text-gray-400 capitalize inline-block">@{company}</p>
         </h3>
-        <span className="capitalize font-medium text-sm md:text-base text-dark/75">
+        <span className="capitalize font-medium text-sm md:text-base text-gray-400 ">
           {time} | {address}
         </span>
         <p className="font-medium w-full text-sm md:text-base">{work}</p>
@@ -74,37 +64,33 @@ const Experience = () => {
           <Details
             position="Frontend Developer"
             company="Engausa"
-            companyLink="www.google.com"
             time="2021-2022"
             address=" Kano, Kano"
-            work="Worked on a team responsible for developing new features for Google's search engine, including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization."
+            work="In my role as a web developer, I crafted websites using the classic trio of HTML, CSS, and JavaScript. I played a key role in weaving together visually appealing and interactive web experiences, adding a touch of creativity to the digital landscape."
           />
 
           <Details
             position="Freelance Developer"
             company="Freelance"
-            companyLink="www.google.com"
             time="2022-2023"
             address="Remote"
-            work="Worked on a team responsible for developing new features for Google's search engine, including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization."
+            work="During my freelance endeavors, I specialized in crafting dynamic web applications using cutting-edge technologies like React, Redux, and Firebase. I thrived in bringing clients' visions to life, delivering responsive and feature-rich solutions that leverage the power of modern front-end frameworks and real-time databases."
           />
 
           <Details
             position="Web Developer"
             company="Office Box"
-            companyLink="www.google.com"
             time="2023-2023"
             address="Kano, Kano"
-            work="Worked on a team responsible for developing new features for Google's search engine, including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization."
+            work="In my recent at role at Box, I took charge of the frontend development using Next.js, TypeScript, Tailwind CSS, and Shadcn UI in the creation of Ribbons, an innovative app enabling anonymous reporting of rape cases. Additionally, I played a pivotal role in the development of AgroSmart Tech, a platform facilitating seamless connections between buyers and sellers in the agricultural domain."
           />
 
           <Details
             position="Freelance Developer"
             company="Freelance"
-            companyLink="www.google.com"
             time="2023-Present"
             address="Remote"
-            work="Worked on a team responsible for developing new features for Google's search engine, including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization."
+            work="Dedicated to full-stack development, I excel in developing diverse web experiences, encompassing dynamic applications, dashboards, CMS, documentation pages, and sleek landing pages. My toolkit, featuring Next.js, Node.js, Express, MongoDB, Tailwind CSS, Redux, and React Native, ensures a cohesive and engaging user journey across varied projects."
           />
         </ul>
       </div>
