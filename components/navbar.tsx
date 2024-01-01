@@ -65,7 +65,7 @@ const Navbar = () => {
 
       <nav className="items-center justify-center flex-wrap hidden md:flex">
         <motion.a
-          href="#"
+          href="https://github.com/azacdev"
           target="_blank"
           className="w-8 mr-3"
           whileHover={{ y: -2 }}
@@ -75,7 +75,7 @@ const Navbar = () => {
         </motion.a>
 
         <motion.a
-          href="#"
+          href="https://twitter.com/azacdev"
           target="_blank"
           className="w-8 mx-3"
           whileHover={{ y: -2 }}
@@ -85,7 +85,7 @@ const Navbar = () => {
         </motion.a>
 
         <motion.a
-          href="#"
+          href="https://linkedin.com/in/azacdev/"
           target="_blank"
           className="w-8 mx-3"
           whileHover={{ y: -2 }}

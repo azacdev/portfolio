@@ -7,7 +7,7 @@ const Socials = () => {
   return (
     <div className="flex items-center justify-center my-4 md:hidden">
       <motion.a
-        href="#"
+        href="https://github.com/azacdev"
         target="_blank"
         className="w-8 mr-3"
         whileHover={{ y: -2 }}
@@ -17,7 +17,7 @@ const Socials = () => {
       </motion.a>
 
       <motion.a
-        href="#"
+        href="https://twitter.com/azacdev"
         target="_blank"
         className="w-8 mx-3"
         whileHover={{ y: -2 }}
@@ -27,7 +27,7 @@ const Socials = () => {
       </motion.a>
 
       <motion.a
-        href="#"
+        href="https://linkedin.com/in/azacdev"
         target="_blank"
         className="w-8 mx-3"
         whileHover={{ y: -2 }}

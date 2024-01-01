@@ -17,7 +17,7 @@ interface FeatureProjectsProps {
 
 const FeaturedProjects = ({
   title,
-  type="featured project",
+  type="Featured project",
   src,
   link,
   summary,
