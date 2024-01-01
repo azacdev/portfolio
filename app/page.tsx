@@ -8,6 +8,7 @@ import AnimatedText from "@/components/animation/animated-text";
 import { LinkArrow } from "@/components/icons";
 import HireMe from "@/components/hire-me";
 import TransitionEffect from "@/components/animation/transition";
+import Socials from "@/components/socials";
 
 export default function Home() {
   return (
@@ -33,9 +34,11 @@ export default function Home() {
               <p className="my-4 text-xs sm:text-sm lg:text-base font-medium ">
                 As a proficient full-stack developer, my commitment lies in
                 translating concepts into cutting-edge software solutions.
-                Explore my recent projects showcasing my
-                expertise in Next.js and web development.
+                Explore my recent projects showcasing my expertise in Next.js
+                and web development.
               </p>
+
+              <Socials />
               <div className="flex items-center lg:self-start mt-2 pb-8">
                 <Link
                   href="/Abdulrazak-Abubakar-(Azacdev)-CV.pdf"
