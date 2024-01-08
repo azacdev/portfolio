@@ -1,38 +1,38 @@
-import IMG1 from "@/public/orion-anime.png";
-import IMG2 from "@/public/shompts.png";
-import IMG3 from "@/public/gadgets-dome.png";
+import IMG1 from "@/public/oryon.webp";
+import IMG2 from "@/public/el-bako.png";
+import IMG3 from "@/public/shompts.png";
 import IMG4 from "@/public/vega-chat.png";
 
 export const projectsData = [
   {
     id: 1,
     src: IMG1,
-    title: "Orion Anime",
+    title: "Oryon",
     description:
-      "An Anime Website project that allows users to explore and discover various anime shows and movies.",
+      "Redefining online shopping with a state-of-the-art platform. We use the latest technologies to create a seamless and enjoyable experience. Our innovative approach ensures your shopping journey is smooth and secure, providing you with a modern and stylish e-commerce destination.",
     tools: "React, Redux, React-Router, React-Player, RTK Query, Tailwind, Git",
-    github: "https://github.com/azacdev/orion-anime",
-    demo: "https://orion-anime.vercel.app/",
+    github: "https://github.com/azacdev/oryon",
+    demo: "https://oryon.vercel.app/",
   },
   {
     id: 2,
     src: IMG2,
+    title: "El-Bako",
+    description:
+      "El-Bako Clothing, a premier luxury brand with a prominent presence in Northern Nigeria.",
+    tools: "React, Tailwind CSS, React-Router, Context API, Daisy UI, Git",
+    github: "https://github.com/azacdev/el-bako",
+    demo: "https://el-bako.vercel.app",
+  },
+  {
+    id: 3,
+    src: IMG3,
     title: "Shompts",
     description:
       "An AI prompting tool for modern world to discover, create and share creative prompts.",
     tools: "Next JS, Tailwind CSS, App-Router, Next Auth, MongoDB, Git",
     github: "https://github.com/azacdev/shompts.git",
     demo: "https://shompts.vercel.app/",
-  },
-  {
-    id: 3,
-    src: IMG3,
-    title: "Gadgets Dome",
-    description:
-      "An e-commerce site that offers a variety of gadgets such as laptops, smartphones, graphics cards, and keyboards.",
-    tools: "React, Tailwind CSS, React-Router, Context API, Daisy UI, Git",
-    github: "https://github.com/azacdev/gadgets-dome.git",
-    demo: "https://gadgets-dome.vercel.app",
   },
   {
     id: 4,

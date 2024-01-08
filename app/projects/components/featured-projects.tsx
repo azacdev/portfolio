@@ -5,6 +5,8 @@ import { motion } from "framer-motion";
 import Image, { StaticImageData } from "next/image";
 
 import { GithubIcon } from "@/components/icons";
+import { ArrowRight } from "lucide-react";
+import { usePathname } from "next/navigation";
 
 interface FeatureProjectsProps {
   src: StaticImageData;
@@ -17,12 +19,13 @@ interface FeatureProjectsProps {
 
 const FeaturedProjects = ({
   title,
-  type="Featured project",
+  type = "Featured project",
   src,
   link,
   summary,
   github,
 }: FeatureProjectsProps) => {
+  const pathname = usePathname();
   const FramerImage = motion(Image);
 
   return (
@@ -45,23 +48,41 @@ const FeaturedProjects = ({
       </Link>
 
       <div className="w-full lg:w-1/2 flex flex-col items-start justify-between pl-0 pt-6 lg:pl-8">
-        <span className="text-gray-500 font-medium text-base md:text-xl">{type}</span>
+        <span className="text-gray-500 font-medium text-base md:text-xl">
+          {type}
+        </span>
         <Link href={link} className="hover:underline underline-offset-2">
-          <h2 className="my-2 w-full text-left text-2xl md:text-4xl font-bold">{title}</h2>
+          <h2 className="my-2 w-full text-left text-2xl md:text-4xl font-bold">
+            {title}
+          </h2>
         </Link>
-        <p className="my-2 font-medium text-sm md:text-base text-dark dark:text-light">{summary}</p>
-        <div className="mt-2 flex items-center">
-          <Link href={github} target="_blank" className="w-10">
-            <GithubIcon />
-          </Link>
+        <p className="my-2 font-medium text-sm md:text-base text-dark dark:text-light">
+          {summary}
+        </p>
+        <div className="flex justify-between w-full items-center">
+          <div className="mt-2 flex items-center">
+            <Link href={github} target="_blank" className="w-10">
+              <GithubIcon />
+            </Link>
 
-          <Link
-            href={link}
-            target="_blank"
-            className="ml-4 rounded-lg bg-dark text-light p-2 px-6 md:text-lg font-semibold border hover:border-dark hover:bg-light hover:text-dark dark:bg-light dark:text-dark dark:hover:dark:border-light dark:hover:bg-dark dark:hover:text-light transition-all duration-300 text-base"
-          >
-            Live Project
-          </Link>
+            <Link
+              href={link}
+              target="_blank"
+              className="ml-4 rounded-lg bg-dark text-light p-2 px-3 md:text-lg font-semibold border hover:border-dark hover:bg-light hover:text-dark dark:bg-light dark:text-dark dark:hover:dark:border-light dark:hover:bg-dark dark:hover:text-light transition-all duration-300 text-base"
+            >
+              Live Project
+            </Link>
+          </div>
+
+          {pathname.endsWith("/") && (
+            <Link href="/projects" className="flex justify-center items-center group mt-2">
+              See More{" "}
+              <ArrowRight
+                className="text-base duration-200 transition-transform
+                 group-hover:translate-x-1"
+              />
+            </Link>
+          )}
         </div>
       </div>
     </article>

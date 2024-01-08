@@ -9,8 +9,11 @@ import { LinkArrow } from "@/components/icons";
 import HireMe from "@/components/hire-me";
 import TransitionEffect from "@/components/animation/transition";
 import Socials from "@/components/socials";
+import FeaturedProjects from "./projects/components/featured-projects";
+import { projectsData } from "@/config/data";
 
 export default function Home() {
+  const featureProject = projectsData[0];
   return (
     <>
       <TransitionEffect />
@@ -32,10 +35,12 @@ export default function Home() {
                 className="!text-3xl sm:!text-5xl lg:!text-6xl text-center 2xl:!text-6xl lg:!text-left dark:text-light"
               />
               <p className="mt-4 text-xs sm:text-sm lg:text-base font-medium ">
-                As a proficient full-stack developer, my commitment lies in
-                translating concepts into cutting-edge software solutions.
-                Explore my recent projects showcasing my expertise in Next.js
-                and web development.
+                The digital world thirsts for innovation, and I&apos;m the chef
+                serving up a feast of cutting-edge solutions. I blend creativity
+                with technical expertise to cook up lightning-fast websites and
+                apps that solve real problems and leave users hungry for more.
+                Let&apos;s sit down and brainstorm - together, we can create the next
+                digital sensation.
               </p>
 
               <Socials />
@@ -51,6 +56,17 @@ export default function Home() {
                 </Link>
               </div>
             </div>
+          </div>
+
+          <div className="mt-0 mb-12 lg:my-12">
+            <FeaturedProjects
+              key={featureProject.id}
+              src={featureProject.src}
+              title={featureProject.title}
+              summary={featureProject.description}
+              github={featureProject.github}
+              link={featureProject.demo}
+            />
           </div>
         </MainLayout>
 
