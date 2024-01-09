@@ -70,6 +70,10 @@ export default function Home() {
           </div>
         </MainLayout>
 
+        
+        <h1 className="absolute text-xl md:text-2xl font-bold top-8 left-4 right-auto md:hidden z-10">Azacdev</h1>
+      
+
         <HireMe />
 
         <div className="absolute right-8 bottom-8 hidden md:inline-block w-24">

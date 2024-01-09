@@ -20,7 +20,7 @@ const AboutPage = () => {
     <>
     <TransitionEffect />
     <main className="flex flex-col w-full items-center justify-center dark:text-light lg:pt-12">
-      <MainLayout className="pt-28 lg:pt-16">
+      <MainLayout className="pt-16">
         <AnimatedText
           title="Passion Fuels Purpose"
           className="mb-8 mb:mb-16 dark:text-light !text-4xl sm:!text-6xl md:!text-7xl"

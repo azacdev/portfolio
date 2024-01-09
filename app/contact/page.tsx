@@ -16,7 +16,7 @@ const ContactPage = () => {
     <>
     <TransitionEffect />
     <main className="w-full mb-16 flex flex-col items-center justify-center dark:text-light lg:pt-12">
-      <MainLayout className="pt-28 lg:pt-16">
+      <MainLayout className="pt-16">
         <AnimatedText title="Contact Me!" className="mb-16 dark:text-light !text-4xl sm:!text-6xl lg:!text-7xl" />
         <div className="grid justify-center grid-cols-1 md:grid-cols-2 gap-y-12 md:gap-y-0 md:gap-x-6 lg:gap-x-18 pb-12">
           <div className="flex flex-col text-center items-center gap-y-4">

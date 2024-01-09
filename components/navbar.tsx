@@ -101,9 +101,6 @@ const Navbar = () => {
         </div>
       </nav>
 
-      <Link href="/" className="fixed top-8 left-4 right-auto md:hidden z-10">
-        <h1 className="text-xl md:text-2xl font-bold">Azacdev</h1>
-      </Link>
       <nav className="fixed bottom-0 left-0 block md:hidden w-full rounded-tl-md rounded-tr-md shadow-lg shadow-[#2A0E61]/5 bg-light dark:bg-dark border-t border-dark dark:border-light z-10 px-6">
         {/* Mobile Nav */}
         <div className="h-12 flex items-center justify-between py-[5px] relative">
