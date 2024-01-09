@@ -17,8 +17,8 @@ const ProjectsPage = () => {
   return (
     <>
     <TransitionEffect />
-    <main className="w-full mb-16 flex flex-col items-center justify-center dark:text-light">
-      <MainLayout className="pt-16">
+    <main className="w-full mb-16 flex flex-col items-center justify-center dark:text-light lg:pt-12">
+      <MainLayout className="pt-28 lg:pt-16">
         <AnimatedText title="Imagination Trumps Knowledge!" className="mb-16 dark:text-light !text-4xl sm:!text-6xl lg:!text-7xl" />
 
         <div className="grid grid-cols-12 gap-y-8 md:gap-y-20 md:gap-x-8 xl:gap-x-16 xl:gap-y-32">

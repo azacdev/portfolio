@@ -17,8 +17,8 @@ export default function Home() {
   return (
     <>
       <TransitionEffect />
-      <main className="flex items-center text-dark w-full min-h-screen dark:text-light">
-        <MainLayout className="pt-8 sm:pt-12 lg:pt-0 relative overflow-hidden">
+      <main className="flex items-center text-dark w-full min-h-screen dark:text-light lg:pt-28">
+        <MainLayout className="pt-28 lg:pt-0 relative overflow-hidden">
           <div className="flex flex-col md:flex-row justify-center items-center w-full gap-8">
             <div className="w-full md:hidden lg:inline-block lg:w-1/2">
               <Image
