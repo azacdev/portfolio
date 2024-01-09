@@ -70,7 +70,7 @@ const FeaturedProjects = ({
               target="_blank"
               className="ml-4 rounded-lg bg-dark text-light p-2 px-3 md:text-lg font-semibold border hover:border-dark hover:bg-light hover:text-dark dark:bg-light dark:text-dark dark:hover:dark:border-light dark:hover:bg-dark dark:hover:text-light transition-all duration-300 text-base"
             >
-              Live Project
+              Visit Website
             </Link>
           </div>
 
