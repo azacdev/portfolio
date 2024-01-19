@@ -68,18 +68,19 @@ const FeaturedProjects = ({
             <Link
               href={link}
               target="_blank"
-              className="ml-4 rounded-lg bg-dark text-light p-2 px-3 md:text-lg font-semibold border hover:border-dark hover:bg-light hover:text-dark dark:bg-light dark:text-dark dark:hover:dark:border-light dark:hover:bg-dark dark:hover:text-light transition-all duration-300 text-base"
+              className="ml-2 sm:ml-4 rounded-lg bg-dark text-light p-2 px-3 md:text-lg font-semibold border hover:border-dark hover:bg-light hover:text-dark dark:bg-light dark:text-dark dark:hover:dark:border-light dark:hover:bg-dark dark:hover:text-light transition-all duration-300 text-base"
             >
               Visit Website
             </Link>
           </div>
 
           {pathname.endsWith("/") && (
-            <Link href="/projects" className="flex justify-center items-center group mt-2">
+            <Link href="/projects" className="text-sm sm:text-base flex justify-center items-center group mt-2">
               See More{" "}
               <ArrowRight
-                className="text-base duration-200 transition-transform
-                 group-hover:translate-x-1"
+                className="text-sm sm:text-base duration-200 transition-transform
+                 group-hover:translate-x-2 mt-[2.3px]
+                 "
               />
             </Link>
           )}

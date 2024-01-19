@@ -14,6 +14,7 @@ import { projectsData } from "@/config/data";
 
 export default function Home() {
   const featureProject = projectsData[0];
+  
   return (
     <>
       <TransitionEffect />
