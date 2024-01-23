@@ -192,7 +192,7 @@ const Navbar = () => {
           </div>
 
           <div className="cursor-pointer" onClick={() => showMenu(!toggle)}>
-            <Menu className="text-3xl" />
+            <Menu className="h-8 w-8" />
           </div>
         </div>
       </nav>
