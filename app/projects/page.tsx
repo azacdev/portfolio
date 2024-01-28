@@ -27,6 +27,7 @@ const ProjectsPage = () => {
               key={featureProject.id}
               src={featureProject.src}
               title={featureProject.title}
+              tools={featureProject.tools}
               summary={featureProject.description}
               github={featureProject.github}
               link={featureProject.demo}

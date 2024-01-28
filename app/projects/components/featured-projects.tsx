@@ -14,6 +14,7 @@ interface FeatureProjectsProps {
   link: string;
   title: string;
   summary: string;
+  tools: string;
   github: string;
 }
 
@@ -22,6 +23,7 @@ const FeaturedProjects = ({
   type = "Featured project",
   src,
   link,
+  tools,
   summary,
   github,
 }: FeatureProjectsProps) => {
@@ -59,6 +61,9 @@ const FeaturedProjects = ({
         <p className="my-2 font-medium text-sm md:text-base text-dark dark:text-light">
           {summary}
         </p>
+        <p className="my-2 font-medium text-sm md:text-base text-dark dark:text-light">
+          Stack / Tools: {tools}
+        </p>
         <div className="flex justify-between w-full items-center">
           <div className="mt-2 flex items-center">
             <Link href={github} target="_blank" className="w-10">
@@ -70,12 +75,15 @@ const FeaturedProjects = ({
               target="_blank"
               className="ml-2 sm:ml-4 rounded-lg bg-dark text-light p-2 px-3 md:text-lg font-semibold border hover:border-dark hover:bg-light hover:text-dark dark:bg-light dark:text-dark dark:hover:dark:border-light dark:hover:bg-dark dark:hover:text-light transition-all duration-300 text-base"
             >
-              Visit Website
+              Visit Site
             </Link>
           </div>
 
           {pathname.endsWith("/") && (
-            <Link href="/projects" className="text-sm sm:text-base flex justify-center items-center group mt-2">
+            <Link
+              href="/projects"
+              className="text-sm sm:text-base flex justify-center items-center group mt-2"
+            >
               See More{" "}
               <ArrowRight
                 className="text-sm sm:text-base duration-200 transition-transform
