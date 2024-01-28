@@ -10,14 +10,15 @@ interface ProjectsProps {
   type?: string;
   link: string;
   title: string;
+  tools: string;
   summary: string;
   github: string;
 }
 
 const Projects = ({
   title,
-  type,
   src,
+  tools,
   link,
   summary,
   github,
@@ -49,6 +50,7 @@ const Projects = ({
           <h2 className="my-2 w-full text-left text-2xl md:text-3xl font-bold">{title}</h2>
         </Link>
         <p className="my-2 font-medium text-dark dark:text-light">{summary}</p>
+        <p className="my-2 font-medium text-dark dark:text-light">Stack / Tools: {tools}</p>
         <div className="w-full mt-2 flex items-center justify-between">
           <Link href={github} target="_blank" className="w-10">
             <GithubIcon />

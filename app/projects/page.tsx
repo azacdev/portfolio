@@ -39,6 +39,7 @@ const ProjectsPage = () => {
               <Projects
                 src={item.src}
                 title={item.title}
+                tools={item.tools}
                 summary={item.description}
                 github={item.github}
                 link={item.demo}
