@@ -63,7 +63,7 @@ const Navbar = () => {
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
           >
-            <GithubIcon />
+            <GithubIcon /> <span className="sr-only">Visit Github</span>
           </motion.a>
 
           <motion.a
@@ -73,7 +73,7 @@ const Navbar = () => {
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
           >
-            <TwitterIcon />
+            <TwitterIcon /> <span className="sr-only">Visit Twitter</span>
           </motion.a>
 
           <motion.a
@@ -83,10 +83,11 @@ const Navbar = () => {
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
           >
-            <LinkedInIcon />
+            <LinkedInIcon /> <span className="sr-only">Visit LinkedIn</span>
           </motion.a>
 
           <button
+            name="toggle-theme"
             onClick={() => setMode(mode === "light" ? "dark" : "light")}
             className={`ml-3 flex items-center justify-center rounded-full p-1
           ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"}
@@ -105,6 +106,7 @@ const Navbar = () => {
         {/* Mobile Nav */}
         <div className="h-12 flex items-center justify-between py-[5px] relative">
           <button
+            name="toggle-theme"
             onClick={() => setMode(mode === "light" ? "dark" : "light")}
             className={`flex items-center justify-center rounded-full p-1 w-7
           ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"}
