@@ -11,8 +11,9 @@ import Script from "next/script";
 const montserrat = Montserrat({ subsets: ["latin"], variable: "--font-mint" });
 
 export const metadata: Metadata = {
-  title: "Azacdev",
-  description: "Software Developer, Web Developer",
+  title: "Abdulrazak Abubakar - Full Stack Web & Mobile Developer",
+  description:
+    "Experienced Software Developer specializing in web and mobile development. Proficient in React, React Native, and responsive design. Let's build innovative solutions together.",
 };
 
 export default function RootLayout({
