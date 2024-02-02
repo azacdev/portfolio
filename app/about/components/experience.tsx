@@ -29,9 +29,9 @@ const Details = ({ position, company, time, address, work }: DetailsProps) => {
       >
         <h3 className="capitalize font-bold text-lg sm:text-xl md:text-2xl">
           {position}&nbsp;{" "}
-          <p className="text-gray-400 capitalize inline-block">@{company}</p>
+          <p className="text-[#0bbf65] capitalize inline-block">@{company}</p>
         </h3>
-        <span className="capitalize font-medium text-sm md:text-base text-gray-400 ">
+        <span className="capitalize font-medium text-sm md:text-base text-[#0bbf65]">
           {time} | {address}
         </span>
         <p className="font-medium w-full text-sm md:text-base">{work}</p>

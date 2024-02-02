@@ -24,7 +24,7 @@ interface CustomLinkProps {
 const CustomLink = ({ href, title, className }: CustomLinkProps) => {
   const pathname = usePathname();
   return (
-    <Link href={href} className={`${className} relative group`}>
+    <Link href={href} className={`${className} relative group`} aria-label={title}>
       {title}
       <span
         className={`h-[1px] inline-block w-0 bg-dark dark:bg-light absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease-in-out duration-300 ${
@@ -87,11 +87,11 @@ const Navbar = () => {
           </motion.a>
 
           <button
-            name="toggle-theme"
             onClick={() => setMode(mode === "light" ? "dark" : "light")}
             className={`ml-3 flex items-center justify-center rounded-full p-1
           ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"}
           `}
+            aria-label={`Toggle ${mode === "light" ? "dark" : "light"} mode`}
           >
             {mode === "dark" ? (
               <SunIcon className={"fill-dark"} />
@@ -111,6 +111,7 @@ const Navbar = () => {
             className={`flex items-center justify-center rounded-full p-1 w-7
           ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"}
           `}
+            aria-label={`Toggle ${mode === "light" ? "dark" : "light"} mode`}
           >
             {mode === "dark" ? (
               <SunIcon className={"fill-dark"} />

@@ -28,7 +28,7 @@ const Details = ({ type, place, time, info }: DetailsProps) => {
         className="flex flex-col gap-4 md:gap-2"
       >
         <h3 className="capitalize font-bold text-lg sm:text-xl md:text-2xl">{type}&nbsp; </h3>
-        <span className="capitalize font-medium text-sm md:text-base text-gray-400">
+        <span className="capitalize font-medium text-sm md:text-base text-[#0bbf65]">
           {time} | {place}
         </span>
         <p className="font-medium w-full">{info}</p>
