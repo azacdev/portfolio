@@ -7,7 +7,7 @@ import ContactForm from "./components/contact-form";
 import TransitionEffect from "@/components/animation/transition";
 
 export const metadata: Metadata = {
-  title: "Azacdev | Contact Abdulrazak Abubakar",
+  title: "Contact",
   description:
     "Connect with Azacdev, a passionate Software and Web Developer. Reach out for collaboration, inquiries, or to discuss your next digital project.",
 };

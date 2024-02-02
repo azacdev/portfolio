@@ -11,7 +11,7 @@ import Education from "@/app/about/components/education";
 import TransitionEffect from "@/components/animation/transition";
 
 export const metadata: Metadata = {
-  title: "Azacdev | About Abdulrazak Abubakar",
+  title: "About",
   description:
     "Passionate Software Developer and Web Developer | Crafting innovative solutions with expertise in NextJS, React Native, and more. Learn about my journey and skills.",
 };
