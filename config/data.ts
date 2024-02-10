@@ -1,7 +1,8 @@
 import IMG1 from "@/public/oryon.webp";
-import IMG2 from "@/public/oryon-admin.png";
+import IMG2 from "@/public/oryon-admin.webp";
 import IMG3 from "@/public/shompts.png";
 import IMG4 from "@/public/el-bako.png";
+import IMG5 from "@/public/sovereign-air.webp";
 
 export const projectsData = [
   {
@@ -45,5 +46,15 @@ export const projectsData = [
     tools: "NextJS, TypeScript, Tailwind CSS, React-Slick, Git",
     github: "https://github.com/azacdev/el-bako",
     demo: "https://el-bako.vercel.app",
+  },
+  {
+    id: 4,
+    src: IMG5,
+    title: "Sovereign-Air",
+    description:
+      "Embark on a seamless journey with Sovereign-Air, where luxury meets innovation. This sophisticated travel platform redefines the way you experience air travel, ensuring every moment is marked by comfort and convenience.",
+    tools: "React, TypeScript, Tailwind CSS, React-Icons, Git",
+    github: "https://github.com/azacdev/sovereign-air",
+    demo: "https://sovereign-air.vercel.app",
   },
 ];
