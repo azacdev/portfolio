@@ -5,8 +5,6 @@ import { motion } from "framer-motion";
 import Image, { StaticImageData } from "next/image";
 
 import { GithubIcon } from "@/components/icons";
-import { ArrowRight } from "lucide-react";
-import { usePathname } from "next/navigation";
 
 interface FeatureProjectsProps {
   src: StaticImageData;
@@ -27,7 +25,6 @@ const FeaturedProjects = ({
   summary,
   github,
 }: FeatureProjectsProps) => {
-  const pathname = usePathname();
   const FramerImage = motion(Image);
 
   return (
@@ -78,20 +75,6 @@ const FeaturedProjects = ({
               Visit Site
             </Link>
           </div>
-
-          {pathname.endsWith("/") && (
-            <Link
-              href="/projects"
-              className="text-sm sm:text-base flex justify-center items-center group mt-2"
-            >
-              See More{" "}
-              <ArrowRight
-                className="text-sm sm:text-base duration-200 transition-transform
-                 group-hover:translate-x-2 mt-[2.3px]
-                 "
-              />
-            </Link>
-          )}
         </div>
       </div>
     </article>

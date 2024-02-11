@@ -1,8 +1,9 @@
 import IMG1 from "@/public/oryon.webp";
 import IMG2 from "@/public/oryon-admin.webp";
 import IMG3 from "@/public/shompts.png";
-import IMG4 from "@/public/el-bako.png";
-import IMG5 from "@/public/sovereign-air.webp";
+import IMG4 from "@/public/regal-ride.webp";
+import IMG5 from "@/public/el-bako.png";
+import IMG6 from "@/public/sovereign-air.webp";
 
 export const projectsData = [
   {
@@ -40,6 +41,16 @@ export const projectsData = [
   {
     id: 4,
     src: IMG4,
+    title: "Regal-Ride",
+    description:
+      "Discover elegance on wheels with Regal-Ride, your passport to a luxurious driving experience. Our curated fleet, fueled by cutting-edge technology and timeless design, redefines the art of car rental.",
+    tools: "React, TypeScript, Framer-Motion, Tailwind CSS, Git",
+    github: "https://github.com/azacdev/regal-ride",
+    demo: "https://regal-ride.vercel.app",
+  },
+  {
+    id: 5,
+    src: IMG5,
     title: "El-Bako",
     description:
       "El-Bako Clothing, a premier luxury brand with a prominent presence in Northern Nigeria.",
@@ -48,8 +59,8 @@ export const projectsData = [
     demo: "https://el-bako.vercel.app",
   },
   {
-    id: 4,
-    src: IMG5,
+    id: 5,
+    src: IMG6,
     title: "Sovereign-Air",
     description:
       "Embark on a seamless journey with Sovereign-Air, where luxury meets innovation. This sophisticated travel platform redefines the way you experience air travel, ensuring every moment is marked by comfort and convenience.",

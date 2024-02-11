@@ -14,7 +14,8 @@ import { projectsData } from "@/config/data";
 
 export default function Home() {
   const featureProject = projectsData[0];
-  
+  const secondFeatureProject = projectsData[3];
+
   return (
     <>
       <TransitionEffect />
@@ -40,8 +41,8 @@ export default function Home() {
                 serving up a feast of cutting-edge solutions. I blend creativity
                 with technical expertise to cook up lightning-fast websites and
                 apps that solve real problems and leave users hungry for more.
-                Let&apos;s sit down and brainstorm - together, we can create the next
-                digital sensation.
+                Let&apos;s sit down and brainstorm - together, we can create the
+                next digital sensation.
               </p>
 
               <Socials />
@@ -59,7 +60,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="mt-0 mb-12 lg:my-12">
+          <div className="mt-0 mb-12 lg:my-12 flex flex-col gap-8 sm:gap-16">
             <FeaturedProjects
               key={featureProject.id}
               src={featureProject.src}
@@ -69,11 +70,32 @@ export default function Home() {
               github={featureProject.github}
               link={featureProject.demo}
             />
+
+            <FeaturedProjects
+              key={secondFeatureProject.id}
+              src={secondFeatureProject.src}
+              title={secondFeatureProject.title}
+              tools={secondFeatureProject.tools}
+              summary={secondFeatureProject.description}
+              github={secondFeatureProject.github}
+              link={secondFeatureProject.demo}
+            />
+          </div>
+
+          <div className="flex items-center justify-end lg:justify-center my-10 lg:my-20">
+            <Link
+              href="/projects"
+              className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark dark:bg-light dark:text-dark dark:hover:dark:border-light dark:hover:bg-dark dark:hover:text-light"
+            >
+              More Projects
+            </Link>
           </div>
         </MainLayout>
-      
-        <h1 className="absolute text-xl md:text-2xl font-bold top-8 left-4 right-auto md:hidden z-10">Azacdev</h1>
-      
+
+        <h1 className="absolute text-xl md:text-2xl font-bold top-8 left-4 right-auto md:hidden z-10">
+          Azacdev
+        </h1>
+
         <HireMe />
 
         <div className="absolute right-8 bottom-8 hidden md:inline-block w-24">
