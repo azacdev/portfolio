@@ -43,7 +43,7 @@ export const projectsData = [
     src: IMG4,
     title: "Elysian",
     description:
-      "Discover unparalleled elegance and unmatched living at Elysian Real Estate. Our commitment to luxury, integrity, and personalized service sets us apart in the world of real estate. Embrace a life of opulence with Elysian",
+      "Discover unparalleled elegance and unmatched living at Elysian Real Estate. Our commitment to luxury, integrity, and personalized service sets us apart in the world of real estate. Embrace a life of opulence with Elysian.",
     tools: "Next JS, TypeScript, Framer-Motion, Tailwind CSS, Git",
     github: "https://github.com/azacdev/elysian",
     demo: "https://elysian-estate.vercel.app",
