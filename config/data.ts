@@ -1,7 +1,7 @@
 import IMG1 from "@/public/oryon.webp";
 import IMG2 from "@/public/oryon-admin.webp";
 import IMG3 from "@/public/shompts.png";
-import IMG4 from "@/public/regal-ride.webp";
+import IMG4 from "@/public/elysian.webp";
 import IMG5 from "@/public/el-bako.png";
 import IMG6 from "@/public/sovereign-air.webp";
 
@@ -41,12 +41,12 @@ export const projectsData = [
   {
     id: 4,
     src: IMG4,
-    title: "Regal-Ride",
+    title: "Elysian",
     description:
-      "Discover elegance on wheels with Regal-Ride, your passport to a luxurious driving experience. Our curated fleet, fueled by cutting-edge technology and timeless design, redefines the art of car rental.",
-    tools: "React, TypeScript, Framer-Motion, Tailwind CSS, Git",
-    github: "https://github.com/azacdev/regal-ride",
-    demo: "https://regal-ride.vercel.app",
+      "Discover unparalleled elegance and unmatched living at Elysian Real Estate. Our commitment to luxury, integrity, and personalized service sets us apart in the world of real estate. Embrace a life of opulence with Elysian",
+    tools: "Next JS, TypeScript, Framer-Motion, Tailwind CSS, Git",
+    github: "https://github.com/azacdev/elysian",
+    demo: "https://elysian-estate.vercel.app",
   },
   {
     id: 5,
