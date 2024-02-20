@@ -9,12 +9,12 @@ import { LinkArrow } from "@/components/icons";
 import HireMe from "@/components/hire-me";
 import TransitionEffect from "@/components/animation/transition";
 import Socials from "@/components/socials";
-import FeaturedProjects from "./projects/components/featured-projects";
+import RecentProjects from "./projects/components/recent-projects";
 import { projectsData } from "@/config/data";
 
 export default function Home() {
-  const featureProject = projectsData[0];
-  const secondFeatureProject = projectsData[3];
+  const recentProject = projectsData[0];
+  const secondRecentProject = projectsData[3];
 
   return (
     <>
@@ -46,7 +46,13 @@ export default function Home() {
               </p>
 
               <Socials />
-              <div className="flex items-center lg:self-start mt-2 pb-8">
+              <div className="flex items-center lg:self-start mt-2 pb-8 gap-4">
+                <Link
+                  href="/book"
+                  className="flex items-center bg-transparent text-dark dark:text-light p-2.5 px-6 rounded-lg text-lg font-semibold border-2 border-solid border-dark hover:border-dark dark:border-light dark:hover:bg-dark dark:hover:text-light"
+                >
+                  Book a call
+                </Link>
                 <Link
                   href="/Abdulrazak-Abubakar-(Azacdev)-CV.pdf"
                   target="_blank"
@@ -61,24 +67,24 @@ export default function Home() {
           </div>
 
           <div className="mt-0 mb-12 lg:my-12 flex flex-col gap-8 sm:gap-16">
-            <FeaturedProjects
-              key={featureProject.id}
-              src={featureProject.src}
-              title={featureProject.title}
-              tools={featureProject.tools}
-              summary={featureProject.description}
-              github={featureProject.github}
-              link={featureProject.demo}
+            <RecentProjects
+              key={recentProject.id}
+              src={recentProject.src}
+              title={recentProject.title}
+              tools={recentProject.tools}
+              summary={recentProject.description}
+              github={recentProject.github}
+              link={recentProject.demo}
             />
 
-            <FeaturedProjects
-              key={secondFeatureProject.id}
-              src={secondFeatureProject.src}
-              title={secondFeatureProject.title}
-              tools={secondFeatureProject.tools}
-              summary={secondFeatureProject.description}
-              github={secondFeatureProject.github}
-              link={secondFeatureProject.demo}
+            <RecentProjects
+              key={secondRecentProject.id}
+              src={secondRecentProject.src}
+              title={secondRecentProject.title}
+              tools={secondRecentProject.tools}
+              summary={secondRecentProject.description}
+              github={secondRecentProject.github}
+              link={secondRecentProject.demo}
             />
           </div>
 

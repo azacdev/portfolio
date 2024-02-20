@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import AnimatedText from "@/components/animation/animated-text";
 import MainLayout from "@/components/main-layout";
-import FeaturedProjects from "./components/featured-projects";
+import FeaturedProjects from "./components/recent-projects";
 import { projectsData } from "@/config/data";
 import Projects from "./components/projects";
 import TransitionEffect from "@/components/animation/transition";

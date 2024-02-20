@@ -1,9 +1,10 @@
 import IMG1 from "@/public/oryon.webp";
 import IMG2 from "@/public/oryon-admin.webp";
 import IMG3 from "@/public/shompts.png";
-import IMG4 from "@/public/elysian.webp";
-import IMG5 from "@/public/el-bako.png";
-import IMG6 from "@/public/sovereign-air.webp";
+import IMG4 from "@/public/luminix.webp";
+import IMG5 from "@/public/elysian.webp";
+import IMG6 from "@/public/el-bako.png";
+import IMG7 from "@/public/sovereign-air.webp";
 
 export const projectsData = [
   {
@@ -41,16 +42,26 @@ export const projectsData = [
   {
     id: 4,
     src: IMG4,
-    title: "Elysian",
+    title: "Luminix",
     description:
-      "Discover unparalleled elegance and unmatched living at Elysian Real Estate. Our commitment to luxury, integrity, and personalized service sets us apart in the world of real estate. Embrace a life of opulence with Elysian.",
+      "Luminix, a beacon of digital innovation, is your gateway to exceptional online experiences. As a cutting-edge digital marketing agency, we specialize in creating captivating websites, dynamic web applications, and striking graphics that redefine the digital landscape. ",
+    tools: "Next JS, TypeScript, Framer-Motion, Tailwind CSS, Git",
+    github: "https://github.com/azacdev/luminix",
+    demo: "https://Luminix.vercel.app",
+  },
+  {
+    id: 5,
+    src: IMG5,
+    title: "Elysian Estate",
+    description:
+      "Discover unparalleled elegance and unmatched living at Elysian Real Estate. Our commitment to luxury, integrity, and personalized service sets us apart in the world of real estate. Embrace a life of opulence with Luminix.",
     tools: "Next JS, TypeScript, Framer-Motion, Tailwind CSS, Git",
     github: "https://github.com/azacdev/elysian",
     demo: "https://elysian-estate.vercel.app",
   },
   {
-    id: 5,
-    src: IMG5,
+    id: 6,
+    src: IMG6,
     title: "El-Bako",
     description:
       "El-Bako Clothing, a premier luxury brand with a prominent presence in Northern Nigeria.",
@@ -59,8 +70,8 @@ export const projectsData = [
     demo: "https://el-bako.vercel.app",
   },
   {
-    id: 5,
-    src: IMG6,
+    id: 7,
+    src: IMG7,
     title: "Sovereign-Air",
     description:
       "Embark on a seamless journey with Sovereign-Air, where luxury meets innovation. This sophisticated travel platform redefines the way you experience air travel, ensuring every moment is marked by comfort and convenience.",

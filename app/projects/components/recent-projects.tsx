@@ -16,9 +16,9 @@ interface FeatureProjectsProps {
   github: string;
 }
 
-const FeaturedProjects = ({
+const RecentProjects = ({
   title,
-  type = "Featured project",
+  type = "Recent project",
   src,
   link,
   tools,
@@ -81,4 +81,4 @@ const FeaturedProjects = ({
   );
 };
 
-export default FeaturedProjects;
+export default RecentProjects;
