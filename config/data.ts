@@ -2,7 +2,7 @@ import IMG1 from "@/public/oryon.webp";
 import IMG2 from "@/public/oryon-admin.webp";
 import IMG3 from "@/public/shompts.png";
 import IMG4 from "@/public/luminix.webp";
-import IMG5 from "@/public/elysian.webp";
+import IMG5 from "@/public/ay-adado.webp";
 import IMG6 from "@/public/el-bako.png";
 import IMG7 from "@/public/sovereign-air.webp";
 
@@ -52,12 +52,12 @@ export const projectsData = [
   {
     id: 5,
     src: IMG5,
-    title: "Elysian Estate",
+    title: "AY Adado Estate",
     description:
-      "Discover unparalleled elegance and unmatched living at Elysian Real Estate. Our commitment to luxury, integrity, and personalized service sets us apart in the world of real estate. Embrace a life of opulence with Luminix.",
+      "Discover unparalleled elegance and unmatched living at AY Adado Real Estate. Our commitment to luxury, integrity, and personalized service sets us apart in the world of real estate. Embrace a life of opulence with Luminix.",
     tools: "Next JS, TypeScript, Framer-Motion, Tailwind CSS, Git",
-    github: "https://github.com/azacdev/elysian",
-    demo: "https://elysian-estate.vercel.app",
+    github: "https://github.com/azacdev/ay-adado.git",
+    demo: "https://ay-adado.vercel.app",
   },
   {
     id: 6,
