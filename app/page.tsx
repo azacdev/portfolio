@@ -46,7 +46,7 @@ export default function Home() {
               </p>
 
               <Socials />
-              <div className="flex items-center lg:self-start mt-2 pb-8 gap-4">
+              <div className="flex items-center lg:self-start mt-4 pb-8 gap-4">
                 <Link
                   href="/book"
                   className="flex items-center bg-transparent text-dark dark:text-light p-2.5 px-6 rounded-lg text-lg font-semibold border-2 border-solid border-dark hover:border-dark dark:border-light dark:hover:bg-dark dark:hover:text-light"
@@ -103,10 +103,6 @@ export default function Home() {
         </h1>
 
         <HireMe />
-
-        <div className="absolute right-8 bottom-8 hidden md:inline-block w-24">
-          <Image src={lightBulb} alt="idea" className="w-full h-auto" />
-        </div>
       </main>
     </>
   );
