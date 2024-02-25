@@ -3,7 +3,6 @@ import Link from "next/link";
 
 import MainLayout from "@/components/main-layout";
 import profilePic from "@/public/profile.webp";
-import lightBulb from "@/public/miscellaneous_icons_1.svg";
 import AnimatedText from "@/components/animation/animated-text";
 import { LinkArrow } from "@/components/icons";
 import HireMe from "@/components/hire-me";
@@ -14,7 +13,8 @@ import { projectsData } from "@/config/data";
 
 export default function Home() {
   const recentProject = projectsData[0];
-  const secondRecentProject = projectsData[3];
+  const recentProjectTwo = projectsData[3];
+  const recentProjectThree = projectsData[2];
 
   return (
     <>
@@ -78,13 +78,23 @@ export default function Home() {
             />
 
             <RecentProjects
-              key={secondRecentProject.id}
-              src={secondRecentProject.src}
-              title={secondRecentProject.title}
-              tools={secondRecentProject.tools}
-              summary={secondRecentProject.description}
-              github={secondRecentProject.github}
-              link={secondRecentProject.demo}
+              key={recentProjectTwo.id}
+              src={recentProjectTwo.src}
+              title={recentProjectTwo.title}
+              tools={recentProjectTwo.tools}
+              summary={recentProjectTwo.description}
+              github={recentProjectTwo.github}
+              link={recentProjectTwo.demo}
+            />
+
+            <RecentProjects
+              key={recentProjectThree.id}
+              src={recentProjectThree.src}
+              title={recentProjectThree.title}
+              tools={recentProjectThree.tools}
+              summary={recentProjectThree.description}
+              github={recentProjectThree.github}
+              link={recentProjectThree.demo}
             />
           </div>
 
