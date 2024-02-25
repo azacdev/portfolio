@@ -29,7 +29,7 @@ const AboutPage = () => {
           <div className="grid w-full grid-cols-8 gap-8 md:gap-16">
             <div className="col-span-8 sm:col-span-4 lg:col-span-3 flex flex-col items-start justify-start order-2 sm:order-none">
               <h2 className="mb-4 text-lg font-bold uppercase text-dark/75">
-                Biography
+                About
               </h2>
               <p className="font-medium">
                 - Hi, I&apos;m Azacdev a Software Developer adept at creating
