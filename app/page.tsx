@@ -14,7 +14,7 @@ import { projectsData } from "@/config/data";
 export default function Home() {
   const recentProject = projectsData[0];
   const recentProjectTwo = projectsData[3];
-  const recentProjectThree = projectsData[2];
+  const recentProjectThree = projectsData[1];
 
   return (
     <>
