@@ -1,9 +1,9 @@
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
-import { useState } from "react";
 
 import {
   GithubIcon,
@@ -24,15 +24,16 @@ interface CustomLinkProps {
 const CustomLink = ({ href, title, className }: CustomLinkProps) => {
   const pathname = usePathname();
   return (
-    <Link href={href} className={`${className} relative group`} aria-label={title}>
+    <Link
+      href={href}
+      className={`${className} relative group hover:bg-dark px-3 py-2 hover:text-white dark:hover:bg-light dark:hover:text-dark rounded-md transition-colors duration-200 ${
+        pathname.endsWith(href)
+          ? "bg-dark text-white dark:text-dark dark:bg-light"
+          : ""
+      }`}
+      aria-label={title}
+    >
       {title}
-      <span
-        className={`h-[1px] inline-block w-0 bg-dark dark:bg-light absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease-in-out duration-300 ${
-          pathname.endsWith(href) ? "w-full" : "w-0"
-        }`}
-      >
-        &nbsp;
-      </span>
     </Link>
   );
 };
@@ -44,15 +45,16 @@ const Navbar = () => {
 
   return (
     <>
+      {/* Desktop Nav */}
       <nav className="w-full fixed top-0 justify-between items-center hidden md:flex p-6 md:p-8 md-px-12 lg:px-32 md:py-4 font-medium bg-light dark:bg-dark border-b border-dark dark:border-light dark:text-light rounded-bl-md rounded-br-md  z-10">
         <Link href="/">
           <h1 className="text-xl md:text-2xl font-bold">Azacdev</h1>
         </Link>
         <div>
-          <CustomLink href="/" title="Home" className="mr-4" />
-          <CustomLink href="/about" title="About" className="mx-4" />
-          <CustomLink href="/projects" title="Projects" className="mx-4" />
-          <CustomLink href="/contact" title="Contact" className="ml-4" />
+          <CustomLink href="/" title="Home" className="mr-2" />
+          <CustomLink href="/about" title="About" className="mx-2" />
+          <CustomLink href="/projects" title="Projects" className="mx-2" />
+          <CustomLink href="/contact" title="Contact" className="ml-2" />
         </div>
 
         <div className="items-center justify-center flex-wrap flex">
