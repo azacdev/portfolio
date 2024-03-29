@@ -83,7 +83,7 @@ const Experience = () => {
             company="Office Box"
             time="Jun/2023 - Dec/2023"
             address="Kano, Nigeria"
-            work="In my recent at role at office Box,i contributed to the development of a pioneering web app for anonymous reporting of rape cases, featuring location based assistance and a streamlined dashboard for efficient case management by authorities, collaborated on an agro-based project linking farmers with investors, integrating investment tracking by crop and implementing a dashboard with wallet functionality for tracking produce and finance"
+            work="In my recent at role at office Box, I contributed to the development of a pioneering web app for anonymous reporting of rape cases, featuring location based assistance and a streamlined dashboard for efficient case management by authorities, collaborated on an agro-based project linking farmers with investors, integrating investment tracking by crop and implementing a dashboard with wallet functionality for tracking produce and finance"
           />
 
           <Details
