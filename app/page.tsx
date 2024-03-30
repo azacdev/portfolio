@@ -13,7 +13,7 @@ import { projectsData } from "@/config/data";
 
 export default function Home() {
   const recentProject = projectsData[0];
-  const recentProjectTwo = projectsData[3];
+  const recentProjectTwo = projectsData[2];
   const recentProjectThree = projectsData[1];
 
   return (
@@ -78,16 +78,6 @@ export default function Home() {
             />
 
             <RecentProjects
-              key={recentProjectTwo.id}
-              src={recentProjectTwo.src}
-              title={recentProjectTwo.title}
-              tools={recentProjectTwo.tools}
-              summary={recentProjectTwo.description}
-              github={recentProjectTwo.github}
-              link={recentProjectTwo.demo}
-            />
-
-            <RecentProjects
               key={recentProjectThree.id}
               src={recentProjectThree.src}
               title={recentProjectThree.title}
@@ -95,6 +85,16 @@ export default function Home() {
               summary={recentProjectThree.description}
               github={recentProjectThree.github}
               link={recentProjectThree.demo}
+            />
+
+            <RecentProjects
+              key={recentProjectTwo.id}
+              src={recentProjectTwo.src}
+              title={recentProjectTwo.title}
+              tools={recentProjectTwo.tools}
+              summary={recentProjectTwo.description}
+              github={recentProjectTwo.github}
+              link={recentProjectTwo.demo}
             />
           </div>
 

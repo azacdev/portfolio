@@ -35,7 +35,7 @@ export const projectsData = [
     title: "Shompts",
     description:
       "An AI prompting tool for modern world to discover, create and share creative prompts.",
-    tools: "Next JS, Tailwind CSS, App-Router, Next Auth, MongoDB, Git",
+    tools: "Next JS, Tailwind CSS, App-Router, Framer Motion Next Auth, MongoDB, Git",
     github: "https://github.com/azacdev/shompts.git",
     demo: "https://shompts.vercel.app/",
   },
