@@ -89,7 +89,7 @@ const Experience = () => {
           <Details
             position="Frontend Developer"
             company="Talents Sphere"
-            time="Feb/2024 - Present"
+            time="Feb/2024 - Apr/2024"
             address="Remote"
             work="Engineered and optimized front-end authentication systems, achieving a 40% reduction in user registration time 
             and enhancing platform security for Talent Sphere Africa's automated talent-matching system, transformed Figma designs into responsive frontend interfaces using modern web technologies, enhancing user engagement and enabling seamless connections across diverse African regions."

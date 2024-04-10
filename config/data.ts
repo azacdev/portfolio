@@ -1,15 +1,26 @@
-import IMG1 from "@/public/oryon.webp";
-import IMG2 from "@/public/oryon-admin.webp";
-import IMG3 from "@/public/shompts.png";
-import IMG4 from "@/public/luminix.webp";
-import IMG5 from "@/public/ay-adado.webp";
-import IMG6 from "@/public/el-bako.png";
-import IMG7 from "@/public/sovereign-air.webp";
+import IMG1 from "@/public/talents-sphere.webp";
+import IMG2 from "@/public/oryon.webp";
+import IMG3 from "@/public/oryon-admin.webp";
+import IMG4 from "@/public/shompts.png";
+import IMG5 from "@/public/luminix.webp";
+import IMG6 from "@/public/ay-adado.webp";
+import IMG7 from "@/public/el-bako.png";
+import IMG8 from "@/public/sovereign-air.webp";
 
 export const projectsData = [
   {
     id: 1,
     src: IMG1,
+    title: "Talents Sphere Africa",
+    description:
+      "I participated in engineering and optimizing authentication systems for Talent Sphere Africa, significantly enhancing user experience throughout account creation, form submissions, and platform interactions. Additionally, I transformed Figma designs into responsive interfaces using modern web technologies, amplifying user engagement and fostering seamless connections across diverse African regions.",
+    tools: "Undisclosed",
+    github: "https://github.com/azacdev/talents-sphere.git",
+    demo: "https://talentsphereafrica.com/",
+  },
+  {
+    id: 2,
+    src: IMG2,
     title: "Oryon",
     description:
       "Redefining online shopping with a state-of-the-art platform. We use the latest technologies to create a seamless and enjoyable experience. Our innovative approach ensures your shopping journey is smooth and secure, providing you with a modern and stylish e-commerce destination.",
@@ -19,8 +30,8 @@ export const projectsData = [
     demo: "https://oryon.vercel.app/",
   },
   {
-    id: 2,
-    src: IMG2,
+    id: 3,
+    src: IMG3,
     title: "Oryon Admin",
     description:
       "Experience a sophisticated full-stack e-commerce admin dashboard, where you can effortlessly view and manage orders, handle products, gain insights with an overview, and seamlessly integrate Paystack for secure payments.",
@@ -30,18 +41,19 @@ export const projectsData = [
     demo: "https://oryon-admin.vercel.app/",
   },
   {
-    id: 3,
-    src: IMG3,
+    id: 4,
+    src: IMG4,
     title: "Shompts",
     description:
       "An AI prompting tool for modern world to discover, create and share creative prompts.",
-    tools: "Next JS, Tailwind CSS, App-Router, Framer Motion Next Auth, MongoDB, Git",
+    tools:
+      "Next JS, Tailwind CSS, App-Router, Framer Motion Next Auth, MongoDB, Git",
     github: "https://github.com/azacdev/shompts.git",
     demo: "https://shompts.vercel.app/",
   },
   {
-    id: 4,
-    src: IMG4,
+    id: 5,
+    src: IMG5,
     title: "Luminix",
     description:
       "Luminix, a beacon of digital innovation, is your gateway to exceptional online experiences. As a cutting-edge digital marketing agency, we specialize in creating captivating websites, dynamic web applications, and striking graphics that redefine the digital landscape. ",
@@ -50,8 +62,8 @@ export const projectsData = [
     demo: "https://Luminix.vercel.app",
   },
   {
-    id: 5,
-    src: IMG5,
+    id: 6,
+    src: IMG6,
     title: "AY Adado Estate",
     description:
       "Discover unparalleled elegance and unmatched living at AY Adado Real Estate. Our commitment to luxury, integrity, and personalized service sets us apart in the world of real estate. Embrace a life of opulence with Luminix.",
@@ -60,8 +72,8 @@ export const projectsData = [
     demo: "https://ay-adado.vercel.app",
   },
   {
-    id: 6,
-    src: IMG6,
+    id: 7,
+    src: IMG7,
     title: "El-Bako",
     description:
       "El-Bako Clothing, a premier luxury brand with a prominent presence in Northern Nigeria.",
@@ -70,8 +82,8 @@ export const projectsData = [
     demo: "https://el-bako.vercel.app",
   },
   {
-    id: 7,
-    src: IMG7,
+    id: 8,
+    src: IMG8,
     title: "Sovereign-Air",
     description:
       "Embark on a seamless journey with Sovereign-Air, where luxury meets innovation. This sophisticated travel platform redefines the way you experience air travel, ensuring every moment is marked by comfort and convenience.",
