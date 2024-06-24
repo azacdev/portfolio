@@ -1,5 +1,6 @@
 "use client";
 
+import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 
 interface AnimatedTextProps {
@@ -43,7 +44,10 @@ const AnimatedText = ({ title, className }: AnimatedTextProps) => {
         variants={quote}
         initial="initial"
         animate="animate"
-        className={`inline-block w-full text-dark font-bold capitalize lg:text-8xl ${className}`}
+        className={cn(
+          `inline-block w-full text-dark font-bold capitalize lg:text-8xl`,
+          className
+        )}
       >
         {title.split(" ").map((word, index) => (
           <motion.span
