@@ -7,7 +7,7 @@ const TransitionEffect = () => {
   const pathname = usePathname();
   return (
     <motion.div
-      className="fixed top-0 bottom-0 right-full w-screen h-screen z-40 bg-[#2b2b2b] rounded-tr-3xl rounded-br-3xl"
+      className="fixed top-0 bottom-0 right-full w-screen h-screen z-50 bg-[#2b2b2b] rounded-tr-3xl rounded-br-3xl"
       initial={{ x: "100%", width: "100%" }}
       animate={{ x: "0%", width: "0%" }}
       exit={{ x: ["0%", "100%"], width: ["0%", "100%"] }}
