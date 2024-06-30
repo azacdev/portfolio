@@ -2,7 +2,15 @@
 
 import Link from "next/link";
 import { SetStateAction, useState } from "react";
-import { Contact, Home, LucideWorkflow, Menu, User, X } from "lucide-react";
+import {
+  BookOpenCheck,
+  Contact,
+  Home,
+  LucideWorkflow,
+  Menu,
+  User,
+  X,
+} from "lucide-react";
 
 import { MoonIcon, SunIcon } from "./icons";
 import useThemeSwitcher from "@/hooks/use-theme-switcher";
@@ -225,7 +233,7 @@ const Navbar = () => {
                 className="flex flex-col justify-center items-center gap-3 cursor-pointer hover:scale-110 relative group"
                 onClick={() => handleMobileNav("Blog")}
               >
-                <Contact />
+                <BookOpenCheck />
                 Blog
                 <span
                   className={`h-[1px] inline-block w-0 bg-dark dark:bg-light absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease-in-out duration-300 ${
@@ -238,7 +246,7 @@ const Navbar = () => {
             </div>
 
             <X
-              className="absolute right-6 bottom-2 text-3xl cursor-pointer text-dark dark:text-light"
+              className="absolute right-6 bottom-3 h-8 w-8 cursor-pointer text-dark dark:text-light"
               onClick={() => showMenu(!toggle)}
             />
           </div>

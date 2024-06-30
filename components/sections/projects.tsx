@@ -16,7 +16,7 @@ const Projects = () => {
       <MainLayout className="pt-16">
         <GradualSpacing
           className="font-display text-center text-4xl font-bold tracking-[-0.1em] text-black dark:text-white md:text-7xl md:leading-[5rem] mb-8 mb:mb-16 "
-          text="Projects"
+          text="Recent Projects"
         />
 
         <div className="flex flex-wrap items-center justify-center p-4 gap-16 sm:gap-32 mt-10">

@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Download } from "lucide-react";
 
 import MainLayout from "@/components/main-layout";
-import profilePic from "@/public/profile.webp";
+import profilePic from "@/public/profile.jpg";
 import AnimatedText from "@/components/animation/animated-text";
 import HireMe from "@/components/hire-me";
 import { SocialIcons } from "@/components/social-icons";

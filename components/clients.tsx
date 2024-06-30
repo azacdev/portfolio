@@ -15,8 +15,8 @@ const Clients = () => {
     >
       <MainLayout className="pt-16">
         <GradualSpacing
-          className="font-display text-center text-4xl font-bold tracking-[-0.1em] text-black dark:text-white md:text-7xl md:leading-[5rem] mb-8 mb:mb-16 "
-          text=" Kind words from satisfied clients"
+          className="font-display text-center text-4xl font-bold tracking-[-0.1em] text-black dark:text-white md:text-7xl md:leading-[5rem] mb-8 mb:mb-16"
+          text="Kind words from satisfied clients"
         />
         <div className="flex flex-col items-center">
           <div className="h-[50vh] md:h-[30rem] rounded-md flex flex-col antialiased  items-center justify-center relative overflow-hidden">
@@ -34,7 +34,7 @@ const Clients = () => {
                   <img
                     src={company.img}
                     alt={company.name}
-                    className="md:w-10 w-5"
+                    className="w-10 md:w-14 h-14 object-contain"
                   />
                 </div>
               </React.Fragment>

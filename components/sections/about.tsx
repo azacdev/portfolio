@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 import MainLayout from "@/components/main-layout";
-import profilePic from "@/public/profile-pic-2.jpg";
+import profilePic from "@/public/profile.jpg";
 import NumberTicker from "@/components/ui/number-ticker";
 import GradualSpacing from "@/components/ui/gradual-spacing";
 import Skills from "@/components/skills";

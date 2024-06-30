@@ -40,13 +40,13 @@ const Skills = () => {
 
         <Skill name="HTML" x="-20vw" y="2vw" />
         <Skill name="CSS" x="15vw" y="-10vw" />
-        <Skill name="Javascript" x="20vw" y="6vw" />
+        <Skill name="Javascript" x="20vw" y="2vw" />
         <Skill name="Tailwind" x="0vw" y="17vw" />
         <Skill name="React" x="-14vw" y="-14vw" />
         <Skill name="NextJS" x="-15vw" y="12vw" />
         <Skill name="Redux" x="32vw" y="-5vw" />
         <Skill name="MUI" x="28vw" y="10vw" />
-        <Skill name="ChakraUI" x="-25vw" y="14vw" />
+        <Skill name="ChakraUI" x="-25vw" y="17vw" />
         <Skill name="ShadCN" x="0vw" y="-22vw" />
         <Skill name="Firebase" x="0vw" y="-13vw" />
         <Skill name="Node" x="-25vw" y="-18vw" />
