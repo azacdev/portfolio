@@ -3,9 +3,13 @@ import { CircularText } from "./icons";
 
 const HireMe = () => {
   return (
-    <div className="absolute md:fixed right-0 left-auto top-0 bottom-auto md:left-4 md:bottom-4 md:top-auto md:right-auto overflow-hidden z-10">
+    <div className="hidden md:fixed left-4 bottom-4 top-auto right-auto overflow-hidden z-10">
       <div className="w-24 md:w-48 h-auto flex items-center justify-center relative overflow-hidden">
-        <CircularText className={"dark:fill-light fill-dark animate-spin-slow w-[5.7rem] md:w-auto"} />
+        <CircularText
+          className={
+            "dark:fill-light fill-dark animate-spin-slow w-[5.7rem] md:w-auto"
+          }
+        />
         <Link
           href="mailto:azacdev@gmail.com"
           target="_blank"

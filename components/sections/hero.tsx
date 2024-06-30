@@ -17,7 +17,7 @@ const Hero = () => {
           <div className="w-full lg:inline-block lg:w-1/2">
             <Image
               src={profilePic}
-              alt="azacdev"
+              alt="profile-pic"
               className="profilePic border-8 border-dark dark:border-light"
               priority={true}
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
@@ -72,10 +72,6 @@ const Hero = () => {
           </div>
         </div>
       </MainLayout>
-
-      <h1 className="absolute text-xl md:text-2xl font-bold top-8 left-4 md:left-8 right-auto lg:hidden z-10">
-        Azacdev
-      </h1>
 
       <HireMe />
     </section>

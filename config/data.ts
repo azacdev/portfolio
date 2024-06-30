@@ -114,8 +114,8 @@ export const companies = [
   },
   {
     id: 5,
-    name: "docker.",
-    img: "/dock.svg",
+    name: "Luminix",
+    img: "/luminix.png",
   },
 ];
 

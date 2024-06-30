@@ -129,28 +129,17 @@ const Navbar = () => {
         </div>
       </nav>
 
-      <nav className="fixed bottom-0 left-0 block lg:hidden w-full rounded-tl-md rounded-tr-md shadow-lg shadow-[#2A0E61]/5 bg-light dark:bg-dark border-t border-dark dark:border-light z-10 px-6">
+      <nav className="fixed top-0 left-0 block lg:hidden w-full rounded-bl-md rounded-br-md shadow-lg shadow-[#2A0E61]/5 bg-light dark:bg-dark border-b border-dark dark:border-light z-10 px-6">
         {/* Mobile Nav */}
-        <div className="h-12 flex items-center justify-between py-[5px] relative">
-          <button
-            name="toggle-theme"
-            onClick={() => setMode(mode === "light" ? "dark" : "light")}
-            className={`flex items-center justify-center rounded-full p-1 w-7
-          ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"}
-          `}
-            aria-label={`Toggle ${mode === "light" ? "dark" : "light"} mode`}
-          >
-            {mode === "dark" ? (
-              <SunIcon className={"fill-dark"} />
-            ) : (
-              <MoonIcon className={"fill-dark"} />
-            )}
-          </button>
+        <div className="h-14 flex items-center justify-between py-2 relative">
+          <Link href={"/"} className=" text-xl md:text-2xl font-bold">
+            Azacdev
+          </Link>
 
           <div
             className={`${
-              toggle ? "bottom-0" : "bottom-[-600%]"
-            } fixed left-0 right-0 w-full pt-8 px-6 pb-16 rounded-tl-3xl rounded-tr-3xl z-[60] bg-light dark:bg-dark border-t border-dark dark:border-light transition-all duration-300`}
+              toggle ? "top-0" : "top-[-600%]"
+            } fixed left-0 right-0 w-full pt-16 px-6 pb-8 rounded-bl-3xl rounded-br-3xl z-[60] bg-light dark:bg-dark border-b border-dark dark:border-light transition-all duration-300`}
           >
             <div className="grid grid-cols-3 gap-8 text-sm text-dark dark:text-light">
               <Link
@@ -246,13 +235,30 @@ const Navbar = () => {
             </div>
 
             <X
-              className="absolute right-6 bottom-3 h-8 w-8 cursor-pointer text-dark dark:text-light"
+              className="absolute right-6 top-3 h-8 w-8 cursor-pointer text-dark dark:text-light"
               onClick={() => showMenu(!toggle)}
             />
           </div>
 
-          <div className="cursor-pointer" onClick={() => showMenu(!toggle)}>
-            <Menu className="h-8 w-8" />
+          <div className="flex items-center justify-center gap-5">
+            <button
+              name="toggle-theme"
+              onClick={() => setMode(mode === "light" ? "dark" : "light")}
+              className={`flex items-center justify-center rounded-full p-1 w-7
+          ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"}
+          `}
+              aria-label={`Toggle ${mode === "light" ? "dark" : "light"} mode`}
+            >
+              {mode === "dark" ? (
+                <SunIcon className={"fill-dark"} />
+              ) : (
+                <MoonIcon className={"fill-dark"} />
+              )}
+            </button>
+
+            <div className="cursor-pointer" onClick={() => showMenu(!toggle)}>
+              <Menu className="h-8 w-8" />
+            </div>
           </div>
         </div>
       </nav>

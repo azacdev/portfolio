@@ -6,6 +6,7 @@ import NumberTicker from "@/components/ui/number-ticker";
 import GradualSpacing from "@/components/ui/gradual-spacing";
 import Skills from "@/components/skills";
 import Grid from "@/components/grid";
+import MacbookScrollDemo from "../macbook-scroll";
 
 const About = () => {
   return (
@@ -84,6 +85,7 @@ const About = () => {
         </div>
 
         <Grid />
+        <MacbookScrollDemo />
         <Skills />
       </MainLayout>
     </section>
