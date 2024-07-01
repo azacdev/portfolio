@@ -46,7 +46,7 @@ const Projects = () => {
                     {item.title}
                   </h1>
 
-                  <p className="lg:text-xl lg:font-normal font-light text-sm line-clamp-2">
+                  <p className="lg:text-xl font-normal text-sm line-clamp-2">
                     {item.des}
                   </p>
 
@@ -60,7 +60,7 @@ const Projects = () => {
                             transform: `translateX(-${5 * index + 2}px)`,
                           }}
                         >
-                          <img src={icon} alt="icon5" className="p-2" />
+                          <Image src={icon} alt="icon5" className="p-2" width={100} height={100}/>
                         </div>
                       ))}
                     </div>
