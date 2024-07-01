@@ -25,7 +25,7 @@ const Skill = ({ name, x, y }: SkillProps) => {
 
 const Skills = () => {
   return (
-    <>
+    <div className="pt-20">
       <GradualSpacing
         className="font-display text-center text-4xl font-bold tracking-[-0.1em] text-black dark:text-white md:text-7xl md:leading-[5rem] mb-8 mb:mb-16 "
         text="Skills"
@@ -54,7 +54,7 @@ const Skills = () => {
         <Skill name="MongoDB" x="-30vw" y="-7vw" />
         <Skill name="Prisma" x="18vw" y="13vw" />
       </div>
-    </>
+    </div>
   );
 };
 
