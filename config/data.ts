@@ -1,6 +1,6 @@
 import IMG2 from "@/public/oryon.webp";
 import IMG3 from "@/public/monapp.png";
-import IMG4 from "@/public/stallion-times.png";
+import IMG4 from "@/public/stallion-times.jpg";
 import IMG5 from "@/public/luminix.webp";
 
 export const projects = [
