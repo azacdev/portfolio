@@ -1,16 +1,16 @@
 import IMG2 from "@/public/oryon.webp";
 import IMG3 from "@/public/monapp.png";
 import IMG4 from "@/public/stallion-times.jpg";
-import IMG5 from "@/public/luminix.webp";
+import IMG5 from "@/public/casiefy.jpg";
 
 export const projects = [
   {
     id: 1,
-    title: "Oryon",
-    des: "Redefining online shopping with a state-of-the-art platform. We use the latest technologies to create a seamless and enjoyable experience.",
-    img: IMG2,
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "https://oryon.vercel.app",
+    title: "Casiefy",
+    des: "A dynamic app allowing users to personalize phone cases with their own image",
+    img: IMG5,
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+    link: "https://casiefy.vercel.app",
   },
   {
     id: 2,
@@ -22,19 +22,19 @@ export const projects = [
   },
   {
     id: 3,
-    title: "Luminix",
-    des: "Luminix, a beacon of digital innovation, is your gateway to exceptional online experiences. As a cutting-edge digital marketing agency, we specialize in creating captivating websites, dynamic web applications, and striking graphics that redefine the digital landscape. ",
-    img: IMG5,
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "https://Luminix.vercel.app",
-  },
-  {
-    id: 4,
     title: "Stallion Times",
     des: "Stallion Times is a premier news platform dedicated to publishing high-quality content that informs, educates, and entertains. We hold leaders and institutions accountable while upholding the highest ethics of journalism, ensuring trust in our reporting. Opinions expressed do not reflect the official stance of Stallion Times unless explicitly stated.",
     img: IMG4,
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
     link: "https://www.stalliontimes.com",
+  },
+  {
+    id: 4,
+    title: "Oryon",
+    des: "Redefining online shopping with a state-of-the-art platform. We use the latest technologies to create a seamless and enjoyable experience.",
+    img: IMG2,
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+    link: "https://oryon.vercel.app",
   },
 ];
 

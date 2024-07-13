@@ -73,7 +73,7 @@ const Experience = () => {
             <Details
               position="Intern Frontend Developer"
               company="Engausa"
-              time="Jan/2021 - Feb/2022"
+              time="Jun/2021 - Jun/2022"
               address="Kano, Nigeria"
               work="In my role as a front-end developer i developed responsive and cross-browser compatible front-end code for high-traffic websites proactively researched 3rd party libraries to avoid technical debt and refactored code to adhere to best practices, engaged in code reviews and provided constructive feedback to enhance team productivity"
             />
@@ -81,7 +81,7 @@ const Experience = () => {
             <Details
               position="Freelance Developer"
               company="Freelance"
-              time="Feb/2022 - Dec/2023"
+              time="Jun/2022 - Aug/2023"
               address="Remote"
               work="During my freelance endeavors, I specialized in crafting dynamic web applications using cutting-edge technologies like React, Redux, and Firebase, delivered high-quality, SEO-optimized front-end code for web applications, meeting client specifications and 
             exceeding expectations, designed sleek and functional websites that ensured optimal user experience and client satisfaction."
@@ -90,7 +90,7 @@ const Experience = () => {
             <Details
               position="Frontend Developer"
               company="Office Box"
-              time="Jan/2023 - June/2023"
+              time="Aug/2023 - Dec/2023"
               address="Kano, Nigeria"
               work="In my recent at role at office Box, I contributed to the development of a pioneering web app for anonymous reporting of rape cases, featuring location based assistance and a streamlined dashboard for efficient case management by authorities, collaborated on an agro-based project linking farmers with investors, integrating investment tracking by crop and implementing a dashboard with wallet functionality for tracking produce and finance"
             />
@@ -98,7 +98,7 @@ const Experience = () => {
             <Details
               position="Full Stack Developer"
               company="Luminix"
-              time="Aug/2024 - Present"
+              time="Dec/2024 - Present"
               address="Remote"
               work="Engineered and optimized front-end authentication systems, achieving a 40% reduction in user registration time 
             and enhancing platform security for Talent Sphere Africa's automated talent-matching system, transformed Figma designs into responsive frontend interfaces using modern web technologies, enhancing user engagement and enabling seamless connections across diverse African regions."
