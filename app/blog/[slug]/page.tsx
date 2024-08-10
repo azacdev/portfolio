@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import { format } from "date-fns";
 import Image from "next/image";
 import { Eye } from "lucide-react";
@@ -8,7 +9,6 @@ import { db } from "@/lib/db";
 import { Badge } from "@/components/ui/badge";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import SocialShare from "@/components/social-share";
-import { Metadata } from "next";
 
 export async function generateMetadata({
   params,
@@ -71,11 +71,6 @@ const BlogPage = async ({ params }: { params: { slug: string } }) => {
     .then((res) => res.json())
     .catch((error) => console.log(error));
 
-  console.log(
-    "SERVER HTTP",
-    `${process.env.NEXT_PUBLIC_BASE_URL}/api/post/${params.slug}`
-  );
-
   const post: POST = response;
 
   await db.post.update({
@@ -85,7 +80,7 @@ const BlogPage = async ({ params }: { params: { slug: string } }) => {
 
   return (
     <div className="min-h-screen">
-      <div className="w-full h-full space-y-7 inline-block z-0 bg-light dark:bg-dark px-4 sm:px-8 lg:px-36 xl:px-60 py-40">
+      <div className="w-full h-full space-y-7 inline-block z-0 bg-light dark:bg-dark px-4 sm:px-8 lg:px-36 xl:px-60 py-20 md:py-40">
         <div className="space-y-3">
           <p>{format(new Date(post.createdAt), "EEEE, MMMM d, yyyy")}</p>
           <h1 className="text-2xl md:text-4xl font-bold max-w-[800px]">
@@ -96,7 +91,7 @@ const BlogPage = async ({ params }: { params: { slug: string } }) => {
         <div className="flex flex-col md:flex-row gap-3 justify-between">
           <div className="flex gap-3 items-center">
             {post.tags.map((tag, index) => (
-              <Badge className="capitalize bg-dark dark:bg-light" key={index}>
+              <Badge className="capitalize bg-dark dark:bg-light text-base" key={index}>
                 {tag}
               </Badge>
             ))}

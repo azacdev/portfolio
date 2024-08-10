@@ -1,3 +1,6 @@
+import { toast } from "sonner";
+import { useRouter } from "next/navigation";
+
 import {
   AlertDialog,
   AlertDialogAction,
@@ -9,8 +12,6 @@ import {
   AlertDialogTrigger,
 } from "@/components/ui/alert-dialog";
 import { Button } from "@/components/ui/button";
-import { useRouter } from "next/navigation";
-import { toast } from "sonner";
 
 interface DeleteDialogProps {
   isPending: boolean;
@@ -19,7 +20,7 @@ interface DeleteDialogProps {
 
 export function DeleteDialog({ id, isPending }: DeleteDialogProps) {
   const router = useRouter();
-  
+
   const onDelete = async () => {
     try {
       const res = await fetch(`/api/post/${id}`, {
@@ -28,8 +29,8 @@ export function DeleteDialog({ id, isPending }: DeleteDialogProps) {
 
       if (res.ok) {
         toast.success("Post deleted");
+        router.push("/blog");
       }
-      router.push("/blog");
     } catch (error) {
       console.error("Error", error);
     }
@@ -48,7 +49,10 @@ export function DeleteDialog({ id, isPending }: DeleteDialogProps) {
         </AlertDialogHeader>
         <AlertDialogFooter>
           <AlertDialogCancel>Cancel</AlertDialogCancel>
-          <AlertDialogAction onClick={() => onDelete()}>
+          <AlertDialogAction
+            className="bg-destructive"
+            onClick={() => onDelete()}
+          >
             Delete
           </AlertDialogAction>
         </AlertDialogFooter>
