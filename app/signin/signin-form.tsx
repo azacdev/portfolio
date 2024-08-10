@@ -34,11 +34,7 @@ export const SigninForm = () => {
 
   const onSubmit = async (values: z.infer<typeof SigninSchema>) => {
     startTransition(() => {
-      signin(values).then((res) => {
-        if (!!res?.error) {
-          router.push("/blog/post");
-        }
-      });
+      signin(values);
     });
   };
 
