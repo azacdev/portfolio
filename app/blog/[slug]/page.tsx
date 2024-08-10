@@ -46,6 +46,11 @@ export async function generateMetadata({
           },
         ],
       },
+      twitter: {
+        title: post.title,
+        description: cleanDescription,
+        images: post.image,
+      },
     };
   } catch (error) {
     console.error("Error fetching post:", error);
