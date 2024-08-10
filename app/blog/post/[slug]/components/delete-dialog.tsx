@@ -1,3 +1,6 @@
+import { toast } from "sonner";
+import { useRouter } from "next/navigation";
+
 import {
   AlertDialog,
   AlertDialogAction,
@@ -9,8 +12,6 @@ import {
   AlertDialogTrigger,
 } from "@/components/ui/alert-dialog";
 import { Button } from "@/components/ui/button";
-import { useRouter } from "next/navigation";
-import { toast } from "sonner";
 
 interface DeleteDialogProps {
   isPending: boolean;
@@ -28,8 +29,8 @@ export function DeleteDialog({ id, isPending }: DeleteDialogProps) {
 
       if (res.ok) {
         toast.success("Post deleted");
+        router.push("/blog");
       }
-      router.push("/blog");
     } catch (error) {
       console.error("Error", error);
     }

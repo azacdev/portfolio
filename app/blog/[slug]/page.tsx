@@ -80,7 +80,7 @@ const BlogPage = async ({ params }: { params: { slug: string } }) => {
 
   return (
     <div className="min-h-screen">
-      <div className="w-full h-full space-y-7 inline-block z-0 bg-light dark:bg-dark px-4 sm:px-8 lg:px-36 xl:px-60 py-40">
+      <div className="w-full h-full space-y-7 inline-block z-0 bg-light dark:bg-dark px-4 sm:px-8 lg:px-36 xl:px-60 py-20 md:py-40">
         <div className="space-y-3">
           <p>{format(new Date(post.createdAt), "EEEE, MMMM d, yyyy")}</p>
           <h1 className="text-2xl md:text-4xl font-bold max-w-[800px]">

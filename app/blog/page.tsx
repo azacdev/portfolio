@@ -2,7 +2,7 @@ import Link from "next/link";
 
 import { POST } from "@/types";
 import { auth } from "@/auth";
-import PostCard from "./components/post-card";
+import PostCard from "@/components/post-card";
 import { buttonVariants } from "@/components/ui/button";
 
 const BlogPage = async () => {
@@ -28,7 +28,7 @@ const BlogPage = async () => {
 
           {session?.user?.email === "azacdev@gmail.com" && (
             <Link
-              href="/blog/post/new"
+              href="/blog/post"
               className={`${buttonVariants({
                 variant: "default",
               })} text-xl w-20 mx-auto`}
@@ -38,7 +38,7 @@ const BlogPage = async () => {
           )}
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 py-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 py-10">
           {posts.map((post: POST, index: number) => (
             <PostCard post={post} key={index} />
           ))}
