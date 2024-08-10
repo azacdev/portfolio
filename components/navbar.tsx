@@ -143,7 +143,7 @@ const Navbar = () => {
           >
             <div className="grid grid-cols-3 gap-8 text-sm text-dark dark:text-light">
               <Link
-                href="#"
+                href="/#"
                 className="flex flex-col justify-center items-center gap-3 cursor-pointer hover:scale-110 relative group"
                 onClick={() => handleMobileNav("Home")}
               >
@@ -158,7 +158,7 @@ const Navbar = () => {
                 </span>
               </Link>
               <Link
-                href="#about"
+                href="/#about"
                 className="flex flex-col justify-center items-center gap-3 cursor-pointer hover:scale-110 relative group"
                 onClick={() => handleMobileNav("About")}
               >
@@ -173,7 +173,7 @@ const Navbar = () => {
                 </span>
               </Link>
               <Link
-                href="#projects"
+                href="/#projects"
                 className="flex flex-col justify-center items-center gap-3 cursor-pointer hover:scale-110 relative group"
                 onClick={() => handleMobileNav("Projects")}
               >
@@ -188,7 +188,7 @@ const Navbar = () => {
                 </span>
               </Link>
               <Link
-                href="#experience"
+                href="/#experience"
                 className="flex flex-col justify-center items-center gap-3 cursor-pointer hover:scale-110 relative group"
                 onClick={() => handleMobileNav("Experience")}
               >
@@ -203,7 +203,7 @@ const Navbar = () => {
                 </span>
               </Link>
               <Link
-                href="#contact"
+                href="/#contact"
                 className="flex flex-col justify-center items-center gap-3 cursor-pointer hover:scale-110 relative group"
                 onClick={() => handleMobileNav("Contact")}
               >

@@ -21,7 +21,7 @@ const BlogPage = async () => {
     <main className="pt-40 min-h-screen">
       <div className="w-full h-full space-y-7 inline-block z-0 bg-light dark:bg-dark px-4 sm:px-8 lg:px-36 xl:px-52">
         <div className="flex flex-col text-center space-y-5">
-          <h1 className="font-bold text-xl lg:text-3xl">Blog</h1>
+          <h1 className="font-bold text-2xl lg:text-3xl">Blog</h1>
           <p className="lg:text-lg">
             Personal perspectives on a broad range of topics.
           </p>
