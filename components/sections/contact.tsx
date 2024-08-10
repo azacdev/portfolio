@@ -1,7 +1,7 @@
 import { ArrowRight, Facebook, Mail } from "lucide-react";
 
 import MainLayout from "@/components/main-layout";
-import ContactForm from "@/components/contact/contact-form";
+import ContactForm from "@/components/forms/contact-form";
 import GradualSpacing from "@/components/ui/gradual-spacing";
 
 const Contact = () => {
@@ -12,7 +12,7 @@ const Contact = () => {
     >
       <MainLayout className="pt-16">
         <GradualSpacing
-          className="font-display text-center text-4xl font-bold tracking-[-0.1em] text-black dark:text-white md:text-7xl md:leading-[5rem] mb-8 mb:mb-16 "
+          className="font-display text-center text-4xl font-bold tracking-[-0.1em] text-black dark:text-light md:text-7xl md:leading-[5rem] mb-8 mb:mb-16 "
           text="Contact Me!"
         />
         <div className="grid justify-center grid-cols-1 md:grid-cols-2 gap-y-12 md:gap-y-0 md:gap-x-6 lg:gap-x-18 pb-12">

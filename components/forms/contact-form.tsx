@@ -5,6 +5,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
+import { Send } from "lucide-react";
 
 import {
   Form,
@@ -18,7 +19,6 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
-import { Send } from "lucide-react";
 
 const formSchema = z.object({
   name: z.string().min(1, "Name is required").max(30),
@@ -86,7 +86,7 @@ const ContactForm = () => {
             name="email"
             render={({ field }) => (
               <FormItem>
-                <FormLabel className=" absolute top-[-0.5rem] left-5 text-sm p-1 z-30 text-dark bg-light dark:text-light dark:bg-dark">
+                <FormLabel className="absolute top-[-0.5rem] left-5 text-sm p-1 z-30 text-dark bg-light dark:text-light dark:bg-dark">
                   Email
                 </FormLabel>
                 <FormControl>
