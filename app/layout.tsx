@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { SessionProvider } from "next-auth/react";
+import { Toaster } from "sonner";
 
 import "@/styles/globals.css";
+import { auth } from "@/auth";
 import { ThemeProvider } from "@/hooks/theme-provider";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
-import { Toaster } from "sonner";
 
 const montserrat = Montserrat({ subsets: ["latin"], variable: "--font-mint" });
 
@@ -49,23 +51,27 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  const session = await auth();
+
   return (
     <html lang="en">
       <body
         className={`${montserrat.className} font-mont bg-light w-full min-h-screen dark:bg-dark`}
       >
-        <ThemeProvider attribute="class">
-          <Toaster theme="dark" />
-          <Navbar />
-          {children}
-          <Footer />
-          <SpeedInsights />
-        </ThemeProvider>
+        <SessionProvider session={session}>
+          <ThemeProvider attribute="class">
+            <Toaster />
+            <Navbar />
+            {children}
+            <Footer />
+            <SpeedInsights />
+          </ThemeProvider>
+        </SessionProvider>
       </body>
     </html>
   );

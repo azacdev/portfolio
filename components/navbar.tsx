@@ -129,7 +129,7 @@ const Navbar = () => {
         </div>
       </nav>
 
-      <nav className="fixed top-0 left-0 block lg:hidden w-full rounded-bl-md rounded-br-md shadow-lg shadow-[#2A0E61]/5 bg-light dark:bg-dark border-b border-dark dark:border-light z-10 px-6">
+      <nav className="fixed top-0 left-0 block lg:hidden w-full rounded-bl-md rounded-br-md shadow-lg shadow-[#2A0E61]/5 bg-light dark:bg-dark border-b border-dark dark:border-light z-50 px-6">
         {/* Mobile Nav */}
         <div className="h-14 flex items-center justify-between py-2 relative">
           <Link href={"/"} className=" text-xl md:text-2xl font-bold">

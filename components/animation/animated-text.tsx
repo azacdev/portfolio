@@ -2,6 +2,7 @@
 
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
+import { useSession } from "next-auth/react";
 
 interface AnimatedTextProps {
   title: string;
@@ -36,6 +37,10 @@ const singleWord = {
 };
 
 const AnimatedText = ({ title, className }: AnimatedTextProps) => {
+  const session = useSession();
+
+  console.log(session.data?.user?.email);
+  
   return (
     <div
       className={`w-full mx-auto py-0 sm:py-2 flex items-center justify-center text-center overflow-hidden`}
