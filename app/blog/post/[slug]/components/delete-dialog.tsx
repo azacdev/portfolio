@@ -19,7 +19,7 @@ interface DeleteDialogProps {
 
 export function DeleteDialog({ id, isPending }: DeleteDialogProps) {
   const router = useRouter();
-  
+
   const onDelete = async () => {
     try {
       const res = await fetch(`/api/post/${id}`, {
@@ -48,7 +48,10 @@ export function DeleteDialog({ id, isPending }: DeleteDialogProps) {
         </AlertDialogHeader>
         <AlertDialogFooter>
           <AlertDialogCancel>Cancel</AlertDialogCancel>
-          <AlertDialogAction onClick={() => onDelete()}>
+          <AlertDialogAction
+            className="bg-destructive"
+            onClick={() => onDelete()}
+          >
             Delete
           </AlertDialogAction>
         </AlertDialogFooter>

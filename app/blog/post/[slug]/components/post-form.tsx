@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useTransition } from "react";
+import { useState, useEffect } from "react";
 import * as z from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
@@ -26,6 +26,7 @@ import { Label } from "@/components/ui/label";
 import ImageUpload from "@/components/image-upload";
 import { POST } from "@/types";
 import { DeleteDialog } from "./delete-dialog";
+import { toast } from "sonner";
 
 type PostFormValues = z.infer<typeof postSchema>;
 interface PostFormProps {
@@ -40,11 +41,9 @@ interface Tag {
 export function PostForm({ initialData }: PostFormProps) {
   const router = useRouter();
 
-  console.log(initialData);
-
   const [exampleTags, setExampleTags] = useState<Tag[]>([]);
   const [activeTagIndex, setActiveTagIndex] = useState<number | null>(null);
-  const [isPending, startTransition] = useTransition();
+  const [loading, setLoading] = useState(false);
 
   const form = useForm<PostFormValues>({
     resolver: zodResolver(postSchema),
@@ -83,48 +82,49 @@ export function PostForm({ initialData }: PostFormProps) {
   const onSubmit = async (values: PostFormValues) => {
     const tags = exampleTags.map((tag) => tag.text);
 
-    if (initialData) {
-      //PUT
-      startTransition(() => {
-        fetch(`/api/post/${initialData.id}`, {
-          method: "PUT",
+    try {
+      setLoading(true);
+      if (initialData) {
+        //PUT
+        const res = await fetch(`/api/post/${initialData.id}`, {
+          method: "PATCH",
           body: JSON.stringify({
             ...values,
             tags: tags,
             slug: slugify(values.title),
           }),
-        }).then((res) =>
-          res
-            .json()
-            .then((data) => {
-              if (data.success) {
-                router.push("/blog");
-              }
-            })
-            .catch((error: any) => console.log(error))
-        );
-      });
-    } else {
-      // POST
-      startTransition(() => {
-        fetch("/api/post", {
+        });
+
+        const data = await res.json();
+
+        if (data.success) {
+          form.reset();
+          router.push("/blog");
+          toast("Blog Updated.");
+        }
+      } else {
+        // POST
+        const res = await fetch("/api/post", {
           method: "POST",
           body: JSON.stringify({
             ...values,
             tags: tags,
             slug: slugify(values.title),
           }),
-        }).then((res) =>
-          res
-            .json()
-            .then((data) => {
-              if (data.success) {
-                router.push("/blog");
-              }
-            })
-            .catch((error: any) => console.log(error))
-        );
-      });
+        });
+
+        const data = await res.json();
+
+        if (data.success) {
+          form.reset();
+          router.push("/blog");
+          toast("Blog Created.");
+        }
+      }
+    } catch (error) {
+      console.error("Error:", error);
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -141,7 +141,7 @@ export function PostForm({ initialData }: PostFormProps) {
                 <FormControl>
                   <ImageUpload
                     value={field.value}
-                    disabled={isPending}
+                    disabled={loading}
                     onChange={(url) => field.onChange(url)}
                     onRemove={() => field.onChange("")}
                   />
@@ -209,15 +209,13 @@ export function PostForm({ initialData }: PostFormProps) {
             )}
           />
 
-          <Button type="submit" className="w-full" disabled={isPending}>
+          <Button type="submit" className="w-full" disabled={loading}>
             {initialData ? "Edit Post" : "Create Post"}
           </Button>
         </form>
       </Form>
 
-      {initialData && (
-        <DeleteDialog isPending={isPending} id={initialData.id} />
-      )}
+      {initialData && <DeleteDialog isPending={loading} id={initialData.id} />}
     </div>
   );
 }

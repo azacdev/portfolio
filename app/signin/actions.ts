@@ -49,4 +49,6 @@ export const signin = async (values: z.infer<typeof SigninSchema>) => {
 
     throw error;
   }
+
+  return { success: true };
 };
