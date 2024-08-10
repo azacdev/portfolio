@@ -8,7 +8,6 @@ import { signIn } from "@/auth";
 import { db } from "@/lib/db";
 import { SigninSchema } from "@/schemas";
 import { getUserByEmail } from "@/data/user";
-import { SIGNIN_REDIRECT } from "@/routes";
 
 export const signin = async (values: z.infer<typeof SigninSchema>) => {
   const validatedFields = SigninSchema.safeParse(values);
@@ -36,7 +35,7 @@ export const signin = async (values: z.infer<typeof SigninSchema>) => {
     await signIn("credentials", {
       email,
       password,
-      redirectTo: SIGNIN_REDIRECT,
+      redirectTo: "/blog",
     });
   } catch (error) {
     if (error instanceof AuthError) {
