@@ -18,7 +18,9 @@ export async function generateMetadata({
   const postUrl = `${process.env.NEXT_PUBLIC_BASE_URL}/api/post/${params.slug}`;
 
   try {
-    const response = await fetch(postUrl);
+    const response = await fetch(postUrl)
+      .then((res) => res.json())
+      .catch((error) => console.log(error));
 
     const post: any = response;
 
@@ -68,6 +70,11 @@ const BlogPage = async ({ params }: { params: { slug: string } }) => {
   )
     .then((res) => res.json())
     .catch((error) => console.log(error));
+
+  console.log(
+    "SERVER HTTP",
+    `${process.env.NEXT_PUBLIC_BASE_URL}/api/post/${params.slug}`
+  );
 
   const post: POST = response;
 
