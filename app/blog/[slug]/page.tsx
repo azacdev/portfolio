@@ -91,7 +91,10 @@ const BlogPage = async ({ params }: { params: { slug: string } }) => {
         <div className="flex flex-col md:flex-row gap-3 justify-between">
           <div className="flex gap-3 items-center">
             {post.tags.map((tag, index) => (
-              <Badge className="capitalize bg-dark dark:bg-light text-base" key={index}>
+              <Badge
+                className="capitalize bg-dark dark:bg-light text-base"
+                key={index}
+              >
                 {tag}
               </Badge>
             ))}

@@ -4,6 +4,8 @@ import { POST } from "@/types";
 import { auth } from "@/auth";
 import PostCard from "@/components/post-card";
 import { buttonVariants } from "@/components/ui/button";
+import { SkeletonCard } from "@/components/skeletons/skeleton-card";
+import { Suspense } from "react";
 
 const BlogPage = async () => {
   const session = await auth();
@@ -39,9 +41,11 @@ const BlogPage = async () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 py-10">
-          {posts.map((post: POST, index: number) => (
-            <PostCard post={post} key={index} />
-          ))}
+          <Suspense fallback={<SkeletonCard />}>
+            {posts.map((post: POST, index: number) => (
+              <PostCard post={post} key={index} />
+            ))}
+          </Suspense>
         </div>
       </div>
     </main>
