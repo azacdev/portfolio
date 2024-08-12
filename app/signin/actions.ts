@@ -2,10 +2,8 @@
 
 import * as z from "zod";
 import { AuthError } from "next-auth";
-import bcrypt from "bcryptjs";
 
 import { signIn } from "@/auth";
-import { db } from "@/lib/db";
 import { SigninSchema } from "@/schemas";
 import { getUserByEmail } from "@/data/user";
 
@@ -20,15 +18,8 @@ export const signin = async (values: z.infer<typeof SigninSchema>) => {
 
   const existingUser = await getUserByEmail(email);
 
-  const hashedPassword = await bcrypt.hash(password, 10);
-
-  if (!existingUser) {
-    await db.user.create({
-      data: {
-        email: email,
-        password: hashedPassword,
-      },
-    });
+  if (!existingUser || !existingUser.email || !existingUser.password) {
+    return { error: "Email does not exist" };
   }
 
   try {

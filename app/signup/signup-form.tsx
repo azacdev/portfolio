@@ -6,7 +6,7 @@ import { useForm } from "react-hook-form";
 import { useRouter } from "next/navigation";
 import { zodResolver } from "@hookform/resolvers/zod";
 
-import { signin } from "./actions";
+import { signup } from "./actions";
 import { SigninSchema } from "@/schemas";
 import {
   Form,
@@ -19,8 +19,9 @@ import {
 import { Input } from "@/components/ui/input";
 import { CardWrapper } from "@/components/card-wrapper";
 import { Button } from "@/components/ui/button";
+import { toast } from "sonner";
 
-export const SigninForm = () => {
+export const SignupForm = () => {
   const router = useRouter();
   const [isPending, startTransition] = useTransition();
 
@@ -34,15 +35,21 @@ export const SigninForm = () => {
 
   const onSubmit = async (values: z.infer<typeof SigninSchema>) => {
     startTransition(() => {
-      signin(values);
+      signup(values).then((data) => {
+        if (data.success) {
+          router.push("/signin");
+        } else {
+          toast.error("Something went wrong");
+        }
+      });
     });
   };
 
   return (
     <CardWrapper
-      headerLabel="Welcome back"
-      backButtonLabel="Don't have an account? Sign up."
-      backButtonHref="/signup"
+      headerLabel="Create an account"
+      backButtonLabel="Already have an account? Sign in."
+      backButtonHref="/signin"
     >
       <Form {...form}>
         <form
@@ -99,7 +106,7 @@ export const SigninForm = () => {
             </div>
           </div>
           <Button type="submit" className="w-full" disabled={isPending}>
-            Signin
+            Signup
           </Button>
         </form>
       </Form>
