@@ -49,10 +49,12 @@ const Skills = () => {
         <Skill name="ChakraUI" x="-25vw" y="17vw" />
         <Skill name="ShadCN" x="0vw" y="-22vw" />
         <Skill name="Firebase" x="0vw" y="-13vw" />
-        <Skill name="Node" x="-25vw" y="-18vw" />
-        <Skill name="Express" x="18vw" y="-18vw" />
+        <Skill name="NodeJS" x="-25vw" y="-18vw" />
+        <Skill name="ExpressJS" x="18vw" y="-18vw" />
         <Skill name="MongoDB" x="-30vw" y="-7vw" />
         <Skill name="Prisma" x="18vw" y="13vw" />
+        <Skill name="PostgreSQL" x="9vw" y="7.5vw" />
+        <Skill name="NestJS" x="-9vw" y="-7vw" />
       </div>
     </div>
   );
