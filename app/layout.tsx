@@ -9,6 +9,7 @@ import { auth } from "@/auth";
 import { ThemeProvider } from "@/hooks/theme-provider";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
+import Providers from "@/components/providers";
 
 const montserrat = Montserrat({ subsets: ["latin"], variable: "--font-mint" });
 
@@ -24,9 +25,9 @@ export const metadata: Metadata = {
     "Experienced Software Developer specializing in web and mobile development. Proficient in React, React Native, and responsive design. Let's build innovative solutions together.",
   keywords: [
     "web dev",
-    "web developer kano",
-    "web developer abuja",
-    "web developer lagos",
+    "fullstack developer",
+    "frontend developer",
+    "backend developer",
     "web developer nigeria",
     "azacdev",
     "abdulrazak abubakar",
@@ -67,7 +68,7 @@ export default async function RootLayout({
           <ThemeProvider attribute="class">
             <Toaster />
             <Navbar />
-            {children}
+            <Providers>{children}</Providers>
             <Footer />
             <SpeedInsights />
           </ThemeProvider>

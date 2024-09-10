@@ -1,4 +1,4 @@
-import IMG2 from "@/public/oryon.webp";
+import IMG1 from "@/public/phoniefy.png";
 import IMG3 from "@/public/monapp.png";
 import IMG4 from "@/public/stallion-times.jpg";
 import IMG5 from "@/public/casiefy.jpg";
@@ -6,35 +6,35 @@ import IMG5 from "@/public/casiefy.jpg";
 export const projects = [
   {
     id: 1,
-    title: "Casiefy",
-    des: "A dynamic app allowing users to personalize phone cases with their own image",
-    img: IMG5,
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "https://casiefy.vercel.app",
-  },
-  {
-    id: 2,
     title: "Monapp",
-    des: "Monapp is a sophisticated fintech platform offering flexible payment solutions, including Escrow, BNPL, and Save to Buy. It features a comprehensive admin dashboard for managing transactions and integrating Paystack for secure, seamless payments.",
+    des: "Worked with a dynamic fintech company where I played a key role in developing Monapp, a cutting-edge platform that offers flexible payment solutions such as Escrow, Buy Now Pay Later (BNPL), and Save to Buy. My responsibilities included building and optimizing the comprehensive admin dashboard for transaction management and integrating Paystack to ensure secure and seamless payments.",
     img: IMG3,
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
     link: "https://www.monapp.ng",
   },
   {
+    id: 2,
+    title: "Phoniefy",
+    des: "Redefining e-commerce with a state-of-the-art platform. We use the latest technologies to create a seamless and enjoyable experience.",
+    img: IMG1,
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+    link: "https://phoneify.vercel.app",
+  },
+  {
     id: 3,
+    title: "Casiefy",
+    des: "Casiefy is an innovative app that allows users to fully personalize their phone cases. Users can upload their own images, select a preferred phone case model, customize the design, and seamlessly pay to order their unique creation.",
+    img: IMG5,
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+    link: "https://casiefy.vercel.app",
+  },
+  {
+    id: 4,
     title: "Stallion Times",
     des: "Stallion Times is a premier news platform dedicated to publishing high-quality content that informs, educates, and entertains. We hold leaders and institutions accountable while upholding the highest ethics of journalism, ensuring trust in our reporting. Opinions expressed do not reflect the official stance of Stallion Times unless explicitly stated.",
     img: IMG4,
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
     link: "https://www.stalliontimes.com",
-  },
-  {
-    id: 4,
-    title: "Oryon",
-    des: "Redefining online shopping with a state-of-the-art platform. We use the latest technologies to create a seamless and enjoyable experience.",
-    img: IMG2,
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "https://oryon.vercel.app",
   },
 ];
 
