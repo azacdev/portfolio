@@ -71,6 +71,16 @@ export function PostForm({ initialData }: PostFormProps) {
     }
   }, [initialData]);
 
+  const modules = {
+    toolbar: [
+      [{ header: [1, 2, 3, 4, 5, 6, false] }],
+      ["bold", "italic", "underline", "strike", "blockquote"],
+      [{ align: ["right", "center", "justify"] }],
+      [{ list: "ordered" }, { list: "bullet" }],
+      ["link", "image"],
+    ],
+  };
+
   const slugify = (str: string) =>
     str
       .toLowerCase()
@@ -201,7 +211,7 @@ export function PostForm({ initialData }: PostFormProps) {
                     theme="snow"
                     value={field.value}
                     onChange={field.onChange}
-                    className=""
+                    modules={modules}
                   />
                 </FormControl>
                 <FormMessage />

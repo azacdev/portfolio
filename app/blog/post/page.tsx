@@ -20,9 +20,9 @@ const BlogPostPage = async () => {
         href="/blog/post/new"
         className={`${buttonVariants({
           variant: "default",
-        })} text-xl flex items-center justify-end ml-auto`}
+        })} text-xl flex items-center justify-center ml-auto`}
       >
-        <Plus className="h-6 w-6 mr-2" /> New Post
+        <Plus className="h-6 w-6 mr-2" /> <span>New Post</span>
       </Link>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 pb-20 pt-10">
         {posts.map((post: POST, index: number) => (

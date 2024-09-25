@@ -14,7 +14,7 @@ export const projects = [
   },
   {
     id: 2,
-    title: "Phoniefy",
+    title: "Phoneify",
     des: "Redefining e-commerce with a state-of-the-art platform. We use the latest technologies to create a seamless and enjoyable experience.",
     img: IMG1,
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
