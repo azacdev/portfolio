@@ -2,12 +2,12 @@ import Link from "next/link";
 import Image from "next/image";
 import parse from "html-react-parser";
 import { format } from "date-fns";
-import { cn } from "@/lib/utils";
+import { Pencil } from "lucide-react";
 
+import { cn, formatNumber } from "@/lib/utils";
 import {
   Card,
   CardContent,
-  CardDescription,
   CardFooter,
   CardHeader,
   CardTitle,
@@ -15,8 +15,6 @@ import {
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { POST } from "@/types";
 import { Separator } from "@/components/ui/separator";
-import { Button } from "./ui/button";
-import { Pencil } from "lucide-react";
 
 interface PostCardProps {
   post: POST;
@@ -53,9 +51,9 @@ const PostCard = ({ post, showEdit }: PostCardProps) => {
           <CardTitle className="line-clamp-2 hover:underline text-xl md:text-2xl">
             {post.title}
           </CardTitle>
-          <CardDescription className="line-clamp-4 text-base md:text-lg">
+          <div className="line-clamp-4 text-base md:text-lg">
             {parse(post.description)}
-          </CardDescription>
+          </div>
         </CardContent>
         <CardFooter className="flex justify-between items-center w-full p-3 mt-auto">
           <div className="flex items-center w-full ">
@@ -64,7 +62,7 @@ const PostCard = ({ post, showEdit }: PostCardProps) => {
               className="dark:bg-light bg-dark w-[2px] h-5 mx-5"
               orientation="vertical"
             />
-            <span>{post.views} views</span>
+            <span>{formatNumber(post.views)} views</span>
           </div>
 
           {showEdit && (
