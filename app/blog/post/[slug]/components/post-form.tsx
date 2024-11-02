@@ -8,7 +8,7 @@ import ReactQuill from "react-quill";
 import { useRouter } from "next/navigation";
 import { TagInput } from "emblor";
 import { v4 as uuidv4 } from "uuid";
-import "react-quill/dist/quill.snow.css";
+// import "react-quill/dist/quill.snow.css";
 
 import {
   Form,
@@ -207,12 +207,12 @@ export function PostForm({ initialData }: PostFormProps) {
               <FormItem>
                 <FormLabel>Description</FormLabel>
                 <FormControl>
-                  <ReactQuill
+                  {/* <ReactQuill
                     theme="snow"
                     value={field.value}
                     onChange={field.onChange}
                     modules={modules}
-                  />
+                  /> */}
                 </FormControl>
                 <FormMessage />
               </FormItem>
