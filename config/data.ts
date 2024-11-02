@@ -10,7 +10,7 @@ export const projects = [
     des: "Snap Homz is an innovative real estate platform that leverages AI technology to streamline the entire home buying and selling process. By offering a user-friendly interface and comprehensive tools, we empower both buyers and sellers to take control of their real estate journey.",
     img: IMG4,
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "https://www.stalliontimes.com",
+    link: "https://www.snaphomz.com",
   },
   {
     id: 2,
