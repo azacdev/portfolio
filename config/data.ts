@@ -1,24 +1,24 @@
 import IMG1 from "@/public/phoniefy.png";
 import IMG3 from "@/public/monapp.png";
-import IMG4 from "@/public/stallion-times.jpg";
+import IMG4 from "@/public/snaphomz.png";
 import IMG5 from "@/public/casiefy.jpg";
 
 export const projects = [
   {
     id: 1,
+    title: "Snaphomz",
+    des: "Snap Homz is an innovative real estate platform that leverages AI technology to streamline the entire home buying and selling process. By offering a user-friendly interface and comprehensive tools, we empower both buyers and sellers to take control of their real estate journey.",
+    img: IMG4,
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
+    link: "https://www.stalliontimes.com",
+  },
+  {
+    id: 2,
     title: "Monapp",
     des: "Worked with a dynamic fintech company where I played a key role in developing Monapp, a cutting-edge platform that offers flexible payment solutions such as Escrow, Buy Now Pay Later (BNPL), and Save to Buy. My responsibilities included building and optimizing the comprehensive admin dashboard for transaction management and integrating Paystack to ensure secure and seamless payments.",
     img: IMG3,
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
     link: "https://www.monapp.ng",
-  },
-  {
-    id: 2,
-    title: "Phoneify",
-    des: "Redefining e-commerce with a state-of-the-art platform. We use the latest technologies to create a seamless and enjoyable experience.",
-    img: IMG1,
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "https://phoneify.vercel.app",
   },
   {
     id: 3,
@@ -30,11 +30,11 @@ export const projects = [
   },
   {
     id: 4,
-    title: "Stallion Times",
-    des: "Stallion Times is a premier news platform dedicated to publishing high-quality content that informs, educates, and entertains. We hold leaders and institutions accountable while upholding the highest ethics of journalism, ensuring trust in our reporting. Opinions expressed do not reflect the official stance of Stallion Times unless explicitly stated.",
-    img: IMG4,
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "https://www.stalliontimes.com",
+    title: "Phoneify",
+    des: "Redefining e-commerce with a state-of-the-art platform. We use the latest technologies to create a seamless and enjoyable experience.",
+    img: IMG1,
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+    link: "https://phoneify.vercel.app",
   },
 ];
 
