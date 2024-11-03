@@ -10,7 +10,7 @@ export const projects = [
     des: "Snap Homz is an innovative real estate platform that leverages AI technology to streamline the entire home buying and selling process. By offering a user-friendly interface and comprehensive tools, we empower both buyers and sellers to take control of their real estate journey.",
     img: IMG4,
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "https://www.snaphomz.com",
+    link: "https://snaphomz.com",
   },
   {
     id: 2,
@@ -18,7 +18,7 @@ export const projects = [
     des: "Worked with a dynamic fintech company where I played a key role in developing Monapp, a cutting-edge platform that offers flexible payment solutions such as Escrow, Buy Now Pay Later (BNPL), and Save to Buy. My responsibilities included building and optimizing the comprehensive admin dashboard for transaction management and integrating Paystack to ensure secure and seamless payments.",
     img: IMG3,
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "https://www.monapp.ng",
+    link: "https://monapp.ng",
   },
   {
     id: 3,
