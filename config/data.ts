@@ -1,4 +1,5 @@
-import IMG1 from "@/public/phoniefy.png";
+import IMG1 from "@/public/phoneify.png";
+import IMG2 from "@/public/talents-sphere.png";
 import IMG3 from "@/public/monapp.png";
 import IMG4 from "@/public/snaphomz.png";
 import IMG5 from "@/public/casiefy.jpg";
@@ -14,6 +15,14 @@ export const projects = [
   },
   {
     id: 2,
+    title: "Talents Sphere",
+    des: "Contributed to developing Talent Sphere Africa, a platform connecting clients with diverse African talents and creatives through an automated matching system, streamlined booking, and project management tools.",
+    img: IMG2,
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
+    link: "https://talentsphereafrica.com",
+  },
+  {
+    id: 3,
     title: "Monapp",
     des: "Worked with a dynamic fintech company where I played a key role in developing Monapp, a cutting-edge platform that offers flexible payment solutions such as Escrow, Buy Now Pay Later (BNPL), and Save to Buy. My responsibilities included building and optimizing the comprehensive admin dashboard for transaction management and integrating Paystack to ensure secure and seamless payments.",
     img: IMG3,
